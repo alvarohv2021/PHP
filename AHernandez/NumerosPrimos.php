@@ -3,7 +3,7 @@
     <title>Find N prime numbers</title>
 </head>
 <body>
-<form method="post" action="find_n_primes.php">
+<form method="post" action="NumerosPrimos.php">
     <label>
         Number:
         <input type="text" name="num"/>
@@ -12,17 +12,35 @@
 </form>
 <div>
     <?php
+
+    $divisores=[];
+
     function getDivisors($num){
-        //TODO: YOUR CODE HERE
+        for ($i = 1; $i <= $num; $i++) {
+            if ($num % $i == 0) {
+
+                $divisores[] = $i;
+            }
+        }
+        echo "<br>";
+        return $divisores;
     }
 
     function isPrimeNum($num){
-        //TODO: YOUR CODE HERE
+        $i=0;
+        while ($i!=$num){
+            $divisores=getDivisors($num);
+            if (sizeof($divisores)==2){
+                echo $divisores[1];
+                $i++;
+            }
+        }
     }
 
     if (isset($_POST["num"])) {
         $num = intval($_POST["num"]);
-        //TODO: YOUR CODE HERE
+
+        isPrimeNum($num);
     }
     ?>
 </div>

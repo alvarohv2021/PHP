@@ -28,7 +28,7 @@
     function isPrimeNum($num){
         $i=0;
         $j=0;
-        while ($i<=$num){
+        while ($i<$num){
             $divisores=getDivisors($j);
             if (sizeof($divisores)==2){
 

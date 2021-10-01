@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Numeros Primos">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Sacxar Divisores">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AHernandez/NumerosPrimos.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/NumerosPrimos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +57,8 @@
       <workItem from="1632935085815" duration="4510000" />
       <workItem from="1632939607267" duration="97000" />
       <workItem from="1633011058578" duration="3322000" />
-      <workItem from="1633094212255" duration="9458000" />
+      <workItem from="1633094212255" duration="9670000" />
+      <workItem from="1633108340512" duration="1795000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -79,7 +81,28 @@
       <option name="project" value="LOCAL" />
       <updated>1633103511478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Numeros Primos casi acabado">
+      <created>1633107022673</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633107022673</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Numeros Primos casi acabado">
+      <created>1633107049050</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633107049050</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Sacxar Divisores">
+      <created>1633107174059</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633107174059</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +123,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&lt;br&gt;" />
     <MESSAGE value="Numeros Primos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Numeros Primos" />
+    <MESSAGE value="Numeros Primos casi acabado" />
+    <MESSAGE value="Sacxar Divisores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sacxar Divisores" />
   </component>
 </project>

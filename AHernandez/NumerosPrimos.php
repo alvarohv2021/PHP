@@ -22,24 +22,27 @@
                 $divisores[] = $i;
             }
         }
-        echo "<br>";
         return $divisores;
     }
 
     function isPrimeNum($num){
         $i=0;
-        while ($i!=$num){
-            $divisores=getDivisors($i);
+        $j=0;
+        while ($i<=$num){
+            $divisores=getDivisors($j);
             if (sizeof($divisores)==2){
-                echo $divisores[1];
+
+                echo "<br>";
+                echo "-{$divisores[1]}";
                 $i++;
             }
+            $j++;
         }
     }
 
     if (isset($_POST["num"])) {
         $num = intval($_POST["num"]);
-
+        echo "Los {$num} primeros numeros primos son:";
         isPrimeNum($num);
     }
     ?>

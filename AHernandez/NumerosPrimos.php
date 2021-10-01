@@ -29,7 +29,7 @@
     function isPrimeNum($num){
         $i=0;
         while ($i!=$num){
-            $divisores=getDivisors($num);
+            $divisores=getDivisors($i);
             if (sizeof($divisores)==2){
                 echo $divisores[1];
                 $i++;

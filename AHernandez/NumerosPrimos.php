@@ -5,7 +5,7 @@
 <body>
 <form method="post" action="NumerosPrimos.php">
     <label>
-        Number:
+        NNumeroPrimosumber:
         <input type="text" name="num"/>
     </label>
     <input type="submit"/>
@@ -31,9 +31,7 @@
         while ($i<$num){
             $divisores=getDivisors($j);
             if (sizeof($divisores)==2){
-
-                echo "<br>";
-                echo "-{$divisores[1]}";
+                echo "<br>-{$divisores[1]}";
                 $i++;
             }
             $j++;

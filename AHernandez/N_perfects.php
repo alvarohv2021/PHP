@@ -12,17 +12,30 @@
 </form>
 <div>
     <?php
-    function getDivisors($num){
+    function getDivisors($num)
+    {
         for ($i = 1; $i <= $num; $i++) {
-            if ($num % $i == 0) {
-                $divisores[] = $i;
-            }
+
+            $divisores[] = $i % $num;
+
         }
         return $divisores;
     }
 
-    function isPerfectNum($num){
-        //TODO: YOUR CODE HERE
+    function isPerfectNum($num)
+    {
+
+        $i = 0;
+        $j = 0;
+        $sum = 0;
+        while ($i < $num) {
+
+            $divisores = getDivisors($j);
+
+            $sum = $divisores[$i] + $sum;
+
+
+        }
     }
 
     if (isset($_POST["num"])) {

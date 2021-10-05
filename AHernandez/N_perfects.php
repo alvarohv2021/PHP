@@ -13,7 +13,7 @@
 <div>
     <?php
     function getDivisors($num){
-        for ($i = 1; $i <= $num; $i++) {
+        for ($i = 1; $i < $num; $i++) {
             if ($num % $i == 0) {
 
                 $divisores[] = $i;

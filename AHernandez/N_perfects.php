@@ -3,7 +3,7 @@
     <title>Find N perfect numbers</title>
 </head>
 <body>
-<form method="post" action="find_n_perfects.php">
+<form method="post" action="N_perfects.php">
     <label>
         Number:
         <input type="text" name="num"/>
@@ -12,35 +12,39 @@
 </form>
 <div>
     <?php
-    function getDivisors($num)
-    {
+    function getDivisors($num){
         for ($i = 1; $i <= $num; $i++) {
+            if ($num % $i == 0) {
 
-            $divisores[] = $i % $num;
-
+                $divisores[] = $i;
+            }
         }
         return $divisores;
     }
 
     function isPerfectNum($num)
     {
-
-        $i = 0;
         $j = 0;
-        $sum = 0;
-        while ($i < $num) {
-
-            $divisores = getDivisors($j);
-
-            $sum = $divisores[$i] + $sum;
+        $i = 1;
 
 
+        while ($j < $num) {
+
+            $divisores = getDivisors($i);
+            $sum=array_sum($divisores);
+
+            if ($sum == $i) {
+                echo $i. " es perfecto<br>";
+                $j++;
+            }
+            $i++;
         }
+
     }
 
     if (isset($_POST["num"])) {
         $num = intval($_POST["num"]);
-        //TODO: YOUR CODE HERE
+        isPerfectNum($num);
     }
     ?>
 </div>

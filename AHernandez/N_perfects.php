@@ -12,7 +12,9 @@
 </form>
 <div>
     <?php
-    function getDivisors($num){
+    function getDivisors($num)
+    {
+        $divisores=array();
         for ($i = 1; $i < $num; $i++) {
             if ($num % $i == 0) {
 
@@ -26,15 +28,24 @@
     {
         $j = 0;
         $i = 1;
-
+        $sum=0;
 
         while ($j < $num) {
 
             $divisores = getDivisors($i);
-            $sum=array_sum($divisores);
+            //var_dump($divisores);
 
+    //        $sum=array_sum($divisores);
+            foreach ($divisores as $perf) {
+                if ($num%$perf) {
+                    $sum += $perf;
+
+                    echo "<br>" . $sum;
+                }
+           }
+            echo "<br>";
             if ($sum == $i) {
-                echo $i. " es perfecto<br>";
+                echo $i . " es perfecto<br>";
                 $j++;
             }
             $i++;

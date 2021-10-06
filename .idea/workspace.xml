@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Numeros Perfectos &quot;array_sum&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/N_perfects.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/N_perfects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/arbol.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/arbol.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AHernandez" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AHernandez" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="pruebas.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/AHernandez/pruebas.php">
@@ -63,6 +69,7 @@
       <workItem from="1633111292950" duration="262000" />
       <workItem from="1633353193417" duration="3394000" />
       <workItem from="1633454124605" duration="6025000" />
+      <workItem from="1633537863059" duration="8398000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -148,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633456426077</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Numeros Perfectos &quot;array_sum&quot;">
+      <created>1633537970429</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1633537970429</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

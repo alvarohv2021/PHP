@@ -19,16 +19,15 @@
     <?php
     function lineas($num){
         for ($i = 1; $i <= $num; $i++) {
-            for ($f=$num;$f>=$i;$f--){
-                echo'&nbsp';
+            for ($f=$num;$f>$i;$f--){
+                echo "<span style='color:white'>*</span>";
             }
-            for ($j = 1; $j <= $i;$j++) {
-                echo "<span style='color:skyblue'>*</span>";
+            for ($j = 1; $j < $i*2;$j++) {
+                echo "<span style='color:darkred'>*</span>";
             }
             echo "<br>";
         }
     }
-
 
     if (isset($_POST["num"])) {
         $num = intval($_POST["num"]);

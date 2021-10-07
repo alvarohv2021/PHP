@@ -3,11 +3,6 @@
     <title>Find N prime numbers</title>
 </head>
 <body>
-<style>
-    p {
-        background-color: #212738;
-    }
-</style>
 <form method="post" action="arbol.php">
     <label>
         NNumeroPrimosumber:

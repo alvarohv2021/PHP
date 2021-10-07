@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="escalera invertida">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Arbol en 3 bucles">
       <change beforePath="$PROJECT_DIR$/AHernandez/arbol.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/arbol.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
       <workItem from="1633353193417" duration="3394000" />
       <workItem from="1633454124605" duration="6025000" />
       <workItem from="1633537863059" duration="8480000" />
-      <workItem from="1633615769817" duration="675000" />
+      <workItem from="1633615769817" duration="989000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -170,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633546693238</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Arbol en 3 bucles">
+      <created>1633616689903</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1633616689903</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +204,7 @@
     <MESSAGE value="Numeros Perfectos mal" />
     <MESSAGE value="Numeros Perfectos &quot;array_sum&quot;" />
     <MESSAGE value="incompleto" />
-    <option name="LAST_COMMIT_MESSAGE" value="incompleto" />
+    <MESSAGE value="Arbol en 3 bucles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arbol en 3 bucles" />
   </component>
 </project>

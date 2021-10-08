@@ -1,8 +1,13 @@
 <html lang="es">
 <head>
     <title>Find N prime numbers</title>
+    <style>
+        body{
+            background-color:orange;
+        }
+    </style>
 </head>
-<body>
+<body >
 <form method="post" action="arbol.php">
     <label>
         NNumeroPrimosumber:
@@ -15,7 +20,7 @@
     function lineas($num){
         for ($i = 1; $i <= $num; $i++) {
             for ($f=$num;$f>$i;$f--){
-                echo "<span style='color:white'>*</span>";
+                echo "<span style='color:orange'>*</span>";
             }
             for ($j = 1; $j < $i*2;$j++) {
                 echo "<span style='color:darkred'>*</span>";

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Arbol en 3 bucles">
-      <change afterPath="$PROJECT_DIR$/AHernandez/Password.php" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Password">
+      <change afterPath="$PROJECT_DIR$/AHernandez/OrdenarArrays.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/arbol.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/arbol.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/Password.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Password.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,8 @@
       <workItem from="1633621117818" duration="60000" />
       <workItem from="1633621295510" duration="294000" />
       <workItem from="1633699048819" duration="222000" />
-      <workItem from="1633699723722" duration="1539000" />
+      <workItem from="1633699723722" duration="5633000" />
+      <workItem from="1634143704085" duration="2388000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -189,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633616760837</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Password">
+      <created>1633701683947</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1633701683947</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +226,7 @@
     <MESSAGE value="Numeros Perfectos &quot;array_sum&quot;" />
     <MESSAGE value="incompleto" />
     <MESSAGE value="Arbol en 3 bucles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arbol en 3 bucles" />
+    <MESSAGE value="Password" />
+    <option name="LAST_COMMIT_MESSAGE" value="Password" />
   </component>
 </project>

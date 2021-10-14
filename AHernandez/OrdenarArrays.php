@@ -12,4 +12,5 @@ for ($i = 0; $i < count($array); $i++) {
     }
 }
 var_dump($array);
+
 ?>

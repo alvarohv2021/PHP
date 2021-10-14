@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Password">
-      <change afterPath="$PROJECT_DIR$/AHernandez/OrdenarArrays.php" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Echo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/OrdenarArrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/OrdenarArrays.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AHernandez/Password.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Password.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +26,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1yp4EcSpCeZOmvmzoKBqMHZBvUx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -76,7 +77,9 @@
       <workItem from="1633621295510" duration="294000" />
       <workItem from="1633699048819" duration="222000" />
       <workItem from="1633699723722" duration="5633000" />
-      <workItem from="1634143704085" duration="2388000" />
+      <workItem from="1634143704085" duration="5769000" />
+      <workItem from="1634220790282" duration="457000" />
+      <workItem from="1634221746341" duration="4104000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -197,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633701683947</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Echo">
+      <created>1634146109769</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1634146109769</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +237,7 @@
     <MESSAGE value="incompleto" />
     <MESSAGE value="Arbol en 3 bucles" />
     <MESSAGE value="Password" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password" />
+    <MESSAGE value="Echo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Echo" />
   </component>
 </project>

@@ -17,7 +17,6 @@ function getSortedElephantsByNumber($elephants){
             }
         }
     }
-    var_dump($elephants);
     return $elephants;
 }
 ?>

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="Craker">
-      <change afterPath="$PROJECT_DIR$/AHernandez/Elefantes.php" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="18-10-21">
+      <change afterPath="$PROJECT_DIR$/AHernandez/elephants-multifilter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/OrdenarArrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/OrdenarArrays.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,12 @@
       <workItem from="1634143704085" duration="5769000" />
       <workItem from="1634220790282" duration="457000" />
       <workItem from="1634221746341" duration="4170000" />
-      <workItem from="1634305075338" duration="4335000" />
+      <workItem from="1634305075338" duration="6391000" />
+      <workItem from="1634315271177" duration="1614000" />
+      <workItem from="1634563085670" duration="241000" />
+      <workItem from="1634565212377" duration="1498000" />
+      <workItem from="1634569676094" duration="2133000" />
+      <workItem from="1634577624416" duration="4407000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -218,7 +222,28 @@
       <option name="project" value="LOCAL" />
       <updated>1634225908326</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Elefantes">
+      <created>1634310064909</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634310064909</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Elefantes done">
+      <created>1634316032921</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634316032921</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Elefantes done">
+      <created>1634563303124</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1634563303124</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +275,8 @@
     <MESSAGE value="Password" />
     <MESSAGE value="Echo" />
     <MESSAGE value="Craker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Craker" />
+    <MESSAGE value="Elefantes" />
+    <MESSAGE value="Elefantes done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Elefantes done" />
   </component>
 </project>

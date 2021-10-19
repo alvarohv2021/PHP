@@ -160,7 +160,7 @@ if (isset($_GET["sortingCriteria"])) {
                        echo "<img src=".$elephants[$i]['image'].">" ;
 
         }
-
+        alvaro
         ?>
     </div>
 </div>

@@ -158,18 +158,17 @@ if (isset($_GET["sortingCriteria"])) {
             echo "<div class='col-md-4'>";
             echo "<div class='card' style='width: 18rem;'>";
             echo "<img class='card-img-top' src=" . $elephants[$i]['image'] . "></img>";
-            echo "<div class='card-body'>
-                    <h5 class='card-title'>" . $elephants[$i]['number'] . "-" . $elephants[$i]['name'] . "</h5>
-                    <br><h6 class='card-subtitle mb-2 text-muted'> Species: " . $elephants[$i]['species'] . "</h6>
-                    <br><h6 class='card-subtitle mb-2 text-muted'> Year of birth: " . $elephants[$i]['dob'] . "</h6>
-                    <br><p class='card-text'>" . $elephants[$i]['note'] . "</p>
-                    <br><a class='btn mr-2' href='" . $elephants[$i]['wikilink'] . "' target='_blank'>
-                        <i class='fas fa-link'></i>
-                        Visit elephant
-                    </a>
-                    </div>
-                    </div>
-                    </div>";
+            echo "<div class='card-body'>";
+            echo        "<h5 class='card-title'>" . $elephants[$i]['number'] . "-" . $elephants[$i]['name'] . "</h5>";
+            echo        "<br><h6 class='card-subtitle mb-2 text-muted'> Species: " . $elephants[$i]['species'] . "</h6>";
+            echo        "<br><h6 class='card-subtitle mb-2 text-muted'> Year of birth: " . $elephants[$i]['dob'] . "</h6>";
+            echo        "<br><p class='card-text'>" . $elephants[$i]['note'] . "</p>";
+            echo        "<br><a class='btn mr-2' href='" . $elephants[$i]['wikilink'] . "' target='_blank'>";
+            echo        "<i class='fas fa-link'></i>Visit elephant";
+            echo        "</a>";
+            echo        "</div>";
+            echo        "</div>";
+            echo        "</div>";
         }
         alvaro
         ?>

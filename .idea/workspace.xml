@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="18-10-21">
-      <change afterPath="$PROJECT_DIR$/AHernandez/elephants-multifilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="19-10-21">
+      <change afterPath="$PROJECT_DIR$/AHernandez/arrayMap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AHernandez/world.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/elephants-multifilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/elephants-multifilter.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634563303124</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="19-10-21">
+      <created>1634662717049</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1634662717049</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +285,7 @@
     <MESSAGE value="Craker" />
     <MESSAGE value="Elefantes" />
     <MESSAGE value="Elefantes done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Elefantes done" />
+    <MESSAGE value="19-10-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="19-10-21" />
   </component>
 </project>

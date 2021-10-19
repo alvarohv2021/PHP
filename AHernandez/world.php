@@ -1,7 +1,11 @@
 <?php
 $contents = file_get_contents("https://dawsonferrer.com/allabres/apis_solutions/world.php?data=world");
 $world = json_decode($contents, true);
-//var_dump($world[0]['Cities']);
+
+/*echo("<pre>");
+echo var_dump($world[1]['Cities']);
+echo("</pre>");*/
+
 function getUnsortedCities($world)
 {
     //TODO: Return an array of cities without any kind of sort.
@@ -10,12 +14,14 @@ function getUnsortedCities($world)
 
     for ($i = 0; $i < count($world); $i++) {
         for ($j = 0; $j < count($world[$i]['Cities']); $j++) {
-            $ciudades = ($world[$i]['Cities']);
-            echo "<br>".$ciudades[$j]['Name'];
-            return $ciudades;
+            $ciudades[] = $world[$i]['Cities'][$j];
         }
-
     }
+
+   /* echo("<pre>");
+    var_dump($ciudades);
+    echo("</pre>");*/
+    return $ciudades;
 }
 
 function getSortedCitiesByPopulation($cities)
@@ -24,10 +30,14 @@ function getSortedCitiesByPopulation($cities)
     //NOTES 1: You receive a cities multidimensional array, you can view it's content with var_dump() function.
     //NOTES 2:You CAN'T use any sorting PHP built-in function.
     for ($i = 0; $i < count($cities); $i++) {
-        var_dump($cities);
-        $pop=intval($cities['Population']);
-       // echo $pop;
+
+
+        //echo "<br>" . $cities[$i]['Population'];
+        //$pop=intval($cities['Population']);
+        //echo $pop;
+
     }
+
 }
 
 ?>
@@ -78,7 +88,11 @@ function getSortedCitiesByPopulation($cities)
     //TODO: Logic to print the table body.
     $cities = getUnsortedCities($world);
 
-    getSortedCitiesByPopulation($cities);
+
+    echo("<pre>");
+    var_dump($cities);
+    echo("</pre>");
+    //getSortedCitiesByPopulation($cities);
     ?>
     </tbody>
 </table>

@@ -18,9 +18,9 @@ function getUnsortedCities($world)
         }
     }
 
-   /* echo("<pre>");
-    var_dump($ciudades);
-    echo("</pre>");*/
+    /* echo("<pre>");
+     var_dump($ciudades);
+     echo("</pre>");*/
     return $ciudades;
 }
 
@@ -30,14 +30,15 @@ function getSortedCitiesByPopulation($cities)
     //NOTES 1: You receive a cities multidimensional array, you can view it's content with var_dump() function.
     //NOTES 2:You CAN'T use any sorting PHP built-in function.
     for ($i = 0; $i < count($cities); $i++) {
-
-
-        //echo "<br>" . $cities[$i]['Population'];
-        //$pop=intval($cities['Population']);
-        //echo $pop;
-
+        for ($j = 0; $j < count($cities); $j++) {
+            if ($cities[$i]['Population'] < $cities[$j]['Population']) {
+                $aux = $cities[$i];
+                $cities[$i] = $cities[$j];
+                $cities[$j] = $aux;
+            }
+        }
     }
-
+    return $cities;
 }
 
 ?>
@@ -87,12 +88,31 @@ function getSortedCitiesByPopulation($cities)
     <?php
     //TODO: Logic to print the table body.
     $cities = getUnsortedCities($world);
-
-
-    echo("<pre>");
-    var_dump($cities);
-    echo("</pre>");
-    //getSortedCitiesByPopulation($cities);
+    $pop=getSortedCitiesByPopulation($cities);
+    for ($i = 0; $i < count($pop);$i++){
+        echo '<tr>';
+        //desordenada
+        echo '<td>';
+        echo $cities[$i]['ID'];
+        echo '</td>';
+        echo '<td>';
+        echo $cities[$i]['Name'];
+        echo '</td>';
+        echo '<td>';
+        echo $cities[$i]['Population'];
+        echo '</td>';
+        //ordenada
+        echo '<td>';
+        echo $pop[$i]['ID'];
+        echo '</td>';
+        echo '<td>';
+        echo $pop[$i]['Name'];
+        echo '</td>';
+        echo '<td>';
+        echo $pop[$i]['Population'];
+        echo '</td>';
+        echo '</tr>';
+    }
     ?>
     </tbody>
 </table>

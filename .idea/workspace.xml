@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="20-10-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="19-10-21">
+      <change afterPath="$PROJECT_DIR$/AHernandez/mapping.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PHP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/world.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/world.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +16,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -88,8 +88,6 @@
       <workItem from="1634565212377" duration="1498000" />
       <workItem from="1634569676094" duration="2133000" />
       <workItem from="1634577624416" duration="4407000" />
-      <workItem from="1634677922199" duration="4755000" />
-      <workItem from="1634728265372" duration="1490000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -252,14 +250,7 @@
       <option name="project" value="LOCAL" />
       <updated>1634662717049</updated>
     </task>
-    <task id="LOCAL-00024" summary="20-10-21">
-      <created>1634682702761</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1634682702761</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +285,6 @@
     <MESSAGE value="Elefantes" />
     <MESSAGE value="Elefantes done" />
     <MESSAGE value="19-10-21" />
-    <MESSAGE value="20-10-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="20-10-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="19-10-21" />
   </component>
 </project>

@@ -12,6 +12,9 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="2eb4a019-8640-4744-859e-d85ad3080741" name="escuela" url="http://localhost/examen">
+        <fileTransfer mountedRoot="$PROJECT_DIR$/examen" accessType="MOUNT" port="0" />
+      </webServer>
     </option>
   </component>
 </project>

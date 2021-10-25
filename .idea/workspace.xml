@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="19-10-21">
-      <change afterPath="$PROJECT_DIR$/examen/prueba.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AHernandez/arraysDeObjetos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examen/Examen.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examen/prueba.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examen/rickandmorty.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/rickandmorty.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +100,9 @@
       <workItem from="1634744308873" duration="284000" />
       <workItem from="1634744769772" duration="65000" />
       <workItem from="1634746754562" duration="91000" />
+      <workItem from="1634910459784" duration="4985000" />
+      <workItem from="1635167807545" duration="3724000" />
+      <workItem from="1635179242405" duration="1786000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>

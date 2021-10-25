@@ -87,13 +87,14 @@ function getSortedEpisodesById($episodes)
 
 function mapCharacters($characters)
 {
-    //TODO: Your code here.
     global $sortedLocations;//sustituir el valor de "origin" en el array $characters por el valor de "name" del array locations
 
     for ($i = 0; $i < count($characters); $i++) {
         for ($j = 0; $j < count($sortedLocations); $j++) {
             if ($characters[$i]['origin'] == $sortedLocations[$j]['id']) {
                 $characters[$i]['origin'] = $sortedLocations[$j]['name'];
+            }else if ($characters[$i]['origin']=="0"){
+                $characters[$i]['origin']="Unknown";
             }
         }
     }
@@ -193,11 +194,12 @@ $mappedCharacters = mapCharacters($characters);
                 //renderCard(mapCharacters($characters));
                 $lista = mapCharacters($characters);
                 var_dump($lista);
+                $lista[0]['image'];
 
                 for ($i = 0; $i < count($characters); $i++) {
                     echo "<div class='col-md-4 col-sm-12 col-xs-12'>";
                     echo "<div class='card mb-4 box-shadow bg-light'>";
-                    echo "<img class='$lista[$i]['image']'>";
+                    echo "<img class='card-img-top' src=".$lista[$i]['image']."></img>";
                     echo "<div class='card-body'>";
                     echo "<h5 class='card-title'>" . $lista[$i]['name'] . "</h5>";
                     echo "<div class='alert alert-success' style='padding:0;' role='alert'>" . $lista[$i]['status'] . " - " . $lista[$i]['species']."</div>";
@@ -207,7 +209,11 @@ $mappedCharacters = mapCharacters($characters);
                                 echo "<strong>Origin</strong>";
                             echo "</label>";
                             echo "<div id='emailHelp' class='form-text' style='margin-top:0;'>";
-                            echo $lista[$i]['origin'];
+                            //if ($lista[$i]['origin']!="0"){
+                                echo $lista[$i]['origin'];
+                            /*}else{
+                                echo "Unknown";
+                            }*/
                             echo "</div>";
                         echo "</div>";
                     echo "<label class='form-label' for='exampleInputEmail1' style='margin-bottom: 0;'>";

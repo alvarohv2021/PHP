@@ -2,6 +2,7 @@
 
 function ordenarVotos($votosPartidos)
 {
+
     for ($i = 0; $i < count($votosPartidos); $i++) {//recorre el array buscando el mayor num de votos
         for ($j = 1; $j <= count($votosPartidos); $j++) {
             if ($votosPartidos[$i] < $votosPartidos[$j]) {

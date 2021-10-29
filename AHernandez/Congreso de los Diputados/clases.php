@@ -49,8 +49,14 @@ class Circumscripcion
 }
 
 for ($i = 0; $i < count($resultados); $i++) {
-        $resultados[$i]= new Circumscripcion($resultados[$i]['party'], $resultados[$i]['district'], $resultados[$i]['votes']);
-}
-var_dump($resultados);
+    $resultado_obj[$i] = new Circumscripcion($resultados[$i]['party'], $resultados[$i]['district'], $resultados[$i]['votes']);
+    echo "<table><tr>";
+    for ($j = 0; $j < 1; $j++) {
+        echo "<td>" . $resultado_obj[$i]->getProvincias() . "</td>";
+        echo "<td>" . $resultado_obj[$i]->getPartidos() . "</td>";
+        echo "<td>" . $resultado_obj[$i]->getResultados() . "</td>";
 
+    }
+    echo "</tr></table>";
+}
 ?>

@@ -170,7 +170,6 @@ if (isset($_GET["sortingCriteria"])) {
             echo        "</div>";
             echo        "</div>";
         }
-        alvaro
         ?>
     </div>
 </div>

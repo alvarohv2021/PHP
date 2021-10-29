@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="29-10-21">
-      <change afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/tablas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/pruebas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/arrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/arrays.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/clases.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/clases.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/tablas.css" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/tablas.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +14,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,7 +118,7 @@
       <workItem from="1635359728157" duration="3000" />
       <workItem from="1635430725260" duration="4521000" />
       <workItem from="1635513571177" duration="7660000" />
-      <workItem from="1635528979568" duration="305000" />
+      <workItem from="1635528979568" duration="4707000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -344,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635521226507</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="29-10-21">
+      <created>1635529343735</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1635529343735</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

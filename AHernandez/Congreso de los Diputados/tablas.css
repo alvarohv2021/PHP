@@ -3,3 +3,6 @@ table,tr,td{
     border-collapse: collapse;
     padding: 9px;
 }
+tr:hover{
+    background: lightgray;
+}

@@ -61,10 +61,6 @@ if (isset($_GET["sortingCriteria"])) {
 </nav>
 <table>
 <?php
-
-//ordenarCircumscripcion($provincias, $partidos);
-//var_dump($ordenado);
-
 for ($i = 0; $i < count($ordenado); $i++) {
     echo "<tr>";
     echo "<td>".$provincias[$i]."</td>";

@@ -59,18 +59,22 @@ if (isset($_GET["sortingCriteria"])) {
         </div>
     </div>
 </nav>
+<table>
 <?php
 
 //ordenarCircumscripcion($provincias, $partidos);
 //var_dump($ordenado);
 
 for ($i = 0; $i < count($ordenado); $i++) {
-echo "<tr>";
-    for ($j = 0; $j < count($ordenado[$i]); $j++) {
-        echo "<td>"+$ordenado[$i][$j]+"</td>";
+    echo "<tr>";
+    echo "<td>".$provincias[$i]."</td>";
+    for ($j = 0; $j < count($ordenado[$provincias[$i]]); $j++) {
+
+        echo "<td>".$ordenado[$provincias[$i]][$j]."</td>";
     }
     echo "</tr>";
 }
 ?>
+</table>
 </body>
 </html>

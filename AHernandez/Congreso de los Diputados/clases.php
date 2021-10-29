@@ -1,45 +1,56 @@
 <?php
+$api_url = "https://dawsonferrer.com/allabres/apis_solutions/elections/api.php?data=";
 
-class escaños{
-    private $partido,$provincia,$votos;
+$partidos = json_decode(file_get_contents($api_url . "parties"), true);
+$provincias = json_decode(file_get_contents($api_url . "districts"), true);
+$resultados = json_decode(file_get_contents($api_url . "results"), true);
 
-    public function __construct($partido, $provincia, $votos)
+class Circumscripcion
+{
+
+    private $partidos, $provincias, $resultados;
+
+    public function __construct($partidos, $provincias, $resultados)
     {
-        $this->partido = $partido;
-        $this->provincia = $provincia;
-        $this->votos = $votos;
+        $this->partidos = $partidos;
+        $this->provincias = $provincias;
+        $this->resultados = $resultados;
     }
 
-    public function getPartido()
+    public function getPartidos()
     {
-        return $this->partido;
+        return $this->partidos;
     }
 
-    public function setPartido($partido)
+    public function setPartidos($partidos)
     {
-        $this->partido = $partido;
+        $this->partidos = $partidos;
     }
 
-    public function getProvincia()
+    public function getProvincias()
     {
-        return $this->provincia;
+        return $this->provincias;
     }
 
-    public function setProvincia($provincia)
+    public function setProvincias($provincias)
     {
-        $this->provincia = $provincia;
+        $this->provincias = $provincias;
     }
 
-    public function getVotos()
+    public function getResultados()
     {
-        return $this->votos;
+        return $this->resultados;
     }
 
-    public function setVotos($votos)
+    public function setResultados($resultados)
     {
-        $this->votos = $votos;
+        $this->resultados = $resultados;
     }
-
 }
+
+for ($i = 0; $i < count($resultados); $i++) {
+        $resultados[$i]= new Circumscripcion($resultados[$i]['party'], $resultados[$i]['district'], $resultados[$i]['votes']);
+}
+var_dump($resultados);
 
 ?>

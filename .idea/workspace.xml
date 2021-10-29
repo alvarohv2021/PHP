@@ -4,6 +4,7 @@
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="29-10-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/arrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/arrays.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/clases.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/clases.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +108,7 @@
       <workItem from="1635351804128" duration="3125000" />
       <workItem from="1635359728157" duration="3000" />
       <workItem from="1635430725260" duration="4521000" />
-      <workItem from="1635513571177" duration="3428000" />
+      <workItem from="1635513571177" duration="5910000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -319,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635516565411</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="29-10-21">
+      <created>1635517112732</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1635517112732</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

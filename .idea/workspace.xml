@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="29-10-21">
-      <change afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClaseCircumscripcion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClasePartidos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClaseProvincias.php" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="2-11-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/arrays.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/clases.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/nav.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/tablas.css" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/tablas.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClaseCircumscripcion.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClaseCircumscripcion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +121,10 @@
       <workItem from="1635528979568" duration="4707000" />
       <workItem from="1635533757760" duration="35000" />
       <workItem from="1635866303420" duration="3795000" />
-      <workItem from="1635875695003" duration="5827000" />
+      <workItem from="1635875695003" duration="5844000" />
+      <workItem from="1635955493237" duration="2194000" />
+      <workItem from="1635959902180" duration="2135000" />
+      <workItem from="1635962194536" duration="6683000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -373,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635533766172</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="2-11-21">
+      <created>1635883122790</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1635883122790</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,6 +418,7 @@
     <MESSAGE value="27-10-21" />
     <MESSAGE value="28-10-21" />
     <MESSAGE value="29-10-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="29-10-21" />
+    <MESSAGE value="2-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="2-11-21" />
   </component>
 </project>

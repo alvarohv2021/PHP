@@ -2,7 +2,7 @@
 class Circumscripcion
 {
 
-    private $partidos, $provincias, $resultados,$escaños;
+    private $partidos, $provincias, $resultados,$escanos;
 
     public function __construct($partidos, $provincias, $resultados)
     {
@@ -11,14 +11,14 @@ class Circumscripcion
         $this->resultados = $resultados;
     }
 
-    public function getEscaños()
+    public function getEscanos()
     {
-        return $this->escaños;
+        return $this->escanos;
     }
 
-    public function setEscaños($escaños)
+    public function setEscanos($escaños)
     {
-        $this->escaños = $escaños;
+        $this->escanos = $escaños;
     }
 
     public function getPartidos()

@@ -12,6 +12,7 @@ $provincias = json_decode(file_get_contents($api_url . "districts"), true);
 $arrayCircumscripcion = crearObjetoCircumscripcion($resultados);//array de objetos
 $arrayPartidos = crearObjetoPartidos($partidos);//array de objetos
 $arrayProvincias = crearObjetoProvincias($provincias);//array de objetos
+
 $soloProvincias = provincias($provincias);//devulve un array que solo contiene las provincias
 
 ?>
@@ -62,13 +63,15 @@ function crearObjetoCircumscripcion($resultados)//creamos el array de objetos y 
     }
     return $resultado_obj;
 }
+
 function crearObjetoPartidos($partidos)//creamos el array de objetos y le introducimos valores
 {
     for ($i = 0; $i < count($partidos); $i++) {
-        $resultado_obj[$i] = new Partidos($partidos[$i]['id'], $partidos[$i]['name'], $partidos[$i]['acronym'],$partidos[$i]['logo'],$partidos[$i]['colour']);
+        $resultado_obj[$i] = new Partidos($partidos[$i]['id'], $partidos[$i]['name'], $partidos[$i]['acronym'], $partidos[$i]['logo'], $partidos[$i]['colour']);
     }
     return $resultado_obj;
 }
+
 function crearObjetoProvincias($provincias)//creamos el array de objetos y le introducimos valores
 {
     for ($i = 0; $i < count($provincias); $i++) {
@@ -101,6 +104,7 @@ function tablaProvincia($provincia)//Crea una tabla con con los datos de la prov
             echo "<td>" . $arrayCircumscripcion[$i]->getProvincias() . "</td>";
             echo "<td>" . $arrayCircumscripcion[$i]->getPartidos() . "</td>";
             echo "<td>" . $arrayCircumscripcion[$i]->getResultados() . "</td>";
+            echo "<td>" . $arrayCircumscripcion[$i]->getEscanos() . "</td>";
         }
         echo "</tr>";
     }
@@ -108,16 +112,67 @@ function tablaProvincia($provincia)//Crea una tabla con con los datos de la prov
 
 }
 
-function RepartirEscaños($arrayCircumscripcion){
+function RepartirEscaños($provincia, $arrayCircumscripcion)
 
+{
+    global $arrayProvincias;
+    $totalEscanos = getDelegatesByProvince($arrayProvincias, $provincia);
+    $arrayVotos = getVotesByProvinces($arrayCircumscripcion, $provincia);
+    $escanos = [];
+    $posicion = 0;
+
+    for ($i = 0; $i < $totalEscanos; $i++) {
+        $mayor = 0;
+        for ($j = 0; $j < count($arrayVotos); $j++) {
+            $escanos[]=0;
+            if ($arrayVotos[$j] > $mayor) {
+                $mayor = $arrayVotos[$j];
+                $posicion = $j;
+            }
+        }
+        $arrayVotos[$posicion] = $arrayVotos[$posicion] / 2;
+        $escanos[$posicion] = $escanos[$posicion] + 1;
+    }
+    $posicion = 0;
+    for ($i = 0; $i < count($arrayCircumscripcion); $i++) {
+        if ($arrayCircumscripcion[$i]->getProvincias() == $provincia) {
+
+            $arrayCircumscripcion[$i]->setEscanos($escanos[$posicion]);
+            $posicion++;
+        }
+    }
+}
+
+function getDelegatesByProvince($arrayProvincias, $provincia)
+{
+
+    for ($i = 0; $i < count($arrayProvincias); $i++) {//Sacamos el numero total de escaños de la provincia seleccionada
+        if ($provincia == $arrayProvincias[$i]->getname()) {
+            $totalEscaños = $arrayProvincias[$i]->getDelegates();
+        }
+    }
+    return $totalEscaños;
+}//devuelve las delegaciones de la provincia introducida
+
+function getVotesByProvinces($arrayCircumscripcion, $provincia)
+{
+    for ($i = 0; $i < count($arrayCircumscripcion); $i++) {//Sacamos el numero total de escaños de la provincia seleccionada
+        if ($provincia == $arrayCircumscripcion[$i]->getProvincias()) {
+            $votosProvincia[] = $arrayCircumscripcion[$i]->getResultados();
+        }
+    }
+
+    return $votosProvincia;
 }
 
 if (isset($_GET["sortingCriteria"])) {
-    var_dump($arrayCircumscripcion);
     for ($i = 0; i < count($soloProvincias); $i++) {
         if ($_GET["sortingCriteria"] == $arrayCircumscripcion[$i]->getProvincias()) {//recibe el valor introducido por la nav bar
             //envia el valor recibido a una funcion que creara un tabla con los datos de esa provincia.
+            RepartirEscaños($arrayCircumscripcion[$i]->getProvincias(), $arrayCircumscripcion);
             tablaProvincia($arrayCircumscripcion[$i]->getProvincias());
+
+
             break;
         }
     }

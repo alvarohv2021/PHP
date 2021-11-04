@@ -105,8 +105,9 @@ function tablaProvincia($provincia)//Crea una tabla con con los datos de la prov
             echo "<td>" . $arrayCircumscripcion[$i]->getPartidos() . "</td>";
             echo "<td>" . $arrayCircumscripcion[$i]->getResultados() . "</td>";
             echo "<td>" . $arrayCircumscripcion[$i]->getEscanos() . "</td>";
+            echo "</tr>";
         }
-        echo "</tr>";
+
     }
     echo "</table>";
 
@@ -116,25 +117,39 @@ function RepartirEscaños($provincia, $arrayCircumscripcion)
 
 {
     global $arrayProvincias;
-    $totalEscanos = getDelegatesByProvince($arrayProvincias, $provincia);
-    $arrayVotos = getVotesByProvinces($arrayCircumscripcion, $provincia);
-    $escanos = [];
+    $totalEscanos = getDelegatesByProvince($arrayProvincias, $provincia);//numero total de escaños de la provincia
+    $arrayVotos = getVotesByProvinces($arrayCircumscripcion, $provincia);//array con todos los votos de los partidos de la provincia
+    $minVotos = array_sum($arrayVotos) * 0.03;
+    $divArrayVotos = $arrayVotos;
     $posicion = 0;
+
+    $escanos = [];
+    for ($i = 0; $i < count($arrayVotos); $i++) {
+        $escanos[] = 0;
+    }//rellenamos el array de escaños con el mismo nº de posiciones que tiene arrayVotos
 
     for ($i = 0; $i < $totalEscanos; $i++) {
         $mayor = 0;
         for ($j = 0; $j < count($arrayVotos); $j++) {
-            $escanos[]=0;
-            if ($arrayVotos[$j] > $mayor) {
-                $mayor = $arrayVotos[$j];
+            //sacamos la posicion y el mayor valor del arrayVotos
+
+            if ($divArrayVotos[$j] > $mayor && $arrayVotos[$j] > $minVotos) {
+
+                $mayor = $divArrayVotos[$j];
                 $posicion = $j;
+
             }
         }
-        $arrayVotos[$posicion] = $arrayVotos[$posicion] / 2;
-        $escanos[$posicion] = $escanos[$posicion] + 1;
+        $escanos[$posicion] += 1;
+        $divArrayVotos[$posicion] = $arrayVotos[$posicion] / ($escanos[$posicion] + 1);
     }
+
     $posicion = 0;
+    //si no igualamos esta variable a 0 empezará a colocar los escaños a partir-
+    // de la posicion del partido que se haya llevado el ultimo escaño.
+
     for ($i = 0; $i < count($arrayCircumscripcion); $i++) {
+        //asigna los escaños al array de objetos
         if ($arrayCircumscripcion[$i]->getProvincias() == $provincia) {
 
             $arrayCircumscripcion[$i]->setEscanos($escanos[$posicion]);

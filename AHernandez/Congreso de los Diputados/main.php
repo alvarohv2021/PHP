@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);//Hace que en Windows no salgna mensajes de warning
 $api_url = "https://dawsonferrer.com/allabres/apis_solutions/elections/api.php?data=";
 
 include("ClaseCircumscripcion.php");
@@ -104,6 +105,7 @@ function provincias($provincias)//creacion de una rray que solo contiene el nomb
 function tabla($toSearch, $sortedObj)//Crea una tabla con con los datos de la provincia introducida
 {
 
+
     echo "<br><table>";
     echo "<tr>";
     echo "<th>Circumscripcion</th>";
@@ -111,28 +113,32 @@ function tabla($toSearch, $sortedObj)//Crea una tabla con con los datos de la pr
     echo "<th>Votos</th>";
     echo "<th>Escaños</th>";
     echo "</tr>";
+    echo "</tr>";
+
     for ($i = 0; $i < count($sortedObj); $i++) {
         echo "<tr>";
-        if ($sortedObj[$i]->getProvincias() == $toSearch) {
-            echo "<td>" . $sortedObj[$i]->getProvincias() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getPartidos() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getResultados() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getEscanos() . "</td>";
+        if ($toSearch == "Generales") {
+
+            echo "<td>" . $toSearch . "</td>";
+            echo "<td>" . $sortedObj[$i]->getName() . "</td>";
+            echo "<td>" . $sortedObj[$i]->getTotalVotos() . "</td>";
+            echo "<td>" . $sortedObj[$i]->getTotalEscanos() . "</td>";
             echo "</tr>";
-        }
-        if ($sortedObj[$i]->getPartidos() == $toSearch) {
-            echo "<td>" . $sortedObj[$i]->getProvincias() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getPartidos() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getResultados() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getEscanos() . "</td>";
-            echo "</tr>";
-        }
-        if ($toSearch=="General"){
-            echo "<td>" . $sortedObj[$i]->getProvincias() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getPartidos() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getResultados() . "</td>";
-            echo "<td>" . $sortedObj[$i]->getEscanos() . "</td>";
-            echo "</tr>";
+        } else {
+            if ($sortedObj[$i]->getProvincias() == $toSearch && $sortedObj[$i]->getProvincias() != null) {
+                echo "<td>" . $sortedObj[$i]->getProvincias() . "</td>";
+                echo "<td>" . $sortedObj[$i]->getPartidos() . "</td>";
+                echo "<td>" . $sortedObj[$i]->getResultados() . "</td>";
+                echo "<td>" . $sortedObj[$i]->getEscanos() . "</td>";
+                echo "</tr>";
+            }
+            if ($sortedObj[$i]->getPartidos() == $toSearch && $sortedObj[$i]->getProvincias() != null) {
+                echo "<td>" . $sortedObj[$i]->getProvincias() . "</td>";
+                echo "<td>" . $sortedObj[$i]->getPartidos() . "</td>";
+                echo "<td>" . $sortedObj[$i]->getResultados() . "</td>";
+                echo "<td>" . $sortedObj[$i]->getEscanos() . "</td>";
+
+            }
         }
 
     }
@@ -214,14 +220,18 @@ function getAllEscanos($arrayProvincias, $arrayCircumscripcion)
     }
 }
 
-function rellenarPartidos($arrayPartidos){
-    for ($i=0;$i<count($arrayPartidos);$i++){
+function rellenarPartidos($arrayPartidos)
+//rellena los parametros de TotalVotos y TotalEscanos de la clase de partidos a 0
+// para poder hacer operaciones con ellos
+{
+    for ($i = 0; $i < count($arrayPartidos); $i++) {
         $arrayPartidos[$i]->setTotalVotos(0);
         $arrayPartidos[$i]->setTotalEscanos(0);
     }
 }
 
 function totalPartido($arrayCircumscripcion, $arrayPartidos)
+//asigna el tota de votos y escaños de todos los partidos en los parametros  TotalVotos y TotalEscanos
 {
 
 
@@ -256,8 +266,7 @@ if (isset($_GET["sortingCriteria"]) || isset($_GET["sortingCriteriaProvincias"])
 
         rellenarPartidos($arrayPartidos);
         totalPartido($arrayCircumscripcion, $arrayPartidos);
-        tabla($criteria,$arrayPartidos);
-
+        tabla($criteria, $arrayPartidos);
     }
 
     if ($_GET["sortingCriteria"] == "Provincia") {
@@ -265,6 +274,7 @@ if (isset($_GET["sortingCriteria"]) || isset($_GET["sortingCriteriaProvincias"])
         optionSelected($arrayProvincias, $criteria);
 
     }
+
     for ($i = 0; $i < count($soloProvincias); $i++) {
         if ($_GET["sortingCriteriaProvincias"] == $arrayCircumscripcion[$i]->getProvincias()) {
             //recibe el valor introducido por la nav bar

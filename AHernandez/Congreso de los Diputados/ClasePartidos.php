@@ -1,7 +1,7 @@
 <?php
 
 class Partidos{
-    private $id,$name,$acronym,$logo,$colour;
+    private $id,$name,$acronym,$logo,$colour,$totalVotos,$totalEscanos;
 
     public function __construct($id, $name, $acronym, $logo, $colour)
     {
@@ -10,6 +10,26 @@ class Partidos{
         $this->acronym = $acronym;
         $this->logo = $logo;
         $this->colour = $colour;
+    }
+
+    public function getTotalVotos()
+    {
+        return $this->totalVotos;
+    }
+
+    public function setTotalVotos($totalVotos): void
+    {
+        $this->totalVotos = $totalVotos;
+    }
+
+    public function getTotalEscanos()
+    {
+        return $this->totalEscanos;
+    }
+
+    public function setTotalEscanos($totalEscanos): void
+    {
+        $this->totalEscanos = $totalEscanos;
     }
 
     public function getId()

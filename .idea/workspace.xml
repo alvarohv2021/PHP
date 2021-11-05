@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="3-11-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="4-11-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClasePartidos.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClasePartidos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +144,9 @@
       <workItem from="1635959902180" duration="2135000" />
       <workItem from="1635962194536" duration="6737000" />
       <workItem from="1636038755886" duration="4010000" />
-      <workItem from="1636046527212" duration="7804000" />
+      <workItem from="1636046527212" duration="8319000" />
+      <workItem from="1636121684645" duration="7537000" />
+      <workItem from="1636136123016" duration="5433000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -404,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635968926671</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="4-11-21">
+      <created>1636054569078</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1636054569079</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,18 +456,8 @@
     <MESSAGE value="29-10-21" />
     <MESSAGE value="2-11-21" />
     <MESSAGE value="3-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="3-11-21" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php</url>
-          <line>150</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="4-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="4-11-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

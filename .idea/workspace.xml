@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="2-11-21">
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="4-11-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClasePartidos.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/ClasePartidos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +30,18 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/AHernandez/Congreso de los Diputados/main.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
-      <server host="localhost" id="3cc67511-edda-49b0-986b-91660607b339" name="localhost" />
+      <server host="localhost" id="9495fa64-aa12-4299-80fb-ab49a41bad0a" name="localhost" />
     </servers>
   </component>
-  <component name="PhpWebServerValidation" path_to_validation_script="D:\Programas\Xampp\htdocs" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
+    <include_path>
+      <path value="/usr/share/php" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1yp4EcSpCeZOmvmzoKBqMHZBvUx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,9 +52,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AHernandez" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -70,6 +70,11 @@
   </component>
   <component name="RunManager">
     <configuration name="pruebas.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/AHernandez/pruebas.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -135,7 +140,11 @@
       <workItem from="1635875695003" duration="5844000" />
       <workItem from="1635955493237" duration="2194000" />
       <workItem from="1635959902180" duration="2135000" />
-      <workItem from="1635962194536" duration="6683000" />
+      <workItem from="1635962194536" duration="6737000" />
+      <workItem from="1636038755886" duration="4010000" />
+      <workItem from="1636046527212" duration="8319000" />
+      <workItem from="1636121684645" duration="7537000" />
+      <workItem from="1636136123016" duration="5433000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -389,7 +398,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635883122790</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="3-11-21">
+      <created>1635968926671</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1635968926671</updated>
+    </task>
+    <task id="LOCAL-00038" summary="4-11-21">
+      <created>1636054569078</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1636054569079</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,6 +453,12 @@
     <MESSAGE value="28-10-21" />
     <MESSAGE value="29-10-21" />
     <MESSAGE value="2-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="2-11-21" />
+    <MESSAGE value="3-11-21" />
+    <MESSAGE value="4-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="4-11-21" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

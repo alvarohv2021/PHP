@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Alvaro" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="FTP" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="Alvaro">
         <serverdata>
@@ -12,7 +12,7 @@
       <paths name="FTP">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/PHP/AHernandez" web="/" />
           </mappings>
         </serverdata>
       </paths>

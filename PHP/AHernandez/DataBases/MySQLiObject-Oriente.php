@@ -18,9 +18,10 @@ if ($conn->connect_error) {
 
 $sql = "";
 for ($i = 0; $i < count($partidos); $i++) {
-    //mysql_real_escape_string
+    $name[] = $partidos[$i]["name"];
+    $name[$i] = $conn->real_escape_string($name[$i]);
     $sql .= "INSERT INTO Partidos ( name, acronym,logo,colour,totalVotos,totalEscanyos)VALUES (";
-    $sql .= "'" . $partidos[$i]['name'] . "','" . $partidos[$i]['acronym']. "','" . $partidos[$i]['logo']. "','" . $partidos[$i]['colour']. "','" . $partidos[$i]['totalVotos']. "','" . $partidos[$i]['totalEscanyos']."'";
+    $sql .= "'" . $name[$i] . "','" . $partidos[$i]['acronym']. "','" . $partidos[$i]['logo']. "','" . $partidos[$i]['colour']. "','" . $partidos[$i]['totalVotos']. "','" . $partidos[$i]['totalEscanyos']."'";
     $sql .= ");";
 }
 

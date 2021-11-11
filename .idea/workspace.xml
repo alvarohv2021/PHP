@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="8-11-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="10-11-21">
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/MySQLiObject-Oriente.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/Congreso de los Diputados/ley d'hondt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/Congreso de los Diputados/pruebas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/Elefantes.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/Elefantes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/N_perfects.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/N_perfects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/NumerosPrimos.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/NumerosPrimos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OrdenarArrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/OrdenarArrays.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/Password.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/Password.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/PrimosAndres.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/PrimosAndres.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/ResultadosElecciones/ClaseCircumscripcion.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClaseCircumscripcion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/ResultadosElecciones/ClasePartidos.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClasePartidos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/ResultadosElecciones/ClaseProvincias.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClaseProvincias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/ResultadosElecciones/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/ResultadosElecciones/tablas.css" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/tablas.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/arbol.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/arbol.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/arrayMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/arrayMap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/arraysDeObjetos.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/arraysDeObjetos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/elephants-multifilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/elephants-multifilter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/escaleraInversa.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/escaleraInversa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/mapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/mapping.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/phpinfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/phpinfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/rickandmorty.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/rickandmorty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/world.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/world.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +86,7 @@
       <recent name="$PROJECT_DIR$/AHernandez" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP" />
       <recent name="$PROJECT_DIR$/AHernandez/Objetos" />
       <recent name="$PROJECT_DIR$/AHernandez" />
     </key>
@@ -149,6 +169,8 @@
       <workItem from="1636121684645" duration="7537000" />
       <workItem from="1636136123016" duration="5433000" />
       <workItem from="1636483759579" duration="680000" />
+      <workItem from="1636564974499" duration="4270000" />
+      <workItem from="1636643842996" duration="3281000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -437,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636382031522</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="10-11-21">
+      <created>1636565271610</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1636565271610</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +485,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&lt;br&gt;" />
     <MESSAGE value="Numeros Primos" />
     <MESSAGE value="Numeros Primos casi acabado" />
     <MESSAGE value="Sacxar Divisores" />
@@ -481,7 +509,8 @@
     <MESSAGE value="3-11-21" />
     <MESSAGE value="4-11-21" />
     <MESSAGE value="8-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="8-11-21" />
+    <MESSAGE value="10-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="10-11-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -10,8 +10,10 @@ $resultados = json_decode(file_get_contents($api_url . "results"), true);
 $partidos = json_decode(file_get_contents($api_url . "parties"), true);
 $provincias = json_decode(file_get_contents($api_url . "districts"), true);
 
+var_dump($resultados);
 
 $arrayCircumscripcion = crearObjetoCircumscripcion($resultados);//array de objetos
+var_dump($arrayCircumscripcion);
 $arrayPartidos = crearObjetoPartidos($partidos);//array de objetos
 $arrayProvincias = crearObjetoProvincias($provincias);//array de objetos
 getAllEscanos($arrayProvincias, $arrayCircumscripcion);

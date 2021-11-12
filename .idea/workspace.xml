@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="11-11-21">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/MySQLiObject-Oriente.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/MySQLiObject-Oriente.php" afterDir="false" />
     </list>
@@ -151,7 +150,8 @@
       <workItem from="1636483759579" duration="680000" />
       <workItem from="1636564974499" duration="4270000" />
       <workItem from="1636643842996" duration="3601000" />
-      <workItem from="1636652429504" duration="1726000" />
+      <workItem from="1636652429504" duration="1781000" />
+      <workItem from="1636726785467" duration="2724000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -454,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636647436373</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="11-11-21">
+      <created>1636654202405</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1636654202405</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

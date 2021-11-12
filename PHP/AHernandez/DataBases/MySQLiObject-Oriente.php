@@ -15,16 +15,34 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+/*$sql = "";
+for ($i = 0; $i < count($resultados); $i++) {
+    $party[] = $resultados[$i]["party"];
+    $party[$i] = $conn->real_escape_string($party[$i]);
+    $sql .= "INSERT INTO Resultados (partidos,provincias,resultados)VALUES (";
+    $sql .="'". $party[$i] . "','".$resultados[$i]['district']."',".$resultados[$i]['votes'];
+    $sql .= ");";
+}
 
 $sql = "";
 for ($i = 0; $i < count($partidos); $i++) {
     $name[] = $partidos[$i]["name"];
     $name[$i] = $conn->real_escape_string($name[$i]);
     $sql .= "INSERT INTO Partidos ( name, acronym,logo,colour,totalVotos,totalEscanyos)VALUES (";
-    $sql .= "'" . $name[$i] . "','" . $partidos[$i]['acronym']. "','" . $partidos[$i]['logo']. "','" . $partidos[$i]['colour']. "','" . $partidos[$i]['totalVotos']. "','" . $partidos[$i]['totalEscanyos']."'";
+    $sql .= "'" . $name[$i] . "','" . $partidos[$i]['acronym']. "','" . $partidos[$i]['logo'].
+        "','" . $partidos[$i]['colour']. "','" . $partidos[$i]['totalVotos']. "','" .
+        $partidos[$i]['totalEscanyos']."'";
     $sql .= ");";
 }
-
+$sql = "CREATE TABLE Partidos (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+acronym VARCHAR(10) NOT NULL,
+logo VARCHAR(100),
+colour VARCHAR(10),
+totalVotos VARCHAR(50),
+totalEscanyos VARCHAR(50)
+)";*/
 if ($conn->multi_query($sql) === TRUE) {
     $last_id = $conn->insert_id;
     echo "new record created successfully . Last inserted ID is: " . $last_id;

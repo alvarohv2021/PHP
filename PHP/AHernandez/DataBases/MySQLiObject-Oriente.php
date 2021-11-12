@@ -15,6 +15,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$query = "SELECT * FROM Resultados";
+$result=$conn->query($query);
+$arrayAsociativo = $result->fetch_all(MYSQLI_ASSOC);
+var_dump($arrayAsociativo);
+
 /*$sql = "";
 for ($i = 0; $i < count($resultados); $i++) {
     $party[] = $resultados[$i]["party"];
@@ -42,13 +47,13 @@ logo VARCHAR(100),
 colour VARCHAR(10),
 totalVotos VARCHAR(50),
 totalEscanyos VARCHAR(50)
-)";*/
+)";
 if ($conn->multi_query($sql) === TRUE) {
     $last_id = $conn->insert_id;
     echo "new record created successfully . Last inserted ID is: " . $last_id;
 } else {
     echo "Error: " . $sql . " < br>" . $conn->error;
 }
-
+*/
 $conn->close();
 ?> 

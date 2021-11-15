@@ -18,17 +18,17 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$query = "SELECT * FROM Resultados";
-$result = $conn->query($query);
-$resultados_asociativo = $result->fetch_all(MYSQLI_ASSOC);
+$queryResult = "SELECT * FROM Resultados";
+$resultResult = $conn->query($queryResult);
+$resultados_asociativo = $resultResult->fetch_all(MYSQLI_ASSOC);
 
-$query = "SELECT * FROM Provincias";
-$result = $conn->query($query);
-$partidos_asociativo = $result->fetch_all(MYSQLI_ASSOC);
+$queryProv = "SELECT * FROM Provincias";
+$resultProv = $conn->query($queryProv);
+$provincias_asociativo = $resultProv->fetch_all(MYSQLI_ASSOC);
 
-$query = "SELECT * FROM Partidos";
-$result = $conn->query($query);
-$provincias_asociativo = $result->fetch_all(MYSQLI_ASSOC);
+$queryPart = "SELECT * FROM Partidos";
+$resultPart = $conn->query($queryPart);
+$partidos_asociativo = $resultPart->fetch_all(MYSQLI_ASSOC);
 
 //*************************************************************
 
@@ -80,7 +80,6 @@ $soloProvincias = provincias($provincias);//devulve un array que solo contiene l
     </div>
 </nav>
 <?php
-
 function optionSelected($sortedObj, $criteria)
 {
     echo "<form class='d-flex' action='mainBD.php'>";
@@ -98,7 +97,7 @@ function optionSelected($sortedObj, $criteria)
 function crearObjetoCircumscripcion($resultados)//creamos el array de objetos y le introducimos valores
 {
     for ($i = 0; $i < count($resultados); $i++) {
-        $resultado_obj[$i] = new Circumscripcion($resultados[$i]['party'], $resultados[$i]['district'], $resultados[$i]['votes']);
+        $resultado_obj[$i] = new Circumscripcion($resultados[$i]['party'], $resultados[$i]['district'], intval($resultados[$i]['votes']));
     }
     return $resultado_obj;
 }
@@ -130,7 +129,7 @@ function provincias($provincias)//creacion de una rray que solo contiene el nomb
 
 function tabla($toSearch, $sortedObj)//Crea una tabla con con los datos de la provincia introducida
 {
-
+var_dump($sortedObj);
 
     echo "<br><table>";
     echo "<tr>";
@@ -313,7 +312,6 @@ if (isset($_GET["sortingCriteria"]) || isset($_GET["sortingCriteriaProvincias"])
     if ($_GET["sortingCriteria"] == "Partido") {
 
         optionSelected($arrayPartidos, $criteria);
-
     }
     for ($i = 0; $i < count($arrayPartidos); $i++) {
         if ($_GET["sortingCriteriaProvincias"] == $arrayCircumscripcion[$i]->getPartidos()) {

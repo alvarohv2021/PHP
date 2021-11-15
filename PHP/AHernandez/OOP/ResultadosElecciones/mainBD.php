@@ -6,6 +6,24 @@ include("ClaseCircumscripcion.php");
 include("ClasePartidos.php");
 include("ClaseProvincias.php");
 
+//*************************************************************
+
+$servername = "localhost";
+$username = "root";
+$password = "2609Ahv*";
+$dbname = "myDB";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$query = "SELECT * FROM Resultados";
+$result = $conn->query($query);
+$arrayAsociativo = $result->fetch_all(MYSQLI_ASSOC);
+
+//*************************************************************
+
 $resultados = json_decode(file_get_contents($api_url . "results"), true);
 $partidos = json_decode(file_get_contents($api_url . "parties"), true);
 $provincias = json_decode(file_get_contents($api_url . "districts"), true);

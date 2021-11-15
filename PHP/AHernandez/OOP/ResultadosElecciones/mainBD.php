@@ -129,9 +129,6 @@ function provincias($provincias)//creacion de una rray que solo contiene el nomb
 
 function tabla($toSearch, $sortedObj)//Crea una tabla con con los datos de la provincia introducida
 {
-    var_dump($sortedObj);
-    var_dump($toSearch);
-
     echo "<br><table>";
     echo "<tr>";
     echo "<th>Circumscripcion</th>";
@@ -311,7 +308,6 @@ if (isset($_GET["sortingCriteria"]) || isset($_GET["sortingCriteriaProvincias"])
     }
     for ($i = 0; $i < count($arrayCircumscripcion); $i++) {
         if ($_GET["sortingCriteriaProvincias"] == $arrayCircumscripcion[$i]->getPartidos()) {
-            var_dump($criteria2);
             tabla($arrayCircumscripcion[$i]->getPartidos(), $arrayCircumscripcion);
 
             break;

@@ -129,7 +129,8 @@ function provincias($provincias)//creacion de una rray que solo contiene el nomb
 
 function tabla($toSearch, $sortedObj)//Crea una tabla con con los datos de la provincia introducida
 {
-var_dump($sortedObj);
+    var_dump($sortedObj);
+    var_dump($toSearch);
 
     echo "<br><table>";
     echo "<tr>";
@@ -257,8 +258,6 @@ function rellenarPartidos($arrayPartidos)
 function totalPartido($arrayCircumscripcion, $arrayPartidos)
 //asigna el tota de votos y escaños de todos los partidos en los parametros  TotalVotos y TotalEscanos
 {
-
-
     for ($i = 0; $i < count($arrayCircumscripcion); $i++) {
         $totalVotos = 0;
         $totalEscanos = 0;
@@ -272,20 +271,17 @@ function totalPartido($arrayCircumscripcion, $arrayPartidos)
 
                 $arrayPartidos[$j]->setTotalVotos($totalVotos);
                 $arrayPartidos[$j]->setTotalEscanos($totalEscanos);
-
             }
         }
 
     }
-
-
 }
 
 //getAllEscanos($arrayProvincias, $arrayCircumscripcion);
 if (isset($_GET["sortingCriteria"]) || isset($_GET["sortingCriteriaProvincias"])) {
 
     $criteria = $_GET["sortingCriteria"];
-
+    $criteria2 = $_GET["sortingCriteriaProvincias"];
     if ($_GET["sortingCriteria"] == "Generales") {
 
         rellenarPartidos($arrayPartidos);
@@ -313,8 +309,9 @@ if (isset($_GET["sortingCriteria"]) || isset($_GET["sortingCriteriaProvincias"])
 
         optionSelected($arrayPartidos, $criteria);
     }
-    for ($i = 0; $i < count($arrayPartidos); $i++) {
+    for ($i = 0; $i < count($arrayCircumscripcion); $i++) {
         if ($_GET["sortingCriteriaProvincias"] == $arrayCircumscripcion[$i]->getPartidos()) {
+            var_dump($criteria2);
             tabla($arrayCircumscripcion[$i]->getPartidos(), $arrayCircumscripcion);
 
             break;

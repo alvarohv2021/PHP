@@ -289,7 +289,7 @@ if (isset($_GET["sortingCriteria"]) || isset($_GET["sortingCriteriaProvincias"])
         optionSelected($arrayPartidos, $criteria);
 
     }
-    for ($i = 0; $i < count($arrayPartidos); $i++) {
+    for ($i = 0; $i < count($arrayCircumscripcion); $i++) {
         if ($_GET["sortingCriteriaProvincias"] == $arrayCircumscripcion[$i]->getPartidos()) {
             tabla($arrayCircumscripcion[$i]->getPartidos(), $arrayCircumscripcion);
 

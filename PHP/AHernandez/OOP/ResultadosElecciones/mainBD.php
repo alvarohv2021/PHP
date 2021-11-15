@@ -20,13 +20,21 @@ if ($conn->connect_error) {
 }
 $query = "SELECT * FROM Resultados";
 $result = $conn->query($query);
-$arrayAsociativo = $result->fetch_all(MYSQLI_ASSOC);
+$resultados_asociativo = $result->fetch_all(MYSQLI_ASSOC);
+
+$query = "SELECT * FROM Provincias";
+$result = $conn->query($query);
+$partidos_asociativo = $result->fetch_all(MYSQLI_ASSOC);
+
+$query = "SELECT * FROM Partidos";
+$result = $conn->query($query);
+$provincias_asociativo = $result->fetch_all(MYSQLI_ASSOC);
 
 //*************************************************************
 
-$resultados = json_decode(file_get_contents($api_url . "results"), true);
-$partidos = json_decode(file_get_contents($api_url . "parties"), true);
-$provincias = json_decode(file_get_contents($api_url . "districts"), true);
+$resultados = $resultados_asociativo;
+$partidos = $partidos_asociativo;
+$provincias = $provincias_asociativo;
 
 $arrayCircumscripcion = crearObjetoCircumscripcion($resultados);//array de objetos
 $arrayPartidos = crearObjetoPartidos($partidos);//array de objetos
@@ -58,7 +66,7 @@ $soloProvincias = provincias($provincias);//devulve un array que solo contiene l
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex" action="main.php">
+            <form class="d-flex" action="mainBD.php">
                 <select class="form-control me-2 form-select" aria-label="Sorting criteria" name="sortingCriteria">
                     <option selected value="unsorted">Selecciona Circumscripcion</option>
                     <option selected value="Generales">Resultados Generales</option>
@@ -75,7 +83,7 @@ $soloProvincias = provincias($provincias);//devulve un array que solo contiene l
 
 function optionSelected($sortedObj, $criteria)
 {
-    echo "<form class='d-flex' action='main.php'>";
+    echo "<form class='d-flex' action='mainBD.php'>";
     echo "<select class='form-control me-2 form-select' aria-label='Sorting criteria' name='sortingCriteriaProvincias'>";
     //Pone todas las provincias como options dentro de la nav
     echo "<option value='unsorted'>Seleccione " . $criteria . "</option>";

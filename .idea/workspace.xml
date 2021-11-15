@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="15-11-21">
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/CreacionTablas.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/InsertTablas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/MySQLiObject-Oriente.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/MySQLiObject-Oriente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/mainBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/mainBD.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,7 @@
       <workItem from="1636643842996" duration="3601000" />
       <workItem from="1636652429504" duration="1781000" />
       <workItem from="1636726785467" duration="5580000" />
-      <workItem from="1636985903754" duration="2540000" />
+      <workItem from="1636985903754" duration="3211000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -487,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636987683189</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="15-11-21">
+      <created>1636988550250</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1636988550250</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

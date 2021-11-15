@@ -14,17 +14,12 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-/*
-$query = "SELECT * FROM Resultados";
-$result=$conn->query($query);
-$arrayAsociativo = $result->fetch_all(MYSQLI_ASSOC);
-var_dump($arrayAsociativo);
-*/
-/**/$sql = "";
+
+$sql = "";
 for ($i = 0; $i < count($resultados); $i++) {
     $party[] = $resultados[$i]["party"];
     $party[$i] = $conn->real_escape_string($party[$i]);
-    $sql .= "INSERT INTO Resultados (provincias,partidos,resultados)VALUES (";
+    $sql .= "INSERT INTO Resultados (district,party,votes)VALUES (";
     $sql .="'".$resultados[$i]['district']."','". $party[$i]."'," .$resultados[$i]['votes'];
     $sql .= ");";
 }
@@ -55,5 +50,11 @@ if ($conn->multi_query($sql) === TRUE) {
     echo "Error: " . $sql . " < br>" . $conn->error;
 }
 */
+
+if ($conn->multi_query($sql) === TRUE) {
+    echo "Table MyGuests created successfully";
+} else {
+    echo "Error creating table: " . $conn->error;
+}
 $conn->close();
 ?> 

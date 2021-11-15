@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="12-11-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="15-11-21">
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/CreacionTablas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/InsertTablas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/MySQLiObject-Oriente.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/MySQLiObject-Oriente.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez/DataBases" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
@@ -61,6 +63,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases" />
+      <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones" />
       <recent name="$PROJECT_DIR$/AHernandez/Congreso de los Diputados" />
       <recent name="$PROJECT_DIR$/AHernandez" />
     </key>
@@ -152,7 +156,7 @@
       <workItem from="1636643842996" duration="3601000" />
       <workItem from="1636652429504" duration="1781000" />
       <workItem from="1636726785467" duration="5580000" />
-      <workItem from="1636985903754" duration="1608000" />
+      <workItem from="1636985903754" duration="2540000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;br&gt;">
       <created>1633011207584</created>
@@ -476,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636732426145</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="15-11-21">
+      <created>1636987683189</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1636987683189</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sacxar Divisores" />
     <MESSAGE value="Numeros Primos completado" />
     <MESSAGE value="Numeros Perfectos" />
     <MESSAGE value="Numeros Perfectos mal" />
@@ -520,7 +530,8 @@
     <MESSAGE value="10-11-21" />
     <MESSAGE value="11-11-21" />
     <MESSAGE value="12-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="12-11-21" />
+    <MESSAGE value="15-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="15-11-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

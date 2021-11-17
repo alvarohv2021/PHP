@@ -6,6 +6,9 @@ $api_url = "https://dawsonferrer.com/allabres/apis_solutions/rickandmorty/api.ph
 $characters = json_decode(file_get_contents($api_url . "characters"), true);
 $episodes = json_decode(file_get_contents($api_url . "episodes"), true);
 $locations = json_decode(file_get_contents($api_url . "locations"), true);
+
+var_dump($locations);
+
 function getSortedCharactersById($characters)
 {
     //TODO: Your code here.
@@ -93,8 +96,8 @@ function mapCharacters($characters)
         for ($j = 0; $j < count($sortedLocations); $j++) {
             if ($characters[$i]['origin'] == $sortedLocations[$j]['id']) {
                 $characters[$i]['origin'] = $sortedLocations[$j]['name'];
-            }else if ($characters[$i]['origin']=="0"){
-                $characters[$i]['origin']="Unknown";
+            } else if ($characters[$i]['origin'] == "0") {
+                $characters[$i]['origin'] = "Unknown";
             }
         }
     }
@@ -193,29 +196,28 @@ $mappedCharacters = mapCharacters($characters);
                 //Hya que llamar a la funcion renderCard por cada caracter del array $mapedCharacters
                 //renderCard(mapCharacters($characters));
                 $lista = mapCharacters($characters);
-                var_dump($lista);
                 $lista[0]['image'];
 
                 for ($i = 0; $i < count($characters); $i++) {
                     echo "<div class='col-md-4 col-sm-12 col-xs-12'>";
                     echo "<div class='card mb-4 box-shadow bg-light'>";
-                    echo "<img class='card-img-top' src=".$lista[$i]['image']."></img>";
+                    echo "<img class='card-img-top' src=" . $lista[$i]['image'] . "></img>";
                     echo "<div class='card-body'>";
                     echo "<h5 class='card-title'>" . $lista[$i]['name'] . "</h5>";
-                    echo "<div class='alert alert-success' style='padding:0;' role='alert'>" . $lista[$i]['status'] . " - " . $lista[$i]['species']."</div>";
+                    echo "<div class='alert alert-success' style='padding:0;' role='alert'>" . $lista[$i]['status'] . " - " . $lista[$i]['species'] . "</div>";
                     echo "<form>";
-                        echo "<div class='mb-3' style='margin-bottom:0!important;'>";
-                            echo "<label class='form-label' for='exampleInputEmail1' style='margin-bottom: 0;'>";
-                                echo "<strong>Origin</strong>";
-                            echo "</label>";
-                            echo "<div id='emailHelp' class='form-text' style='margin-top:0;'>";
-                            //if ($lista[$i]['origin']!="0"){
-                                echo $lista[$i]['origin'];
-                            /*}else{
-                                echo "Unknown";
-                            }*/
-                            echo "</div>";
-                        echo "</div>";
+                    echo "<div class='mb-3' style='margin-bottom:0!important;'>";
+                    echo "<label class='form-label' for='exampleInputEmail1' style='margin-bottom: 0;'>";
+                    echo "<strong>Origin</strong>";
+                    echo "</label>";
+                    echo "<div id='emailHelp' class='form-text' style='margin-top:0;'>";
+                    //if ($lista[$i]['origin']!="0"){
+                    echo $lista[$i]['origin'];
+                    /*}else{
+                        echo "Unknown";
+                    }*/
+                    echo "</div>";
+                    echo "</div>";
                     echo "<label class='form-label' for='exampleInputEmail1' style='margin-bottom: 0;'>";
                     echo "<strong>Last Known Location</strong>";
                     echo "</label>";
@@ -223,22 +225,16 @@ $mappedCharacters = mapCharacters($characters);
                     echo $lista[$i]['location'];
                     echo "</div>";
                     echo "</form>";
-
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";
                 }
-
-
-
-
                 /*echo "<div>";
                   echo "</div>";*/
                 ?>
             </div>
         </div>
     </div>
-
 </main>
 </body>
 </html>

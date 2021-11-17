@@ -40,7 +40,7 @@ $arrayCircumscripcion = crearObjetoCircumscripcion($resultados);//array de objet
 $arrayPartidos = crearObjetoPartidos($partidos);//array de objetos
 $arrayProvincias = crearObjetoProvincias($provincias);//array de objetos
 getAllEscanos($arrayProvincias, $arrayCircumscripcion);
-$soloProvincias = provincias($provincias);//devulve un array que solo contiene las provincias
+
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">

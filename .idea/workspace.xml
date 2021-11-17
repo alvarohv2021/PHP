@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="15-11-21">
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/CrearTablas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/CreateBD.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/InsertarValores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/RickAndMortyBD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/CreacionTablas.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/CreacionTablas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/InsertTablas.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/InsertTablas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/MySQLiObject-Oriente.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/MySQLiObject-Oriente.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/mainBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/mainBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/rickandmorty.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/rickandmorty.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez/DataBases" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
@@ -62,12 +69,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones" />
       <recent name="$PROJECT_DIR$/AHernandez/Congreso de los Diputados" />
       <recent name="$PROJECT_DIR$/AHernandez" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD" />
+      <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP" />
       <recent name="$PROJECT_DIR$/AHernandez/Objetos" />
       <recent name="$PROJECT_DIR$/AHernandez" />
@@ -156,21 +166,10 @@
       <workItem from="1636652429504" duration="1781000" />
       <workItem from="1636726785467" duration="5580000" />
       <workItem from="1636985903754" duration="3221000" />
-      <workItem from="1636990257119" duration="3072000" />
-    </task>
-    <task id="LOCAL-00002" summary="Numeros Primos">
-      <created>1633011594155</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1633011594155</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Numeros Primos">
-      <created>1633103511478</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1633103511478</updated>
+      <workItem from="1636990257119" duration="3133000" />
+      <workItem from="1636997983476" duration="372000" />
+      <workItem from="1637086820982" duration="5332000" />
+      <workItem from="1637169799466" duration="5659000" />
     </task>
     <task id="LOCAL-00004" summary="Numeros Primos casi acabado">
       <created>1633107022673</created>
@@ -501,7 +500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636992637257</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="15-11-21">
+      <created>1636993359933</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1636993359933</updated>
+    </task>
+    <task id="LOCAL-00052" summary="15-11-21">
+      <created>1636993375845</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1636993375845</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

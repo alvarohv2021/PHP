@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="17-11-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="18-11-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/mainBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/mainBD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/RickAndMortyBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/RickAndMortyBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/rickandmorty.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/rickandmorty.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,14 +163,7 @@
       <workItem from="1636997983476" duration="372000" />
       <workItem from="1637086820982" duration="5332000" />
       <workItem from="1637169799466" duration="6029000" />
-      <workItem from="1637248484878" duration="343000" />
-    </task>
-    <task id="LOCAL-00005" summary="Numeros Primos casi acabado">
-      <created>1633107049050</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1633107049050</updated>
+      <workItem from="1637248484878" duration="1145000" />
     </task>
     <task id="LOCAL-00006" summary="Sacxar Divisores">
       <created>1633107174059</created>
@@ -508,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637175491261</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="18-11-21">
+      <created>1637249035321</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1637249035321</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +527,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Numeros Perfectos" />
     <MESSAGE value="Numeros Perfectos mal" />
     <MESSAGE value="Numeros Perfectos &quot;array_sum&quot;" />
     <MESSAGE value="incompleto" />
@@ -552,7 +551,8 @@
     <MESSAGE value="12-11-21" />
     <MESSAGE value="15-11-21" />
     <MESSAGE value="17-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="17-11-21" />
+    <MESSAGE value="18-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="18-11-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

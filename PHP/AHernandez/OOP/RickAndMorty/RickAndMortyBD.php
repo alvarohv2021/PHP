@@ -23,10 +23,6 @@ $queryEpisodes = "SELECT * FROM Episodes";
 $resultEpisodes = $conn->query($queryEpisodes);
 $Episodes_asociativo = $resultEpisodes->fetch_all(MYSQLI_ASSOC);
 
-$queryIDsEpisodesCharacters = "SELECT * FROM IDsEpisodesCharacters";
-$resultIDsEpisodesCharacters = $conn->query($queryIDsEpisodesCharacters);
-$IDsEpisodesCharacters_asociativo = $resultIDsEpisodesCharacters->fetch_all(MYSQLI_ASSOC);
-
 $queryLocations = "SELECT * FROM Locations";
 $resultLocations = $conn->query($queryLocations);
 $Locations_asociativo = $resultLocations->fetch_all(MYSQLI_ASSOC);

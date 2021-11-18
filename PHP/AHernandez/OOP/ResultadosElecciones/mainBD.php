@@ -18,6 +18,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 $queryResult = "SELECT * FROM Resultados";
 $resultResult = $conn->query($queryResult);
 $resultados_asociativo = $resultResult->fetch_all(MYSQLI_ASSOC);

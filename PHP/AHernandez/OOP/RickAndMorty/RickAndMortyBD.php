@@ -2,12 +2,41 @@
 $seed = 0242; //TODO: LAST 4 NUMBERS OF YOUR DNI.
 $api_url = "https://dawsonferrer.com/allabres/apis_solutions/rickandmorty/api.php?seed=" . $seed . "&data=";
 
-//NOTE: Arrays unsorted
-$characters = json_decode(file_get_contents($api_url . "characters"), true);
-$episodes = json_decode(file_get_contents($api_url . "episodes"), true);
-$locations = json_decode(file_get_contents($api_url . "locations"), true);
+//*************************************************************
 
-var_dump($locations);
+$servername = "localhost";
+$username = "root";
+$password = "2609Ahv*";
+$dbname = "RyckAndMorty";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$queryCharacters = "SELECT * FROM Characters";
+$resultCharacters = $conn->query($queryCharacters);
+$Characters_asociativo = $resultCharacters->fetch_all(MYSQLI_ASSOC);
+
+$queryEpisodes = "SELECT * FROM Episodes";
+$resultEpisodes = $conn->query($queryEpisodes);
+$Episodes_asociativo = $resultEpisodes->fetch_all(MYSQLI_ASSOC);
+
+$queryIDsEpisodesCharacters = "SELECT * FROM IDsEpisodesCharacters";
+$resultIDsEpisodesCharacters = $conn->query($queryIDsEpisodesCharacters);
+$IDsEpisodesCharacters_asociativo = $resultIDsEpisodesCharacters->fetch_all(MYSQLI_ASSOC);
+
+$queryLocations = "SELECT * FROM Locations";
+$resultLocations = $conn->query($queryLocations);
+$Locations_asociativo = $resultLocations->fetch_all(MYSQLI_ASSOC);
+
+//*************************************************************
+
+//NOTE: Arrays unsorted
+$characters = $Characters_asociativo;
+$episodes = $Episodes_asociativo;
+$locations = $Locations_asociativo;
 
 function getSortedCharactersById($characters)
 {
@@ -173,7 +202,7 @@ $mappedCharacters = mapCharacters($characters);
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex" action="rickandmorty.php">
+            <form class="d-flex" action="RickAndMortyBD.php">
                 <select class="form-control me-2 form-select" aria-label="Sorting criteria" name="sortingCriteria">
                     <option <?php echo($sortingCriteria == "" ? "selected" : "") ?> value="unsorted">Sorting criteria
                     </option>

@@ -27,6 +27,17 @@ $queryLocations = "SELECT * FROM Locations";
 $resultLocations = $conn->query($queryLocations);
 $Locations_asociativo = $resultLocations->fetch_all(MYSQLI_ASSOC);
 
+$queryIDsEpisodesCharacters = "SELECT * FROM IDsEpisodesCharacters";
+$resultIDsEpisodesCharacters = $conn->query($queryIDsEpisodesCharacters);
+
+for($i=0;$IDsEpisodesCharacters_asociativo=$resultIDsEpisodesCharacters->fetch_assoc();$i++){
+    for($j=0;$j<count($Characters_asociativo);$j++){
+        if($IDsEpisodesCharacters_asociativo["character_id"]==$Characters_asociativo[$j]["id"]){
+            $Characters_asociativo[$j]["episodes"][]=$IDsEpisodesCharacters_asociativo["episodes_id"];
+        }
+    }
+}
+
 //*************************************************************
 
 //NOTE: Arrays unsorted

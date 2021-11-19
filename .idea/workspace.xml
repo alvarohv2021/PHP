@@ -163,14 +163,8 @@
       <workItem from="1636997983476" duration="372000" />
       <workItem from="1637086820982" duration="5332000" />
       <workItem from="1637169799466" duration="6029000" />
-      <workItem from="1637248484878" duration="1145000" />
-    </task>
-    <task id="LOCAL-00006" summary="Sacxar Divisores">
-      <created>1633107174059</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1633107174059</updated>
+      <workItem from="1637248484878" duration="2880000" />
+      <workItem from="1637332007676" duration="1240000" />
     </task>
     <task id="LOCAL-00007" summary="Numeros Primos completado">
       <created>1633110240205</created>
@@ -508,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637249035321</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="18-11-21">
+      <created>1637249754037</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1637249754037</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

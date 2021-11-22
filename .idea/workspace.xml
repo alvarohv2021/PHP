@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="19-11-21">
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_BD.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="22-11-21" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,13 +162,7 @@
       <workItem from="1637248484878" duration="2880000" />
       <workItem from="1637332007676" duration="3769000" />
       <workItem from="1637590328941" duration="993000" />
-    </task>
-    <task id="LOCAL-00008" summary="Numeros Primos completado">
-      <created>1633110591684</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1633110591684</updated>
+      <workItem from="1637592970909" duration="51000" />
     </task>
     <task id="LOCAL-00009" summary="Numeros Primos completado">
       <created>1633355254410</created>
@@ -510,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637334152970</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="22-11-21">
+      <created>1637592992524</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1637592992525</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +526,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Numeros Perfectos &quot;array_sum&quot;" />
     <MESSAGE value="incompleto" />
     <MESSAGE value="Arbol en 3 bucles" />
     <MESSAGE value="Password" />
@@ -554,7 +550,8 @@
     <MESSAGE value="17-11-21" />
     <MESSAGE value="18-11-21" />
     <MESSAGE value="19-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="19-11-21" />
+    <MESSAGE value="22-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="22-11-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

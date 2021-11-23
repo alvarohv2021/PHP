@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="23-11-21">
-      <change afterPath="$PROJECT_DIR$/Examen2/Mallorcasa.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Examen2/crearOBJ.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/pascal.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen2/Mallorcasa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/Mallorcasa.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +180,7 @@
       <workItem from="1637691168841" duration="15000" />
       <workItem from="1637691524911" duration="12000" />
       <workItem from="1637691564188" duration="19000" />
+      <workItem from="1637692572706" duration="16000" />
     </task>
     <task id="LOCAL-00011" summary="Numeros Perfectos mal">
       <created>1633456178747</created>

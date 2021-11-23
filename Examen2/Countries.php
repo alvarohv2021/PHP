@@ -10,8 +10,6 @@ class Countries
         $this->name = $name;
     }
 
-//*******************************************
-
     public function getId()
     {
         return $this->id;
@@ -31,6 +29,4 @@ class Countries
     {
         $this->name = $name;
     }
-
-
 }

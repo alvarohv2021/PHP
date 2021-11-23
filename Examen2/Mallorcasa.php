@@ -36,15 +36,34 @@ $result_properties = $conn->query($query_properties);
 $properties_asociativo = $result_properties->fetch_all(MYSQLI_ASSOC);
 
 
-//NOTE: Arrays unsorted
-$countries=$countries_asociativo;
-$states=$states_asociativo;
+$countries = $countries_asociativo;
+$states = $states_asociativo;
 $cities = $cities_asociativo;
-$neighborhoods=$neighborhoods_asociativo;
-$multimedias=$multimedias_asociativo;
-$properties=$properties_asociativo;
+$neighborhoods = $neighborhoods_asociativo;
+$multimedias = $multimedias_asociativo;
+$properties = $properties_asociativo;
 
+
+function crearObjetoCountries($countries)
+{
+    for ($i = 0; $i < count($countries); $i++) {
+        $countries_obj = new Countries($countries[$i]['id'], $countries[$i]['name']);
+    }
+    return $countries_obj;
+}
+
+function obj_countries($countries)
+{
+    for ($i = 0; $i < count($countries); $i++) {
+        $resultado_obj = new Countries($countries[$i]['id'], $countries[$i]['name']);
+    }
+    return $resultado_obj;
+}
+
+$countries_obj = obj_countries($countries);
+
+//$countries_obj = Countries::crearObjetoCountries($countries);
+
+var_dump($countries_obj);
 $conn->close();
-
-var_dump($properties);
 ?>

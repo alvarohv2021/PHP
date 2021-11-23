@@ -2,8 +2,6 @@
 
 class Cities
 {
-
-    //neighborhood
     private $id, $name;
 
     public function __construct($id, $name)
@@ -11,8 +9,6 @@ class Cities
         $this->id = $id;
         $this->name = $name;
     }
-
-//*******************************************
 
     public function getId()
     {
@@ -33,6 +29,4 @@ class Cities
     {
         $this->name = $name;
     }
-
-
 }

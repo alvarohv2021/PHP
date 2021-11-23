@@ -43,27 +43,28 @@ $neighborhoods = $neighborhoods_asociativo;
 $multimedias = $multimedias_asociativo;
 $properties = $properties_asociativo;
 
-
-function crearObjetoCountries($countries)
-{
-    for ($i = 0; $i < count($countries); $i++) {
-        $countries_obj = new Countries($countries[$i]['id'], $countries[$i]['name']);
-    }
-    return $countries_obj;
-}
-
 function obj_countries($countries)
 {
     for ($i = 0; $i < count($countries); $i++) {
-        $resultado_obj = new Countries($countries[$i]['id'], $countries[$i]['name']);
+        $resultado_obj[$i] = new Countries($countries[$i]['id'], $countries[$i]['name']);
     }
     return $resultado_obj;
 }
 
-$countries_obj = obj_countries($countries);
+function obj_cities($cities)
+{
+    for ($i = 0; $i < count($cities); $i++) {
+        $resultado_obj[$i] = new Cities($cities[$i]['id'], $cities[$i]['name']);
+    }
+    return $resultado_obj;
+}
+
+$cities_obj=obj_cities($cities);
 
 //$countries_obj = Countries::crearObjetoCountries($countries);
 
-var_dump($countries_obj);
+var_dump($cities_obj);
+
+// No he sido capaz de crear un simple objeto en más de 2h
 $conn->close();
 ?>

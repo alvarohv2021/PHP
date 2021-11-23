@@ -1,4 +1,12 @@
 <?php
+
+include("Countries.php");
+include("Cities.php");
+include("Multimedias.php");
+include("Neighborhood.php");
+include("States.php");
+include("Propiedades.php");
+
 $servername = "localhost";
 $username = "root";
 $password = "2609Ahv*";
@@ -43,28 +51,103 @@ $neighborhoods = $neighborhoods_asociativo;
 $multimedias = $multimedias_asociativo;
 $properties = $properties_asociativo;
 
-function obj_countries($countries)
+//OBJETOS********************************************************
+$countries_obj = crearObjCountries($countries);
+$states_obj = crearObjStates($states);
+$cities_obj = crearObjCities($cities);
+$neighborhoods_obj = crearObjneighborhoods($neighborhoods);
+$multimedia_obj=crearObjMultimedias($multimedias);
+$properties_obj=crearObjPropiedades($properties,$countries_obj,$states_obj,$cities_obj,$neighborhoods_obj,$multimedia_obj);
+
+
+function crearObjCountries($countries)
 {
     for ($i = 0; $i < count($countries); $i++) {
-        $resultado_obj[$i] = new Countries($countries[$i]['id'], $countries[$i]['name']);
+        $resultado_obj = new Countries($countries[$i]['id'], $countries[$i]['name']);
     }
     return $resultado_obj;
 }
 
-function obj_cities($cities)
+function crearObjStates($states)
+{
+    for ($i = 0; $i < count($states); $i++) {
+        $resultado_obj = new States($states[$i]['id'], $states[$i]['name']);
+    }
+    return $resultado_obj;
+}
+
+function crearObjCities($cities)
 {
     for ($i = 0; $i < count($cities); $i++) {
-        $resultado_obj[$i] = new Cities($cities[$i]['id'], $cities[$i]['name']);
+        $resultado_obj = new Cities($cities[$i]['id'], $cities[$i]['name']);
     }
     return $resultado_obj;
 }
 
-$cities_obj=obj_cities($cities);
+function crearObjNeighborhoods($neighborhoods)
+{
+    for ($i = 0; $i < count($neighborhoods); $i++) {
+        $resultado_obj = new Neighborhood($neighborhoods[$i]['id'], $neighborhoods[$i]['name']);
+    }
+    return $resultado_obj;
+}
 
-//$countries_obj = Countries::crearObjetoCountries($countries);
+function crearObjMultimedias($multimedias)
+{
+    for ($i = 0; $i < count($multimedias); $i++) {
+        $resultado_obj = new Multimedias($multimedias[$i]['id'], $multimedias[$i]['propertyId']
+            , $multimedias[$i]['url']);
+    }
+    return $resultado_obj;
+}
 
-var_dump($cities_obj);
+function crearObjPropiedades($properties,$countries_obj,$states_obj,$cities_obj,$neighborhoods_obj,$multimedia_obj)
+{
 
-// No he sido capaz de crear un simple objeto en más de 2h
+
+    for ($i = 0; $i < count($properties); $i++) {
+        $resultado_obj = new Multimedias($properties[$i]['id'], $countries_obj->getId()
+            ,$states_obj->getId(),$cities_obj->getId(),$neighborhoods_obj->getId()
+            ,$properties[$i]['zipcode'],$properties[$i]['latitude'],$properties[$i]['longitude']
+            ,$properties[$i]['date'],$properties[$i]['description'],$properties[$i]['bathrooms']
+            ,$properties[$i]['floor'],$properties[$i]['rooms'],$properties[$i]['surface']
+            ,$properties[$i]['price']);
+    }
+    return $resultado_obj;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $conn->close();
 ?>

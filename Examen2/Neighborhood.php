@@ -1,6 +1,6 @@
 <?php
 
-class neighborhood
+class Neighborhood
 {
     private $id, $name;
 

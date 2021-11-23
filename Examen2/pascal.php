@@ -3,6 +3,3 @@
 echo "prueba";
 
 ?>
-
-
-

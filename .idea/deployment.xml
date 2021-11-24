@@ -5,14 +5,21 @@
       <paths name="Alvaro">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/PHP/AHernandez" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/Examen2" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Clases">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
       <paths name="FTP">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/PHP/AHernandez" web="/" />
+            <mapping deploy="/Examen2" local="$PROJECT_DIR$/Examen2" web="/Examen2" />
           </mappings>
         </serverdata>
       </paths>

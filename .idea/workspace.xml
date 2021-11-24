@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="22-11-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="23-11-21">
+      <change afterPath="$PROJECT_DIR$/Examen2/crearOBJ.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/pascal.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/pascal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen2/Mallorcasa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/Mallorcasa.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
@@ -168,20 +169,21 @@
       <workItem from="1637592970909" duration="51000" />
       <workItem from="1637593977519" duration="41000" />
       <workItem from="1637594057588" duration="126000" />
-    </task>
-    <task id="LOCAL-00009" summary="Numeros Primos completado">
-      <created>1633355254410</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1633355254410</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Numeros Perfectos">
-      <created>1633356876054</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1633356876054</updated>
+      <workItem from="1637680561180" duration="656000" />
+      <workItem from="1637685624748" duration="716000" />
+      <workItem from="1637686358984" duration="128000" />
+      <workItem from="1637687882015" duration="247000" />
+      <workItem from="1637688156274" duration="68000" />
+      <workItem from="1637689131268" duration="25000" />
+      <workItem from="1637690618651" duration="22000" />
+      <workItem from="1637690737239" duration="7000" />
+      <workItem from="1637691137658" duration="12000" />
+      <workItem from="1637691168841" duration="15000" />
+      <workItem from="1637691524911" duration="12000" />
+      <workItem from="1637691564188" duration="19000" />
+      <workItem from="1637692572706" duration="16000" />
+      <workItem from="1637692598009" duration="2169000" />
+      <workItem from="1637696084944" duration="8000" />
     </task>
     <task id="LOCAL-00011" summary="Numeros Perfectos mal">
       <created>1633456178747</created>
@@ -512,7 +514,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637592992525</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="23-11-21">
+      <created>1637680746581</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1637680746581</updated>
+    </task>
+    <task id="LOCAL-00059" summary="23-11-21">
+      <created>1637680874135</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1637680874135</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +547,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="incompleto" />
     <MESSAGE value="Arbol en 3 bucles" />
     <MESSAGE value="Password" />
     <MESSAGE value="Echo" />
@@ -556,7 +571,8 @@
     <MESSAGE value="18-11-21" />
     <MESSAGE value="19-11-21" />
     <MESSAGE value="22-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="22-11-21" />
+    <MESSAGE value="23-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="23-11-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

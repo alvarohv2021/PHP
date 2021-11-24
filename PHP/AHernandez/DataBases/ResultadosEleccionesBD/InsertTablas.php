@@ -4,6 +4,7 @@ $username = "root";
 $password = "2609Ahv*";
 $dbname = "myDB";
 
+
 $api_url = "https://dawsonferrer.com/allabres/apis_solutions/elections/api.php?data=";;
 $resultados = json_decode(file_get_contents($api_url . "results"), true);
 $partidos = json_decode(file_get_contents($api_url . "parties"), true);

@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="23-11-21">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/Cities.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/Cities.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/Countries.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/Countries.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/Mallorcasa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/Mallorcasa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/Multimedias.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/Multimedias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/Neighborhood.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/Neighborhood.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/Propiedades.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/Propiedades.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen2/States.php" beforeDir="false" afterPath="$PROJECT_DIR$/Examen2/States.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/InsertTablas.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/InsertTablas.php" afterDir="false" />
-    </list>
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="24-11-21" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,21 +180,7 @@
       <workItem from="1637692572706" duration="16000" />
       <workItem from="1637692598009" duration="2169000" />
       <workItem from="1637696084944" duration="8000" />
-      <workItem from="1637774714028" duration="565000" />
-    </task>
-    <task id="LOCAL-00011" summary="Numeros Perfectos mal">
-      <created>1633456178747</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1633456178747</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Numeros Perfectos &quot;array_sum&quot;">
-      <created>1633456426077</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1633456426077</updated>
+      <workItem from="1637774714028" duration="880000" />
     </task>
     <task id="LOCAL-00013" summary="Numeros Perfectos &quot;array_sum&quot;">
       <created>1633537970429</created>
@@ -536,7 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637680874135</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="24-11-21">
+      <created>1637775284909</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1637775284910</updated>
+    </task>
+    <task id="LOCAL-00061" summary="24-11-21">
+      <created>1637775322606</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1637775322606</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +544,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Arbol en 3 bucles" />
     <MESSAGE value="Password" />
     <MESSAGE value="Echo" />
     <MESSAGE value="Craker" />
@@ -580,7 +568,8 @@
     <MESSAGE value="19-11-21" />
     <MESSAGE value="22-11-21" />
     <MESSAGE value="23-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="23-11-21" />
+    <MESSAGE value="24-11-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="24-11-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

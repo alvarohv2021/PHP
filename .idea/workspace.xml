@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="24-11-21" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="24-11-21">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_BD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -50,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
@@ -180,21 +191,10 @@
       <workItem from="1637692572706" duration="16000" />
       <workItem from="1637692598009" duration="2169000" />
       <workItem from="1637696084944" duration="8000" />
-      <workItem from="1637774714028" duration="880000" />
-    </task>
-    <task id="LOCAL-00013" summary="Numeros Perfectos &quot;array_sum&quot;">
-      <created>1633537970429</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1633537970429</updated>
-    </task>
-    <task id="LOCAL-00014" summary="incompleto">
-      <created>1633546693238</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1633546693238</updated>
+      <workItem from="1637774714028" duration="1310000" />
+      <workItem from="1637776555209" duration="815000" />
+      <workItem from="1637854364329" duration="1818000" />
+      <workItem from="1638195441812" duration="2025000" />
     </task>
     <task id="LOCAL-00015" summary="Arbol en 3 bucles">
       <created>1633616689903</created>
@@ -525,7 +525,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637775322606</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="24-11-21">
+      <created>1637775686777</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1637775686778</updated>
+    </task>
+    <task id="LOCAL-00063" summary="24-11-21">
+      <created>1637775763814</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1637775763814</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

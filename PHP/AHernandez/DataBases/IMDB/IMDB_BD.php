@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "2609Ahv*";
+$servername = "sql480.main-hosting.eu";
+$username = "u850300514_ahernandez";
+$password = "x43470242N";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE IMDB";
+$sql = "CREATE DATABASE u850300514_ahernandez";
 if ($conn->query($sql) === TRUE) {
     echo "Database created successfully";
 } else {

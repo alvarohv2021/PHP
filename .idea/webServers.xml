@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="4a0cb0e4-3f70-4151-8d04-f81214131fce" name="Alvaro" url="http://localhost/Examen2">
+      <webServer id="4a0cb0e4-3f70-4151-8d04-f81214131fce" name="Examen2" url="http://localhost/Examen2">
         <fileTransfer mountedRoot="$PROJECT_DIR$/Examen2" accessType="MOUNT" port="0" />
       </webServer>
       <webServer id="5944f48c-bb37-4cfc-adc5-e7327c3d04e4" name="FTP" url="http://ahernandez.dawsonferrer.com">
@@ -15,8 +15,8 @@
       <webServer id="2eb4a019-8640-4744-859e-d85ad3080741" name="escuela" url="http://localhost/examen">
         <fileTransfer mountedRoot="$USER_HOME$/D:\Programas\Xampp\htdocs\PHP\examen" accessType="MOUNT" port="0" />
       </webServer>
-      <webServer id="56952e72-cd6b-4952-831b-fe5e5612af15" name="Clases" url="http://localhost/PHP/AHernandez">
-        <fileTransfer mountedRoot="$PROJECT_DIR$/PHP/AHernandez" accessType="MOUNT" port="0" />
+      <webServer id="56952e72-cd6b-4952-831b-fe5e5612af15" name="Clases" url="http://localhost/PHP">
+        <fileTransfer mountedRoot="$PROJECT_DIR$/PHP" accessType="MOUNT" port="0" />
       </webServer>
     </option>
   </component>

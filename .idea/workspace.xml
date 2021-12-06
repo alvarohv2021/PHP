@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="2-12-21">
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Actores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Directores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Generos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Peliculas.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/PeliculasActores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/PeliculasGeneros.php" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="6-12-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Peliculas.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Peliculas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Selects Curiosas" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Selects Curiosas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/RickAndMortyBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/RickAndMortyBD.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,14 +198,7 @@
       <workItem from="1638353444861" duration="2347000" />
       <workItem from="1638394851339" duration="1516000" />
       <workItem from="1638481970623" duration="1546000" />
-      <workItem from="1638785580744" duration="10072000" />
-    </task>
-    <task id="LOCAL-00017" summary="Password">
-      <created>1633701683947</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1633701683947</updated>
+      <workItem from="1638785580744" duration="12958000" />
     </task>
     <task id="LOCAL-00018" summary="Echo">
       <created>1634146109769</created>
@@ -550,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638786770440</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="6-12-21">
+      <created>1638804774693</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1638804774693</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +562,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Echo" />
     <MESSAGE value="Craker" />
     <MESSAGE value="Elefantes" />
     <MESSAGE value="Elefantes done" />
@@ -594,7 +586,8 @@
     <MESSAGE value="23-11-21" />
     <MESSAGE value="24-11-21" />
     <MESSAGE value="2-12-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="2-12-21" />
+    <MESSAGE value="6-12-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="6-12-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

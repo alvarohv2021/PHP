@@ -14,6 +14,8 @@ class Pelicula
         $this->Trailer = $Trailer;
         $this->Foto = $Foto;
         $this->Calificacion = $Calificacion;
+        $this->Actores;
+        $this->Generos;
     }
 
     public function getId()

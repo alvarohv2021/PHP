@@ -18,3 +18,8 @@ group by IdPelicula*/
 select Directores.name from Peliculas
 join Directores on Peliculas.DirectorID =Directores.id
 where Peliculas.id=1
+
+//Generos de peliculas
+select Generos.genero from Generos
+join PeliculasGeneros on Generos.id = PeliculasGeneros.IdGenero
+where PeliculasGeneros.IdPelicula = 7

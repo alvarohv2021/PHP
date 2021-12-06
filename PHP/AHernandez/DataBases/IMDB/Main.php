@@ -100,8 +100,23 @@ function crearArrayObjetosPeliculaGenero($arrayPeliculasGeneros)
 
 //*******************************Mapeado de datos**************************************
 
-function arraysGenerosDePeliculas(){
+function arrayGenerosDePelicula($idPelicula)
+{
+    $sql = "select Generos.genero from Generos
+join PeliculasGeneros on Generos.id = PeliculasGeneros.IdGenero
+where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
 
+    $query = $conn->query($sql);
+}
+
+function arrayActoresDePelicula($idPelicula)
+{
+    $sql = "select  Peliculas.name, Actores.name from Actores
+join PeliculasActores on Actores.id = PeliculasActores.IdActor
+join Peliculas on Peliculas.id = PeliculasActores.IdPelicula
+where Peliculas.id=" . $idPelicula . ";";
+
+    $query = $conn->query($sql);
 }
 
 ?>

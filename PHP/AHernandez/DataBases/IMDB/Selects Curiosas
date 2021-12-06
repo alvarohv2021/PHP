@@ -1,0 +1,9 @@
+/* Nombre de los actores y todas las peliculas en las que participan
+select Actores.name, Peliculas.name from Actores
+join PeliculasActores on Actores.id = PeliculasActores.IdActor
+join Peliculas on Peliculas.id = PeliculasActores.IdPelicula*/
+
+/*Nombre de as peliculas y numero de actores que articipan
+select Peliculas.name,  count(PeliculasActores.IdActor)  from PeliculasActores
+left join Peliculas on PeliculasActores.IdPelicula = Peliculas.id
+group by IdPelicula*/

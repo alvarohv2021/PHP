@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="24-11-21">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="2-12-21">
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Actores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Directores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Generos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Peliculas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/PeliculasActores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/PeliculasGeneros.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_BD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Selects Curiosas" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Selects Curiosas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/RickAndMortyBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/RickAndMortyBD.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +82,11 @@
       <recent name="$PROJECT_DIR$/AHernandez" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programas\Xampp\htdocs\PHP\PHP\AHernandez\DataBases\IMDB\Clases" />
+      <recent name="D:\Programas\Xampp\htdocs\PHP\PHP\AHernandez\DataBases\RyckAndMortyBD" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP" />
-      <recent name="$PROJECT_DIR$/AHernandez/Objetos" />
-      <recent name="$PROJECT_DIR$/AHernandez" />
     </key>
   </component>
   <component name="RunManager">
@@ -198,20 +204,8 @@
       <workItem from="1638352022985" duration="1407000" />
       <workItem from="1638353444861" duration="2347000" />
       <workItem from="1638394851339" duration="1516000" />
-    </task>
-    <task id="LOCAL-00015" summary="Arbol en 3 bucles">
-      <created>1633616689903</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1633616689903</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Arbol en 3 bucles">
-      <created>1633616760837</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1633616760837</updated>
+      <workItem from="1638481970623" duration="1546000" />
+      <workItem from="1638785580744" duration="10072000" />
     </task>
     <task id="LOCAL-00017" summary="Password">
       <created>1633701683947</created>
@@ -542,7 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637775763814</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="2-12-21">
+      <created>1638482200436</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1638482200437</updated>
+    </task>
+    <task id="LOCAL-00065" summary="2-12-21">
+      <created>1638786770440</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1638786770440</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +569,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Password" />
     <MESSAGE value="Echo" />
     <MESSAGE value="Craker" />
     <MESSAGE value="Elefantes" />
@@ -586,7 +593,8 @@
     <MESSAGE value="22-11-21" />
     <MESSAGE value="23-11-21" />
     <MESSAGE value="24-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="24-11-21" />
+    <MESSAGE value="2-12-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="2-12-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

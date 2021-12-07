@@ -102,21 +102,50 @@ function crearArrayObjetosPeliculaGenero($arrayPeliculasGeneros)
 
 function arrayGenerosDePelicula($idPelicula)
 {
+    global $conn;
     $sql = "select Generos.genero from Generos
 join PeliculasGeneros on Generos.id = PeliculasGeneros.IdGenero
 where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
 
     $query = $conn->query($sql);
+    $arrayGenerosDePelicula = $query->fetch_all(MYSQLI_ASSOC);
+    for ($i = 0; $i < count($arrayGenerosDePelicula); $i++) {
+        $result[] = $arrayGenerosDePelicula[$i]['genero'];
+    }
+
+    return $result;
+
 }
 
 function arrayActoresDePelicula($idPelicula)
 {
-    $sql = "select  Peliculas.name, Actores.name from Actores
+    global $conn;
+    $sql = "select Actores.name from Actores
 join PeliculasActores on Actores.id = PeliculasActores.IdActor
 join Peliculas on Peliculas.id = PeliculasActores.IdPelicula
 where Peliculas.id=" . $idPelicula . ";";
 
     $query = $conn->query($sql);
+    $arrayActoresDePelicula = $query->fetch_all(MYSQLI_ASSOC);
+    for ($i = 0; $i < count($arrayActoresDePelicula); $i++) {
+        $result[] = $arrayActoresDePelicula[$i]['name'];
+    }
+    return $result;
+
 }
 
+function insertarAcrrayActoresYGeneros($arrayPeliculas)
+{
+
+    for ($i = 0; $i < count($arrayPeliculas); $i++) {
+        $pelicula = $arrayPeliculas[$i];
+        $pelicula . setActores(arrayGenerosDePelicula($pelicula->getId));
+        $pelicula . setGeneros(arrayActoresDePelicula($pelicula->getId));
+    }
+}
+
+insertarAcrrayActoresYGeneros($arrayOBJ_Peliculas);
+echo '<pre>';
+var_dump($arrayOBJ_Peliculas[0]);
+echo '</pre>';
 ?>

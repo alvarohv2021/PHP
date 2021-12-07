@@ -3,7 +3,7 @@
 class Pelicula
 {
 
-    private $id,$name,$estreno,$Director,$Trailer,$Foto,$Calificacion;
+    private $id, $name, $estreno, $Director, $Trailer, $Foto, $Calificacion;
 
     public function __construct($id, $name, $estreno, $Director, $Trailer, $Foto, $Calificacion)
     {
@@ -14,8 +14,8 @@ class Pelicula
         $this->Trailer = $Trailer;
         $this->Foto = $Foto;
         $this->Calificacion = $Calificacion;
-        $this->Actores;
-        $this->Generos;
+        $this->Actores = [];
+        $this->Generos = [];
     }
 
     public function getId()
@@ -38,6 +38,25 @@ class Pelicula
         $this->Director = $Director;
     }
 
+    public function getActores(): array
+    {
+        return $this->Actores;
+    }
+
+    public function setActores(array $Actores): void
+    {
+        $this->Actores = $Actores;
+    }
+
+    public function getGeneros(): array
+    {
+        return $this->Generos;
+    }
+
+    public function setGeneros(array $Generos): void
+    {
+        $this->Generos = $Generos;
+    }
 
 
 }

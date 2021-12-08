@@ -156,10 +156,7 @@ function insertarAcrrayActoresYGeneros(Pelicula $pelicula)
     $pelicula->setDirector(directorPelicula($pelicula->getId()));
 }
 
-for ($i = 0; $i < count($arrayOBJ_Peliculas); $i++) {
+/*for ($i = 0; $i < count($arrayOBJ_Peliculas); $i++) {
     insertarAcrrayActoresYGeneros($arrayOBJ_Peliculas[$i]);
-}
-echo '<pre>';
-var_dump($arrayOBJ_Peliculas);
-echo '</pre>';
+}*/
 ?>

@@ -28,6 +28,86 @@ class Pelicula
         $this->id = $id;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name): void
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEstreno()
+    {
+        return $this->estreno;
+    }
+
+    /**
+     * @param mixed $estreno
+     */
+    public function setEstreno($estreno): void
+    {
+        $this->estreno = $estreno;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTrailer()
+    {
+        return $this->Trailer;
+    }
+
+    /**
+     * @param mixed $Trailer
+     */
+    public function setTrailer($Trailer): void
+    {
+        $this->Trailer = $Trailer;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFoto()
+    {
+        return $this->Foto;
+    }
+
+    /**
+     * @param mixed $Foto
+     */
+    public function setFoto($Foto): void
+    {
+        $this->Foto = $Foto;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCalificacion()
+    {
+        return $this->Calificacion;
+    }
+
+    /**
+     * @param mixed $Calificacion
+     */
+    public function setCalificacion($Calificacion): void
+    {
+        $this->Calificacion = $Calificacion;
+    }
+
     public function getDirector()
     {
         return $this->Director;
@@ -57,6 +137,4 @@ class Pelicula
     {
         $this->Generos = $Generos;
     }
-
-
 }

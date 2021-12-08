@@ -127,6 +127,7 @@ where Peliculas.id=" . $idPelicula . ";";
 
     $query = $conn->query($sql);
     $arrayActoresDePelicula = $query->fetch_all(MYSQLI_ASSOC);
+
     for ($i = 0; $i < count($arrayActoresDePelicula); $i++) {
         $result[] = $arrayActoresDePelicula[$i]['name'];
     }
@@ -134,18 +135,31 @@ where Peliculas.id=" . $idPelicula . ";";
 
 }
 
-function insertarAcrrayActoresYGeneros($arrayPeliculas)
+function directorPelicula($idPelicula)
 {
+    global $conn;
+    $sql = "select Directores.name from Peliculas
+join Directores on Peliculas.DirectorID =Directores.id
+where Peliculas.id=" . $idPelicula . ";";
 
-    for ($i = 0; $i < count($arrayPeliculas); $i++) {
-        $pelicula = $arrayPeliculas[$i];
-        $pelicula . setActores(arrayGenerosDePelicula($pelicula->getId));
-        $pelicula . setGeneros(arrayActoresDePelicula($pelicula->getId));
-    }
+    $query = $conn->query($sql);
+    $arrayDirectorPelicula=$query->fetch_all(MYSQLI_ASSOC);
+
+    return $directorPelicula=$arrayDirectorPelicula[0]['name'];
+
 }
 
-insertarAcrrayActoresYGeneros($arrayOBJ_Peliculas);
+function insertarAcrrayActoresYGeneros(Pelicula $pelicula)
+{
+    $pelicula->setActores(arrayGenerosDePelicula($pelicula->getId()));
+    $pelicula->setGeneros(arrayActoresDePelicula($pelicula->getId()));
+    $pelicula->setDirector(directorPelicula($pelicula->getId()));
+}
+
+for ($i = 0; $i < count($arrayOBJ_Peliculas); $i++) {
+    insertarAcrrayActoresYGeneros($arrayOBJ_Peliculas[$i]);
+}
 echo '<pre>';
-var_dump($arrayOBJ_Peliculas[0]);
+var_dump($arrayOBJ_Peliculas);
 echo '</pre>';
 ?>

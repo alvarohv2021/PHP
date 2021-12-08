@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="6-12-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="8-12-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Peliculas.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Peliculas.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,14 +197,8 @@
       <workItem from="1638394851339" duration="1516000" />
       <workItem from="1638481970623" duration="1546000" />
       <workItem from="1638785580744" duration="13071000" />
-      <workItem from="1638913750936" duration="5895000" />
-    </task>
-    <task id="LOCAL-00019" summary="Craker">
-      <created>1634225908326</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1634225908326</updated>
+      <workItem from="1638913750936" duration="8047000" />
+      <workItem from="1638968982772" duration="3754000" />
     </task>
     <task id="LOCAL-00020" summary="Elefantes">
       <created>1634310064909</created>
@@ -543,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638807778173</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="8-12-21">
+      <created>1638920575278</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1638920575279</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +562,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Craker" />
     <MESSAGE value="Elefantes" />
     <MESSAGE value="Elefantes done" />
     <MESSAGE value="19-10-21" />
@@ -587,18 +586,8 @@
     <MESSAGE value="24-11-21" />
     <MESSAGE value="2-12-21" />
     <MESSAGE value="6-12-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="6-12-21" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Main.php</url>
-          <line>140</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="8-12-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="8-12-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

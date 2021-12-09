@@ -12,4 +12,45 @@ class Actor
         $this->imagen = $imagen;
     }
 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name): void
+    {
+        $this->name = $name;
+    }
+
+    public function getNacimiento()
+    {
+        return $this->nacimiento;
+    }
+
+    public function setNacimiento($nacimiento): void
+    {
+        $this->nacimiento = $nacimiento;
+    }
+
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen($imagen): void
+    {
+        $this->imagen = $imagen;
+    }
+
+
 }

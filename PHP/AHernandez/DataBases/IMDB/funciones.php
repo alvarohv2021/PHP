@@ -135,6 +135,24 @@ where Peliculas.id=" . $idPelicula . ";";
 
 }
 
+function arrayIdActoresDePelicula($idPelicula)
+{
+    global $conn;
+    $sql = "select Actores.id from Actores
+join PeliculasActores on Actores.id = PeliculasActores.IdActor
+join Peliculas on Peliculas.id = PeliculasActores.IdPelicula
+where Peliculas.id=" . $idPelicula . ";";
+
+    $query = $conn->query($sql);
+    $arrayActoresDePelicula = $query->fetch_all(MYSQLI_ASSOC);
+
+    for ($i = 0; $i < count($arrayActoresDePelicula); $i++) {
+        $result[] = $arrayActoresDePelicula[$i]['id'];
+    }
+    return $result;
+
+}
+
 function directorPelicula($idPelicula)
 {
     global $conn;

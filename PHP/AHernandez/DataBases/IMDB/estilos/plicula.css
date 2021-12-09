@@ -3,6 +3,23 @@ body{
     color: white;
     text-align: center;
 }
-img{
+.portada{
+    width: 450px;
+    height: 700px;
     border: 1px solid orange;
+}
+.center{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.actor{
+    border: 1px solid orange;
+    border-radius: 25px;
 }

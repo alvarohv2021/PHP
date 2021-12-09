@@ -12,6 +12,7 @@ body{
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 .circle{
     padding: 10px;
@@ -20,6 +21,8 @@ body{
 }
 
 .actor{
+    width: 150px;
+    height: 150px;
     border: 1px solid orange;
-    border-radius: 25px;
+    border-radius: 100%;
 }

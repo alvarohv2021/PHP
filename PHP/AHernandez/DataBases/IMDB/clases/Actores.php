@@ -32,16 +32,6 @@ class Actor
         $this->name = $name;
     }
 
-    public function getNacimiento()
-    {
-        return $this->nacimiento;
-    }
-
-    public function setNacimiento($nacimiento): void
-    {
-        $this->nacimiento = $nacimiento;
-    }
-
     public function getImagen()
     {
         return $this->imagen;

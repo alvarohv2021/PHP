@@ -57,7 +57,7 @@ $soloProvincias = provincias($provincias);//devulve un array que solo contiene l
 
 function optionSelected($sortedObj, $criteria)
 {
-    echo "<form class='d-flex' action='main.php'>";
+    echo "<form class='d-flex' action='pagina_principal.php'>";
     echo "<select class='form-control me-2 form-select' aria-label='Sorting criteria' name='sortingCriteriaProvincias'>";
     //Pone todas las provincias como options dentro de la nav
     echo "<option value='unsorted'>Seleccione " . $criteria . "</option>";

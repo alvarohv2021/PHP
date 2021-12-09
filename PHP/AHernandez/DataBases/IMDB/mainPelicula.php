@@ -38,13 +38,20 @@ $idActores = arrayIdActoresDePelicula($peliculaId + 1);
     </tr>
 </table>
 <p><?php echo $pelicula->getCalificacion() ?></p>
-
-<?php
-for ($i = 0; $i < count($idActores); $i++) {
-    $idActor = $idActores[$i];
-    echo '<img class="actor" src=' . $arrayOBJ_Actores[$idActor - 1]->getImagen() . '>
-<p>' . $pelicula->getActores()[$i] . '</p>';
-}
-?>
+<table class="center">
+    <tr>
+        <?php
+        for ($i = 0; $i < count($idActores); $i++) {
+            $idActor = $idActores[$i];
+            echo '<td><img class="actor" src=' . $arrayOBJ_Actores[$idActor - 1]->getImagen() . '></td>';
+        }
+        echo '</tr><tr>';
+        for ($i = 0; $i < count($idActores); $i++) {
+            $idActor = $idActores[$i];
+            echo '<td><p>' . $pelicula->getActores()[$i] . '</p></td>';
+        }
+        ?>
+    </tr>
+</table>
 </body>
 </html>

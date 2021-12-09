@@ -4,7 +4,7 @@ global $arrayOBJ_Peliculas;
 ?>
 <html>
 <head>
-    <link href="main.css" type="text/css" rel="stylesheet">
+    <link href="estilos/main.css" type="text/css" rel="stylesheet">
 </head>
 
 <h1>Peliculas</h1>

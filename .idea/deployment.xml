@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Clases" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="Examen2" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="Clases">
         <serverdata>
@@ -23,10 +23,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="escuela">
+      <paths name="examen">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$/examen" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

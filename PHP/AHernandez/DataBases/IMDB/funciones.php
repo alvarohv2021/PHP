@@ -149,15 +149,15 @@ where Peliculas.id=" . $idPelicula . ";";
 
 }
 
-function insertarAcrrayActoresYGeneros(Pelicula $pelicula)
+function insertarArrayActoresYGeneros(Pelicula $pelicula)
 {
-    $pelicula->setActores(arrayGenerosDePelicula($pelicula->getId()));
-    $pelicula->setGeneros(arrayActoresDePelicula($pelicula->getId()));
+    $pelicula->setActores(arrayActoresDePelicula($pelicula->getId()));
+    $pelicula->setGeneros(arrayGenerosDePelicula($pelicula->getId()));
     $pelicula->setDirector(directorPelicula($pelicula->getId()));
 }
 
 for ($i = 0; $i < count($arrayOBJ_Peliculas); $i++) {
-    insertarAcrrayActoresYGeneros($arrayOBJ_Peliculas[$i]);
+    insertarArrayActoresYGeneros($arrayOBJ_Peliculas[$i]);
 }
 /*echo '<pre>';
 var_dump($arrayOBJ_Peliculas);

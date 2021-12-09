@@ -1,3 +1,19 @@
-ul{
+table, td {
+    border-collapse: collapse;
+}
+img {
+    width: 50%;
+    height: 50%;
+}
 
+.id {
+    width: 5%;
+}
+
+.nombre {
+    width: 70%;
+}
+
+.clasicicacion {
+    width: 10%;
 }

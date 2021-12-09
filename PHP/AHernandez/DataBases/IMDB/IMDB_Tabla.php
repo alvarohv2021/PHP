@@ -12,22 +12,21 @@ if ($conn->connect_error) {
 
 
 //******************Tabal actores**********************
-/*$sql = "CREATE TABLE  Actores(
+$sql = "CREATE TABLE  Actores(
 id INT(6) UNSIGNED auto_increment PRIMARY KEY,
 name varchar (30),
 nacimiento varchar (30),
 imagen varchar(250)
-)";*/
+)";
 
 //******************Tabal Peliculas**********************
-/*$sql = "CREATE TABLE auto_increment  Peliculas(
+/*$sql = "CREATE TABLE  Peliculas(
 id INT(6) UNSIGNED PRIMARY KEY,
 name varchar (30),
 estreno varchar (30),
 DirectorID int(6) UNSIGNED,
 Trailer varchar(100),
-Foto varchar(250),
-Calificacion double
+Foto varchar(100)
 )";*/
 //******************Tabal Directores**********************
 /*$sql = "CREATE TABLE  Directores(

@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="24-11-21">
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/actor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_actor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Actores.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Actores.php" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="10-12-21">
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funcionescopia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Peliculas.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Peliculas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/mainPelicula.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_pelicula.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_principal.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_principal.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
@@ -206,13 +199,6 @@
       <workItem from="1638353444861" duration="2347000" />
       <workItem from="1638394851339" duration="1516000" />
       <workItem from="1639070965341" duration="834000" />
-    </task>
-    <task id="LOCAL-00015" summary="Arbol en 3 bucles">
-      <created>1633616689903</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1633616689903</updated>
     </task>
     <task id="LOCAL-00016" summary="Arbol en 3 bucles">
       <created>1633616760837</created>
@@ -550,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637775763814</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="10-12-21">
+      <created>1639153019716</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1639153019716</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +561,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Password" />
     <MESSAGE value="Echo" />
     <MESSAGE value="Craker" />
     <MESSAGE value="Elefantes" />
@@ -593,7 +585,8 @@
     <MESSAGE value="22-11-21" />
     <MESSAGE value="23-11-21" />
     <MESSAGE value="24-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="24-11-21" />
+    <MESSAGE value="10-12-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="10-12-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

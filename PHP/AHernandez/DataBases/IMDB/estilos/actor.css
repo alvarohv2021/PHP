@@ -1,0 +1,18 @@
+body{
+    background-color: #212738;
+    color: white;
+}
+.portada{
+    width: 400px;
+    height: 550px;
+    border: 1px solid orange;
+
+
+}
+.filmografia {
+    display: table;
+}
+h4{
+    float: right;
+    margin-left: 15px;
+}

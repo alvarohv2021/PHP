@@ -1,8 +1,8 @@
 <?php
+include "Actores.php";
 
 class Pelicula
 {
-
     private $id, $name, $estreno, $Director, $Trailer, $Foto, $Calificacion;
 
     public function __construct($id, $name, $estreno, $Director, $Trailer, $Foto, $Calificacion)
@@ -93,7 +93,7 @@ class Pelicula
         return $this->Actores;
     }
 
-    public function setActores(array $Actores): void
+    public function setActores(Actor $Actores): void
     {
         $this->Actores = $Actores;
     }

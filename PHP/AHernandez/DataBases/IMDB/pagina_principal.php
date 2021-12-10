@@ -22,7 +22,7 @@ global $arrayOBJ_Peliculas;
             <tr style="background-color: ' . $color . '">
                 <td class="foto"><img src=Fotos/' . $pelicula->getFoto() . '></td>
                 <td class="id">' . ($i + 1) . '.</td>
-                <td class="nombre"><a href="mainPelicula.php?PeliculaId='.$pelicula->getId().'"> ' . $pelicula->getName() . '</a> (' . $pelicula->getEstreno() . ')</td>
+                <td class="nombre"><a href="pagina_pelicula.php?PeliculaId='.$pelicula->getId().'"> ' . $pelicula->getName() . '</a> (' . $pelicula->getEstreno() . ')</td>
                 <td class="clasificacion">' . $pelicula->getCalificacion() . '</td>
             </tr>';
         }
@@ -31,4 +31,3 @@ global $arrayOBJ_Peliculas;
     </table>
 </div>
 </html>
-

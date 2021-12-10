@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Examen2" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="Clases" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="Clases">
         <serverdata>
@@ -20,13 +20,6 @@
         <serverdata>
           <mappings>
             <mapping deploy="/Examen2" local="$PROJECT_DIR$/Examen2" web="/Examen2" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="examen">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

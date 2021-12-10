@@ -2,14 +2,14 @@
 
 class Actor
 {
-    private $id, $name, $nacimiento, $imagen;
+    private $id, $name, $nacimiento, $Foto;
 
-    public function __construct($id, $name, $nacimiento, $imagen)
+    public function __construct($id, $name, $nacimiento, $Foto)
     {
         $this->id = $id;
         $this->name = $name;
         $this->nacimiento = $nacimiento;
-        $this->imagen = $imagen;
+        $this->Foto = $Foto;
     }
 
     public function getId()
@@ -32,14 +32,24 @@ class Actor
         $this->name = $name;
     }
 
-    public function getImagen()
+    public function getFoto()
     {
-        return $this->imagen;
+        return $this->Foto;
     }
 
-    public function setImagen($imagen): void
+    public function setFoto($Foto): void
     {
-        $this->imagen = $imagen;
+        $this->Foto = $Foto;
+    }
+
+    public function getNacimiento()
+    {
+        return $this->nacimiento;
+    }
+
+    public function setNacimiento($nacimiento): void
+    {
+        $this->nacimiento = $nacimiento;
     }
 
 

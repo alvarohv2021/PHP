@@ -43,7 +43,12 @@ $idActores = arrayIdActoresDePelicula($peliculaId + 1);
         <?php
         for ($i = 0; $i < count($idActores); $i++) {
             $idActor = $idActores[$i];
-            echo '<td><img class="actor" src=' . $arrayOBJ_Actores[$idActor - 1]->getImagen() . '></td>';
+            echo '
+            <td>
+                <a href="pagina_actor.php?actorId=' . $arrayOBJ_Actores[$idActor - 1]->getId() . '">
+                    <img class="actor" src=' . $arrayOBJ_Actores[$idActor - 1]->getFoto() . '>
+                </a>
+            </td>';
         }
         echo '</tr><tr>';
         for ($i = 0; $i < count($idActores); $i++) {

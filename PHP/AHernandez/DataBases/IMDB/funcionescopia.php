@@ -25,22 +25,23 @@ $Actores_asociativo = $resultActores->fetch_all(MYSQLI_ASSOC);
 $arrayOBJ_Peliculas = crearArrayObjetosPelicula($Pelicula_asociativo);
 $arrayOBJ_Actores = crearArrayObjetosActor($Actores_asociativo);
 
-var_dump($arrayOBJ_Peliculas);
-
 function crearArrayObjetosPelicula($arrayPeliculas)
 {
     for ($i = 0; $i < count($arrayPeliculas); $i++) {
         $arrayOBJ_Peliculas[$i] = new Pelicula($arrayPeliculas[$i]['id'], $arrayPeliculas[$i]['name'],
             $arrayPeliculas[$i]['estreno'], $arrayPeliculas[$i]['DirectorID'], $arrayPeliculas[$i]['Trailer'],
             $arrayPeliculas[$i]['Foto'], $arrayPeliculas[$i]['Calificacion']);
-
-        $Actores=arrayActoresDePelicula($arrayOBJ_Peliculas[$i]->getId());
-        for ($i = 0; $i < count($Actores); $i++) {
-            $arrayOBJ_Actores[$i] = new Actor($Actores[$i]['id'], $Actores[$i]['name'],
-                $Actores[$i]['nacimiento'], $Actores[$i]['imagen']);
-        }
     }
     return $arrayOBJ_Peliculas;
+}
+
+function crearArrayObjetosActor($arrayActores)
+{
+    for ($i = 0; $i < count($arrayActores); $i++) {
+        $arrayOBJ_Actores[$i] = new Actor($arrayActores[$i]['id'], $arrayActores[$i]['name'],
+            $arrayActores[$i]['nacimiento'], $arrayActores[$i]['imagen']);
+    }
+    return $arrayOBJ_Actores;
 }
 //*******************************Mapeado de datos**************************************
 
@@ -71,7 +72,8 @@ where Peliculas.id=" . $idPelicula . ";";
     $arrayActoresDePelicula = $query->fetch_all(MYSQLI_ASSOC);
 
     for ($i = 0; $i < count($arrayActoresDePelicula); $i++) {
-        $result[] = $arrayActoresDePelicula[$i]['id'];
+        $result[] = new Actor($arrayActoresDePelicula[$i]['id'], $arrayActoresDePelicula[$i]['name'],
+            $arrayActoresDePelicula[$i]['nacimiento'], $arrayActoresDePelicula[$i]['imagen']);
     }
     return $result;
 }
@@ -99,4 +101,5 @@ function insertarArrayActoresYGeneros(Pelicula $pelicula)
 for ($i = 0; $i < count($arrayOBJ_Peliculas); $i++) {
     insertarArrayActoresYGeneros($arrayOBJ_Peliculas[$i]);
 }
+var_dump(arrayActoresDePelicula());
 ?>

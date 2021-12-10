@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="10-12-21">
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funcionescopia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Peliculas.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Peliculas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funcionescopia.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funcionescopia.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +69,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases" />
       <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones" />
       <recent name="$PROJECT_DIR$/AHernandez/Congreso de los Diputados" />
-      <recent name="$PROJECT_DIR$/AHernandez" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD" />
@@ -199,13 +199,8 @@
       <workItem from="1638353444861" duration="2347000" />
       <workItem from="1638394851339" duration="1516000" />
       <workItem from="1639070965341" duration="834000" />
-    </task>
-    <task id="LOCAL-00016" summary="Arbol en 3 bucles">
-      <created>1633616760837</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1633616760837</updated>
+      <workItem from="1639154450486" duration="463000" />
+      <workItem from="1639158989125" duration="313000" />
     </task>
     <task id="LOCAL-00017" summary="Password">
       <created>1633701683947</created>
@@ -543,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639153019716</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="10-12-21">
+      <created>1639153804233</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1639153804233</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

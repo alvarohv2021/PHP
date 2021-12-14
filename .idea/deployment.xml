@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Clases" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="Casa" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="Casa">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Clases">
         <serverdata>
           <mappings>
@@ -9,17 +16,17 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="Examen2">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="FTP">
         <serverdata>
           <mappings>
             <mapping deploy="/Examen2" local="$PROJECT_DIR$/Examen2" web="/Examen2" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="examen">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

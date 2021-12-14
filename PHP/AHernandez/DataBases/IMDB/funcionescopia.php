@@ -43,6 +43,7 @@ function crearArrayObjetosActor($arrayActores)
     }
     return $arrayOBJ_Actores;
 }
+
 //*******************************Mapeado de datos**************************************
 
 function arrayGenerosDePelicula($idPelicula)
@@ -65,11 +66,15 @@ function arrayActoresDePelicula($idPelicula)
     global $conn;
     $sql = "select * from Actores
 join PeliculasActores on Actores.id = PeliculasActores.IdActor
-join Peliculas on Peliculas.id = PeliculasActores.IdPelicula
-where Peliculas.id=" . $idPelicula . ";";
+where PeliculasActores.IdPelicula=" . $idPelicula . ";";
 
     $query = $conn->query($sql);
     $arrayActoresDePelicula = $query->fetch_all(MYSQLI_ASSOC);
+
+    /**El resultado de una select idetica es distinto en mysql que en php!**********
+     * echo '<pre>';
+     * var_dump($arrayActoresDePelicula);
+     * echo '</pre>';*/
 
     for ($i = 0; $i < count($arrayActoresDePelicula); $i++) {
         $result[] = new Actor($arrayActoresDePelicula[$i]['id'], $arrayActoresDePelicula[$i]['name'],
@@ -86,9 +91,9 @@ join Directores on Peliculas.DirectorID =Directores.id
 where Peliculas.id=" . $idPelicula . ";";
 
     $query = $conn->query($sql);
-    $arrayDirectorPelicula=$query->fetch_all(MYSQLI_ASSOC);
+    $arrayDirectorPelicula = $query->fetch_all(MYSQLI_ASSOC);
 
-    return $directorPelicula=$arrayDirectorPelicula[0]['name'];
+    return $directorPelicula = $arrayDirectorPelicula[0]['name'];
 }
 
 function insertarArrayActoresYGeneros(Pelicula $pelicula)
@@ -101,5 +106,4 @@ function insertarArrayActoresYGeneros(Pelicula $pelicula)
 for ($i = 0; $i < count($arrayOBJ_Peliculas); $i++) {
     insertarArrayActoresYGeneros($arrayOBJ_Peliculas[$i]);
 }
-var_dump(arrayActoresDePelicula());
 ?>

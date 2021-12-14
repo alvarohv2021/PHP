@@ -1,12 +1,17 @@
 <?php
 include("funciones.php");
-global $arrayOBJ_Peliculas, $arrayOBJ_Actores;
+global $arrayOBJ_Peliculas;
 
 if (isset($_GET["actorId"])) {
     $actorId = $_GET["actorId"] - 1;
 }
-$actor = $arrayOBJ_Actores[$actorId];
+if (isset($_GET["PeliculaId"])) {
+    $peliculaId = $_GET["PeliculaId"] - 1;
+}
 
+var_dump($peliculaId);
+
+$actor=0;
 ?>
 <html>
 <head>

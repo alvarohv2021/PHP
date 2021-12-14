@@ -51,23 +51,43 @@ where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
 function arrayObjetosActoresDePelicula($idPelicula)
 {
     global $conn;
-    $sql = "select * from Actores
+    $sql = "select Actores.* from Actores
 join PeliculasActores on Actores.id = PeliculasActores.IdActor
 where PeliculasActores.IdPelicula=" . $idPelicula . ";";
 
     $query = $conn->query($sql);
     $arrayActoresDePelicula = $query->fetch_all(MYSQLI_ASSOC);
 
-    /**El resultado de una select idetica es distinto en mysql que en php!**********
-     * echo '<pre>';
-     * var_dump($arrayActoresDePelicula);
-     * echo '</pre>';*/
+    /* echo '<pre>';
+     var_dump(arrayPeliculasIDsActor(1));
+     echo '</pre>';*/
 
     for ($i = 0; $i < count($arrayActoresDePelicula); $i++) {
         $result[] = new Actor($arrayActoresDePelicula[$i]['id'], $arrayActoresDePelicula[$i]['name'],
             $arrayActoresDePelicula[$i]['nacimiento'], $arrayActoresDePelicula[$i]['imagen']);
+
+        $result[$i]->setPeliculasId(arrayPeliculasIDsActor($arrayActoresDePelicula[$i]['id']));
+
     }
     return $result;
+}
+
+function arrayPeliculasIDsActor($idActor)
+{
+    global $conn;
+    $sql = "select PeliculasActores.IdPelicula from Actores
+join PeliculasActores on Actores.id = PeliculasActores.IdActor
+where Actores.id=".$idActor.";";
+
+    $query = $conn->query($sql);
+
+
+    $peliculas = array();
+    while ($resultado = $query->fetch_assoc()){
+        $peliculas[] = $resultado["IdPelicula"];
+    }
+
+    return $peliculas;
 }
 
 function directorPelicula($idPelicula)
@@ -78,9 +98,9 @@ join Directores on Peliculas.DirectorID =Directores.id
 where Peliculas.id=" . $idPelicula . ";";
 
     $query = $conn->query($sql);
-    $arrayDirectorPelicula=$query->fetch_all(MYSQLI_ASSOC);
+    $arrayDirectorPelicula = $query->fetch_all(MYSQLI_ASSOC);
 
-    return $directorPelicula=$arrayDirectorPelicula[0]['name'];
+    return $directorPelicula = $arrayDirectorPelicula[0]['name'];
 }
 
 function insertarArrayActoresYGeneros(Pelicula $pelicula)

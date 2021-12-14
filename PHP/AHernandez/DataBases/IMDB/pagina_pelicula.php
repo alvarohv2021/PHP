@@ -42,7 +42,7 @@ $pelicula = $arrayOBJ_Peliculas[$peliculaId];
             $Actor = $Actores[$i];
             echo '
             <td>
-                <a href="pagina_actor.php?actorId=' . $Actor->getId() . '">
+                <a href="pagina_actor.php?actorId=' . $Actor->getId() . '&PeliculaId='.$peliculaId.'">
                     <img class="actor" src=' . $Actor->getFoto() . '>
                 </a>
             </td>';

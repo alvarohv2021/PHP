@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="10-12-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="14-12-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funcionescopia.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funcionescopia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Actores.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Actores.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funciones.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_actor.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_actor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_pelicula.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_pelicula.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,13 +204,6 @@
       <workItem from="1639070965341" duration="834000" />
       <workItem from="1639154450486" duration="463000" />
       <workItem from="1639158989125" duration="313000" />
-    </task>
-    <task id="LOCAL-00017" summary="Password">
-      <created>1633701683947</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1633701683947</updated>
     </task>
     <task id="LOCAL-00018" summary="Echo">
       <created>1634146109769</created>
@@ -546,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639153804233</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="14-12-21">
+      <created>1639495740117</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1639495740117</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +566,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Echo" />
     <MESSAGE value="Craker" />
     <MESSAGE value="Elefantes" />
     <MESSAGE value="Elefantes done" />
@@ -589,7 +590,8 @@
     <MESSAGE value="23-11-21" />
     <MESSAGE value="24-11-21" />
     <MESSAGE value="10-12-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="10-12-21" />
+    <MESSAGE value="14-12-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="14-12-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

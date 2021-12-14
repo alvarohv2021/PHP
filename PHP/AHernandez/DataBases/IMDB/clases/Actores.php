@@ -10,6 +10,17 @@ class Actor
         $this->name = $name;
         $this->nacimiento = $nacimiento;
         $this->Foto = $Foto;
+        $this->PeliculasId=[];
+    }
+
+    public function getPeliculasId(): array
+    {
+        return $this->PeliculasId;
+    }
+
+    public function setPeliculasId(array $PeliculasId): void
+    {
+        $this->PeliculasId = $PeliculasId;
     }
 
     public function getId()

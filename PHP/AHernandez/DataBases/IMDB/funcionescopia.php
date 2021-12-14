@@ -18,12 +18,8 @@ if ($conn->connect_error) {
 $resultPeliculas = $conn->query("SELECT * FROM Peliculas");
 $Pelicula_asociativo = $resultPeliculas->fetch_all(MYSQLI_ASSOC);
 
-$resultActores = $conn->query("select * from Actores");
-$Actores_asociativo = $resultActores->fetch_all(MYSQLI_ASSOC);
-
 //**********************Creacion de objetos*******************************
 $arrayOBJ_Peliculas = crearArrayObjetosPelicula($Pelicula_asociativo);
-$arrayOBJ_Actores = crearArrayObjetosActor($Actores_asociativo);
 
 function crearArrayObjetosPelicula($arrayPeliculas)
 {
@@ -33,15 +29,6 @@ function crearArrayObjetosPelicula($arrayPeliculas)
             $arrayPeliculas[$i]['Foto'], $arrayPeliculas[$i]['Calificacion']);
     }
     return $arrayOBJ_Peliculas;
-}
-
-function crearArrayObjetosActor($arrayActores)
-{
-    for ($i = 0; $i < count($arrayActores); $i++) {
-        $arrayOBJ_Actores[$i] = new Actor($arrayActores[$i]['id'], $arrayActores[$i]['name'],
-            $arrayActores[$i]['nacimiento'], $arrayActores[$i]['imagen']);
-    }
-    return $arrayOBJ_Actores;
 }
 
 //*******************************Mapeado de datos**************************************
@@ -61,7 +48,7 @@ where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
     return $result;
 }
 
-function arrayActoresDePelicula($idPelicula)
+function arrayObjetosActoresDePelicula($idPelicula)
 {
     global $conn;
     $sql = "select * from Actores
@@ -98,7 +85,7 @@ where Peliculas.id=" . $idPelicula . ";";
 
 function insertarArrayActoresYGeneros(Pelicula $pelicula)
 {
-    $pelicula->setActores(arrayActoresDePelicula($pelicula->getId()));
+    $pelicula->setActores(arrayObjetosActoresDePelicula($pelicula->getId()));
     $pelicula->setGeneros(arrayGenerosDePelicula($pelicula->getId()));
     $pelicula->setDirector(directorPelicula($pelicula->getId()));
 }

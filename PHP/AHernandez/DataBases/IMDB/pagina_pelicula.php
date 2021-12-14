@@ -1,16 +1,12 @@
 <?php
 include("funciones.php");
-global $arrayOBJ_Peliculas, $arrayOBJ_Actores;
+global $arrayOBJ_Peliculas;
 
 if (isset($_GET["PeliculaId"])) {
     $peliculaId = $_GET["PeliculaId"] - 1;
 }
 $pelicula = $arrayOBJ_Peliculas[$peliculaId];
 
-
-//saco el id de los actores que participan en la pelicula con el id "$peliculaId"
-//para asi poder busacrlos en la array de objetos de Actores y tener acceso a todos sus metodos
-$idActores = arrayIdActoresDePelicula($peliculaId + 1);
 ?>
 <html>
 <head>
@@ -41,12 +37,13 @@ $idActores = arrayIdActoresDePelicula($peliculaId + 1);
 <table class="center">
     <tr>
         <?php
+        $idActores=$arrayOBJ_Peliculas[$peliculaId]->getActores();
         for ($i = 0; $i < count($idActores); $i++) {
             $idActor = $idActores[$i];
             echo '
             <td>
-                <a href="pagina_actor.php?actorId=' . $arrayOBJ_Actores[$idActor - 1]->getId() . '">
-                    <img class="actor" src=' . $arrayOBJ_Actores[$idActor - 1]->getFoto() . '>
+                <a href="pagina_actor.php?actorId=' . $arrayOBJ_Peliculas[$peliculaId][$idActor]->getId() . '">
+                    <img class="actor" src=' . $arrayOBJ_Peliculas[$peliculaId][$idActor]->getFoto() . '>
                 </a>
             </td>';
         }

@@ -37,20 +37,20 @@ $pelicula = $arrayOBJ_Peliculas[$peliculaId];
 <table class="center">
     <tr>
         <?php
-        $idActores=$arrayOBJ_Peliculas[$peliculaId]->getActores();
-        for ($i = 0; $i < count($idActores); $i++) {
-            $idActor = $idActores[$i];
+        $Actores=$arrayOBJ_Peliculas[$peliculaId]->getActores();
+        for ($i = 0; $i < count($Actores); $i++) {
+            $Actor = $Actores[$i];
             echo '
             <td>
-                <a href="pagina_actor.php?actorId=' . $arrayOBJ_Peliculas[$peliculaId][$idActor]->getId() . '">
-                    <img class="actor" src=' . $arrayOBJ_Peliculas[$peliculaId][$idActor]->getFoto() . '>
+                <a href="pagina_actor.php?actorId=' . $Actor->getId() . '">
+                    <img class="actor" src=' . $Actor->getFoto() . '>
                 </a>
             </td>';
         }
         echo '</tr><tr>';
-        for ($i = 0; $i < count($idActores); $i++) {
-            $idActor = $idActores[$i];
-            echo '<td><p>' . $pelicula->getActores()[$i] . '</p></td>';
+        for ($i = 0; $i < count($Actores); $i++) {
+            $idActor = $Actores[$i];
+            echo '<td><p>' . $Actores[$i]->getName() . '</p></td>';
         }
         ?>
     </tr>

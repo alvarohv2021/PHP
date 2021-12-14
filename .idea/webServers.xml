@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="4a0cb0e4-3f70-4151-8d04-f81214131fce" name="Casa" url="http://localhost/PHP">
-        <fileTransfer mountedRoot="C:\Users\alvar\D:\Programas\Xampp\htdocs\PHP\PHP\AHernandez" accessType="MOUNT" port="0" />
+        <fileTransfer mountedRoot="$USER_HOME$/C:\Users\alvar\D:\Programas\Xampp\htdocs\PHP\PHP\AHernandez" accessType="MOUNT" port="0" />
       </webServer>
       <webServer id="5944f48c-bb37-4cfc-adc5-e7327c3d04e4" name="FTP" url="http://ahernandez.dawsonferrer.com">
         <fileTransfer host="ftp.dawsonferrer.com" port="21">
@@ -13,10 +13,10 @@
         </fileTransfer>
       </webServer>
       <webServer id="2eb4a019-8640-4744-859e-d85ad3080741" name="examen" url="http://localhost/examen">
-        <fileTransfer mountedRoot="C:\Users\alvar\D:\Programas\Xampp\htdocs\PHP\examen" accessType="MOUNT" port="0" />
+        <fileTransfer mountedRoot="$USER_HOME$/C:\Users\alvar\D:\Programas\Xampp\htdocs\PHP\examen" accessType="MOUNT" port="0" />
       </webServer>
       <webServer id="56952e72-cd6b-4952-831b-fe5e5612af15" name="Clases" url="http://localhost/PHP">
-        <fileTransfer mountedRoot="C:\Users\alvar\D:\Programas\Xampp\htdocs\PHP\PHP" accessType="MOUNT" port="0" />
+        <fileTransfer mountedRoot="$USER_HOME$/C:\Users\alvar\D:\Programas\Xampp\htdocs\PHP\PHP" accessType="MOUNT" port="0" />
       </webServer>
     </option>
   </component>

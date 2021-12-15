@@ -35,7 +35,7 @@ echo '</pre>';*/
         <td><img class="portada" src="<?php echo $actor->getFoto() ?>"></td>
     </tr>
     <tr>
-        <td style="text-align: center"><h4>Filmografia</h4></td>
+        <td style="text-align: center">Filmografia</td>
     </tr>
 </table>
 <table class="center">

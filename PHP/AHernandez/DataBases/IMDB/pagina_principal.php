@@ -6,7 +6,7 @@ global $arrayOBJ_Peliculas;
 <head>
     <link href="estilos/main.css" type="text/css" rel="stylesheet">
 </head>
-
+<body>
 <h1>Peliculas</h1>
 <div class="todo">
     <table>
@@ -30,4 +30,5 @@ global $arrayOBJ_Peliculas;
         ?>
     </table>
 </div>
+</body>
 </html>

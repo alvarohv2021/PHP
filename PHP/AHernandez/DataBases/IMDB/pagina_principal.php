@@ -16,7 +16,9 @@ global $arrayOBJ_Peliculas;
             if ($i % 2 == 0) {
                 $color = "grey";
             } else {
+
                 $color = "#212738";
+
             }
             echo '<title>Ranking</title>
             <tr style="background-color: ' . $color . '">

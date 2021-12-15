@@ -1,8 +1,12 @@
 <?php
-$server = "localhost";
-$user = "root";
-$password = "2609Ahv*";
-$db="IMDB";
+$server = "sql480.main-hosting.eu";
+$user = "u850300514_ahernandez";
+$password = "x43470242N";
+$db="u850300514_ahernandez";
+
+/*$servername = "sql480.main-hosting.eu";
+$username = "u850300514_ahernandez";
+$password = "x43470242N";*/
 
 $conn = new mysqli($server, $user, $password, $db);
 
@@ -12,12 +16,12 @@ if ($conn->connect_error) {
 
 
 //******************Tabal actores**********************
-$sql = "CREATE TABLE  Actores(
+/*$sql = "CREATE TABLE  Actores(
 id INT(6) UNSIGNED auto_increment PRIMARY KEY,
 name varchar (30),
 nacimiento varchar (30),
 imagen varchar(250)
-)";
+)";*/
 
 //******************Tabal Peliculas**********************
 /*$sql = "CREATE TABLE  Peliculas(
@@ -53,6 +57,13 @@ IdPelicula int (6) UNSIGNED,
 IdGenero int(6) UNSIGNED
 )";*/
 
+//****************Tabla Usuarios*********************************
+$sql="CREATE TABLE Users(
+    id INT(6) UNSIGNED auto_increment PRIMARY KEY,
+    Email varchar (45),
+    Username varchar (45),
+    Pasword varchar (45)
+)";
 
 if ($conn->query($sql) === TRUE) {
     echo "Table created successfully";

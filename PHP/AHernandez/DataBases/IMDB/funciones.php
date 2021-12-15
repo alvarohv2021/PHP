@@ -113,4 +113,5 @@ function insertarArrayActoresYGeneros(Pelicula $pelicula)
 for ($i = 0; $i < count($arrayOBJ_Peliculas); $i++) {
     insertarArrayActoresYGeneros($arrayOBJ_Peliculas[$i]);
 }
+var_dump($arrayOBJ_Peliculas[0]);
 ?>

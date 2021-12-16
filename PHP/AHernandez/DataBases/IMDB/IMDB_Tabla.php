@@ -58,12 +58,21 @@ IdGenero int(6) UNSIGNED
 )";*/
 
 //****************Tabla Usuarios*********************************
-$sql="CREATE TABLE Users(
+/*$sql="CREATE TABLE Usuarios(
     id INT(6) UNSIGNED auto_increment PRIMARY KEY,
     Email varchar (45),
     Username varchar (45),
     Pasword varchar (45)
+)";*/
+
+//**************Tabla Comentarios********************************
+$sql="CREATE TABLE Comentarios(
+   id INT(6) UNSIGNED auto_increment PRIMARY KEY,
+   idPelicula int(6) UNSIGNED,
+   idUsuario int(6) UNSIGNED,
+   comentario varchar(500)
 )";
+
 
 if ($conn->query($sql) === TRUE) {
     echo "Table created successfully";

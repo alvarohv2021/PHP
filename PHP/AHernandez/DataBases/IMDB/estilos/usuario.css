@@ -1,0 +1,19 @@
+body{
+    color: white;
+    font-family: sans-serif;
+}
+div{
+    background-color: #aa72e1;
+    width: 25%;
+    border-radius: 25px;
+    height: 200px;
+}
+input{
+    border-radius: 25px;
+}
+table{
+    text-align: center;
+}
+.centrarBotones{
+    width: 90px;
+}

@@ -7,6 +7,7 @@ global $arrayOBJ_Peliculas;
     <link href="estilos/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<p><?php echo $_POST["userName"] ?></p>
 <h1>Peliculas</h1>
 <div class="todo">
     <table>
@@ -28,7 +29,6 @@ global $arrayOBJ_Peliculas;
                 <td class="clasificacion">' . $pelicula->getCalificacion() . '</td>
             </tr>';
         }
-
         ?>
     </table>
 </div>

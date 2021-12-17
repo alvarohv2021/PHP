@@ -8,7 +8,7 @@ session_start();
 </head>
 <body>
 <div class="registro">
-    <form action="pagina_principal.php">
+    <form method="post" action="pagina_principal.php">
         <table>
             <tr>
                 <th>Nombre de Usuario</th>

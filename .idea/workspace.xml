@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="14-12-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="15-12-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/plicula.css" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/plicula.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_principal.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_principal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/usuario.css" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/usuario.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_Registro.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,42 +203,9 @@
       <workItem from="1639154450486" duration="463000" />
       <workItem from="1639158989125" duration="313000" />
       <workItem from="1639581008368" duration="41000" />
-      <workItem from="1639589561164" duration="335000" />
-    </task>
-    <task id="LOCAL-00019" summary="Craker">
-      <created>1634225908326</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1634225908326</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Elefantes">
-      <created>1634310064909</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1634310064909</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Elefantes done">
-      <created>1634316032921</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1634316032921</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Elefantes done">
-      <created>1634563303124</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1634563303124</updated>
-    </task>
-    <task id="LOCAL-00023" summary="19-10-21">
-      <created>1634662717049</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1634662717049</updated>
+      <workItem from="1639589561164" duration="3243000" />
+      <workItem from="1639668043277" duration="2866000" />
+      <workItem from="1639751113893" duration="1278000" />
     </task>
     <task id="LOCAL-00024" summary="19-10-21">
       <created>1634738885184</created>
@@ -549,7 +515,42 @@
       <option name="project" value="LOCAL" />
       <updated>1639501041996</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="15-12-21">
+      <created>1639589901866</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1639589901866</updated>
+    </task>
+    <task id="LOCAL-00069" summary="15-12-21">
+      <created>1639589935232</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1639589935232</updated>
+    </task>
+    <task id="LOCAL-00070" summary="15-12-21">
+      <created>1639589957954</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1639589957955</updated>
+    </task>
+    <task id="LOCAL-00071" summary="15-12-21">
+      <created>1639594789235</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1639594789235</updated>
+    </task>
+    <task id="LOCAL-00072" summary="15-12-21">
+      <created>1639670997822</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1639670997822</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Craker" />
     <MESSAGE value="Elefantes" />
     <MESSAGE value="Elefantes done" />
     <MESSAGE value="19-10-21" />
@@ -592,7 +592,8 @@
     <MESSAGE value="24-11-21" />
     <MESSAGE value="10-12-21" />
     <MESSAGE value="14-12-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="14-12-21" />
+    <MESSAGE value="15-12-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="15-12-21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

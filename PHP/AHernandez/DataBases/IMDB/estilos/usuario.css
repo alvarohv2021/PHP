@@ -1,19 +1,29 @@
 body{
     color: white;
     font-family: sans-serif;
+    background-color: #212738;
 }
-div{
+.registro{
+    margin: auto;
+    margin-top: 150px;
     background-color: #aa72e1;
-    width: 25%;
+    width: 227px;
     border-radius: 25px;
-    height: 200px;
+    height: 255px;
 }
+
+.inicio{
+    margin: auto;
+    margin-top: 150px;
+    background-color: #aa72e1;
+    width: 227px;
+    border-radius: 25px;
+    height: 160px;
+}
+
 input{
     border-radius: 25px;
-}
-table{
-    text-align: center;
-}
-.centrarBotones{
-    width: 90px;
+    width: 100%;
+    margin-left: 3px;
+    margin-top: 8px;
 }

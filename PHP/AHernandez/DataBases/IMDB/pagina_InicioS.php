@@ -3,18 +3,12 @@ session_start();
 ?>
 <html>
 <head>
-    <title>Usuario</title>
+    <title>Registro</title>
     <link href="estilos/usuario.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<div>
+<div class="inicio">
     <table>
-        <tr>
-            <th>Nombre de Usuario</th>
-        </tr>
-        <tr>
-            <td><input type="text" style="text-align: center" placeholder="User1"></td>
-        </tr>
         <tr>
             <th>Pasword</th>
         </tr>
@@ -28,8 +22,7 @@ session_start();
             <td><input type="text" style="text-align: center" placeholder="user1@gmail.com"></td>
         </tr>
         <tr>
-            <td><input type="button" value="Iniciar sesion"></td>
-            <td><input type="button" value="Registrarse"></td>
+            <td><input type="submit" value="Iniciar Sesion"></td>
         </tr>
     </table>
 </div>

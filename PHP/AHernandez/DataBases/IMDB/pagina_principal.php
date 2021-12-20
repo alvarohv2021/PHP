@@ -11,6 +11,7 @@ session_start();
 <p><?php
     if (gettype($_POST["userName"])!=null){
     echo $_SESSION["username"]=$_POST["userName"];
+        echo "<br>".$_SESSION["password"]=$_POST["password"];
     } ?>
 </p>
 <h1>Peliculas</h1>

@@ -1,13 +1,18 @@
 <?php
 include 'funciones.php';
 global $arrayOBJ_Peliculas;
+session_start();
 ?>
 <html>
 <head>
     <link href="estilos/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<p><?php echo $_POST["userName"] ?></p>
+<p><?php
+    if (gettype($_POST["userName"])!=null){
+    echo $_SESSION["username"]=$_POST["userName"];
+    } ?>
+</p>
 <h1>Peliculas</h1>
 <div class="todo">
     <table>

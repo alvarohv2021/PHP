@@ -8,12 +8,11 @@ session_start();
     <link href="estilos/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<p><?php
+<?php
     if (gettype($_POST["userName"]) != null) {
         echo "<br><div class='login'><p>" . $_SESSION["username"] = $_POST["userName"] . "</p></div>";
     }
     ?>
-</p>
 <h1>Peliculas</h1>
 <div class="todo">
     <table>

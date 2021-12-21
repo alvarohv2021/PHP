@@ -9,10 +9,11 @@ session_start();
 </head>
 <body>
 <p><?php
-    if (gettype($_POST["userName"])!=null){
-    echo $_SESSION["username"]=$_POST["userName"];
-        echo "<br>".$_SESSION["password"]=$_POST["password"];
-    } ?>
+    if (gettype($_POST["userName"]) != null) {
+        echo $_SESSION["username"] = $_POST["userName"];
+        echo "<br><div><p>" . $_SESSION["password"] = $_POST["password"] . "</p></div>";
+    }
+    ?>
 </p>
 <h1>Peliculas</h1>
 <div class="todo">
@@ -31,7 +32,7 @@ session_start();
             <tr style="background-color: ' . $color . '">
                 <td class="foto"><img src=Fotos/' . $pelicula->getFoto() . '></td>
                 <td class="id">' . ($i + 1) . '.</td>
-                <td class="nombre"><a href="pagina_pelicula.php?PeliculaId='.$pelicula->getId().'"> ' . $pelicula->getName() . '</a> (' . $pelicula->getEstreno() . ')</td>
+                <td class="nombre"><a href="pagina_pelicula.php?PeliculaId=' . $pelicula->getId() . '"> ' . $pelicula->getName() . '</a> (' . $pelicula->getEstreno() . ')</td>
                 <td class="clasificacion">' . $pelicula->getCalificacion() . '</td>
             </tr>';
         }

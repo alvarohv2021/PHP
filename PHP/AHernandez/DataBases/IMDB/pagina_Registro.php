@@ -14,13 +14,13 @@ session_start();
                 <th>Nombre de Usuario</th>
             </tr>
             <tr>
-                <td><input name="userName" type="text" pattern="[A-Za-z0-9]{1,20}" style="text-align: center" placeholder="User1" title="Debe empezar por mayuscula seguido de minusculas y acabado en numeros"></td>
+                <td><input name="userName" type="text" pattern="[A-Z]+[a-z]+[0-9]+" style="text-align: center" placeholder="User1" title="Debe empezar por mayuscula seguido de minusculas y acabado en numeros"></td>
             </tr>
             <tr>
                 <th>Pasword</th>
             </tr>
             <tr>
-                <td><input name="password" type="password"  style="text-align: center" placeholder="Pasword"></td>
+                <td><input name="password" type="password"  pattern="[A-Z]+[a-z]+[0-9]+" style="text-align: center" placeholder="Pasword"></td>
             </tr>
             <tr>
                 <th>Email</th>

@@ -48,13 +48,20 @@ where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
     return $result;
 }
 
-function isnertarDatosUsuario($username,$pasword,$email){
+function insertarDatosUsuario($username,$pasword,$email){
     global $conn;
+    $email = $conn->real_escape_string($email);
     $pasword=password_hash($pasword,PASSWORD_DEFAULT);
-    $sql='insert into Usuarios (Username,Pasword,Email) VALUES 
-            ('.$username.','.$pasword.','.$email.')';
+    $sql='insert into Usuarios (Username,Pasword,Email) values 
+            ("'.$username.'","'.$pasword.'","'.$email.'")';
 
-    $query = $conn->query($sql);
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+        return false;
+    }
+
 }
 
 function arrayObjetosActoresDePelicula($idPelicula)

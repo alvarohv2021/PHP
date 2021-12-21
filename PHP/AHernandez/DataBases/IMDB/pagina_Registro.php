@@ -4,8 +4,14 @@ include("funciones.php");
 
 
 if (gettype($_POST["userName"]) != null && gettype($_POST["password"]) != null && gettype($_POST["email"]) != null) {
-    isnertarDatosUsuario($_POST["userName"], $_POST["password"], $_POST["email"]);
-    header("Location: pagina_principal.php");
+    $insercionCorrecta=insertarDatosUsuario($_POST["userName"], $_POST["password"], $_POST["email"]);
+
+    if ($insercionCorrecta=false){
+        $_POST["userName"]=null;
+    }else{
+        $_SESSION["Username"]=$_POST["userName"];
+        header("Location: pagina_principal.php");
+    }
 }
 
 ?>

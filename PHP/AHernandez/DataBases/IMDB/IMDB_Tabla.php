@@ -58,20 +58,20 @@ IdGenero int(6) UNSIGNED
 )";*/
 
 //****************Tabla Usuarios*********************************
-/*$sql="CREATE TABLE Usuarios(
+$sql="CREATE TABLE Usuarios(
     id INT(6) UNSIGNED auto_increment PRIMARY KEY,
     Email varchar (45),
-    Username varchar (45),
+    Username varchar (45) UNIQUE,
     Pasword varchar (45)
-)";*/
+)";
 
 //**************Tabla Comentarios********************************
-$sql="CREATE TABLE Comentarios(
+/*$sql="CREATE TABLE Comentarios(
    id INT(6) UNSIGNED auto_increment PRIMARY KEY,
    idPelicula int(6) UNSIGNED,
    idUsuario int(6) UNSIGNED,
    comentario varchar(500)
-)";
+)";*/
 
 
 if ($conn->query($sql) === TRUE) {

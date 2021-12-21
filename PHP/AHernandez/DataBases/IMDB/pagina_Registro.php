@@ -1,5 +1,13 @@
 <?php
 session_start();
+include("funciones.php");
+
+
+if (gettype($_POST["userName"]) != null && gettype($_POST["password"]) != null && gettype($_POST["email"]) != null) {
+    isnertarDatosUsuario($_POST["userName"], $_POST["password"], $_POST["email"]);
+    header("Location: pagina_principal.php");
+}
+
 ?>
 <html>
 <head>
@@ -27,19 +35,22 @@ session_start();
 </head>
 <body>
 <div class="registro">
-    <form name="myForm" method="post" action="pagina_principal.php" onsubmit="return validateForm()">
+    <form name="myForm" method="post" action="" onsubmit="return validateForm()">
         <table>
             <tr>
                 <th>Nombre de Usuario</th>
             </tr>
             <tr>
-                <td><input name="userName" type="text" pattern="[A-Z]+[a-z]+[0-9]+" style="text-align: center" placeholder="User1" title="Debe empezar por mayuscula seguido de minusculas y acabado en numeros"></td>
+                <td><input name="userName" type="text" pattern="[A-Z]+[a-z]+[0-9]+" style="text-align: center"
+                           placeholder="User1"
+                           title="Debe empezar por mayuscula seguido de minusculas y acabado en numeros"></td>
             </tr>
             <tr>
                 <th>Pasword</th>
             </tr>
             <tr>
-                <td><input name="password" type="password"  pattern="[A-Z]+[a-z]+[0-9]+" style="text-align: center" placeholder="Aa1"></td>
+                <td><input name="password" type="password" pattern="[A-Z]+[a-z]+[0-9]+" style="text-align: center"
+                           placeholder="Aa1"></td>
             </tr>
             <tr>
                 <th>Email</th>
@@ -53,5 +64,6 @@ session_start();
         </table>
     </form>
 </div>
+
 </body>
 </html>

@@ -10,7 +10,8 @@ session_start();
 <body>
 <?php
     if (gettype($_POST["userName"]) != null) {
-        echo "<br><div class='login'><p>" . $_SESSION["username"] = $_POST["userName"] . "</p></div>";
+        echo "<a href='pagina_InicioS.php'><div class='login'><p> Logout </p></div></a>";
+        echo "<div class='login'><p>" . $_SESSION["username"] = $_POST["userName"] . "</p></div>";
     }
     ?>
 <h1>Peliculas</h1>

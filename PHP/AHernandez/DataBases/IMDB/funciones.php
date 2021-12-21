@@ -48,6 +48,15 @@ where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
     return $result;
 }
 
+function isnertarDatosUsuario($username,$pasword,$email){
+    global $conn;
+    $pasword=password_hash($pasword,PASSWORD_DEFAULT);
+    $sql='insert into Usuarios (Username,Pasword,Email) VALUES 
+            ('.$username.','.$pasword.','.$email.')';
+
+    $query = $conn->query($sql);
+}
+
 function arrayObjetosActoresDePelicula($idPelicula)
 {
     global $conn;

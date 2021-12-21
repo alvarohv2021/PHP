@@ -10,8 +10,7 @@ session_start();
 <body>
 <p><?php
     if (gettype($_POST["userName"]) != null) {
-        echo $_SESSION["username"] = $_POST["userName"];
-        echo "<br><div><p>" . $_SESSION["password"] = $_POST["password"] . "</p></div>";
+        echo "<br><div class='login'><p>" . $_SESSION["username"] = $_POST["userName"] . "</p></div>";
     }
     ?>
 </p>

@@ -9,9 +9,9 @@ session_start();
 </head>
 <body>
 <?php
-    if (gettype($_POST["userName"]) != null) {
+    if ($_SESSION["Username"] != null) {
         echo "<a href='pagina_InicioS.php'><div class='login'><p> Logout </p></div></a>";
-        echo "<div class='login'><p>" . $_SESSION["username"] = $_POST["userName"] . "</p></div>";
+        echo "<div class='login'><p>" . $_SESSION["Username"] . "</p></div>";
     }
     ?>
 <h1>Peliculas</h1>

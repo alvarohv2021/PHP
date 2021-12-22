@@ -2,8 +2,7 @@
 session_start();
 include("funciones.php");
 
-
-if (gettype($_POST["userName"]) != null && gettype($_POST["password"]) != null && gettype($_POST["email"]) != null) {
+if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["password"]) && $_POST["password"]!="" && isset($_POST["email"]) && $_POST["email"]!="") {
     $insercionCorrecta=insertarDatosUsuario($_POST["userName"], $_POST["password"], $_POST["email"]);
 
     if ($insercionCorrecta=false){
@@ -24,17 +23,17 @@ if (gettype($_POST["userName"]) != null && gettype($_POST["password"]) != null &
             var x = document.forms["myForm"]["userName"].value;
             if (x == "" || x == null) {
                 alert("Name must be filled out");
-                return false;
+                return;
             }
             x = document.forms["myForm"]["password"].value;
             if (x == "" || x == null) {
                 alert("Pasword must be filled out");
-                return false;
+                return;
             }
             x = document.forms["myForm"]["email"].value;
             if (x == "" || x == null) {
                 alert("Email must be filled out");
-                return false;
+                return;
             }
         }
     </script>

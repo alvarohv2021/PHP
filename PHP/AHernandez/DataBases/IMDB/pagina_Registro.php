@@ -40,6 +40,16 @@ if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["passwor
     </script>
 </head>
 <body>
+<a href="pagina_InicioS.php">
+    <div class="login">
+        <p>Login</p>
+    </div>
+</a>
+<a href="pagina_principal.php">
+    <div class="login">
+        <p>Home</p>
+    </div>
+</a>
 
 <div class="registro">
     <form name="myForm" method="post" action="" onsubmit="return validateForm()">

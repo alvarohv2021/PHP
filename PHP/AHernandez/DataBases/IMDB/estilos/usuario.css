@@ -28,3 +28,15 @@ input{
     width: 100%;
     padding: 5px;
 }
+.login{
+    background-color: white;
+    color: black;
+    width: 75px;
+    text-align: center;
+    border-radius: 25px;
+    float: right;
+    margin: 2px;
+}
+a{
+    text-decoration: none;
+}

@@ -48,15 +48,22 @@ where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
     return $result;
 }
 
-function insertarDatosUsuario($username,$pasword,$email){
+function insertarDatosUsuario($username, $pasword, $email)
+{
     global $conn;
+
     $email = $conn->real_escape_string($email);
-    $pasword=password_hash($pasword,PASSWORD_DEFAULT);
-    $sql='insert into Usuarios (Username,Pasword,Email) values 
-            ("'.$username.'","'.$pasword.'","'.$email.'")';
+    $pasword = password_hash($pasword, PASSWORD_DEFAULT);
+
+    $sql = 'insert into Usuarios (Username,Pasword,Email) values 
+            ("' . $username . '","' . $pasword . '","' . $email . '")';
 
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+
+        $query = $conn->query('select id from Usuarios where Username = "' . $username . '"');
+        $id = $query->fetch_assoc();
+        return $id['id'];
+
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
         return false;
@@ -93,13 +100,13 @@ function arrayPeliculasIDsActor($idActor)
     global $conn;
     $sql = "select PeliculasActores.IdPelicula from Actores
 join PeliculasActores on Actores.id = PeliculasActores.IdActor
-where Actores.id=".$idActor.";";
+where Actores.id=" . $idActor . ";";
 
     $query = $conn->query($sql);
 
 
     $peliculas = array();
-    while ($resultado = $query->fetch_assoc()){
+    while ($resultado = $query->fetch_assoc()) {
         $peliculas[] = $resultado["IdPelicula"];
     }
 

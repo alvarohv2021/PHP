@@ -1,14 +1,15 @@
 <?php
 session_start();
-//include("funciones.php");
+include("funciones.php");
 
 if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["password"]) && $_POST["password"]!="" && isset($_POST["email"]) && $_POST["email"]!="") {
-    $insercionCorrecta=insertarDatosUsuario($_POST["userName"], $_POST["password"], $_POST["email"]);
+    $idUsuarioInsertado=insertarDatosUsuario($_POST["userName"], $_POST["password"], $_POST["email"]);
 
-    if ($insercionCorrecta=false){
+    if ($idUsuarioInsertado=false){
         $_POST["userName"]=null;
     }else{
         $_SESSION["Username"]=$_POST["userName"];
+        $_SESSION["ID"]=$idUsuarioInsertado;
         header("Location: pagina_principal.php");
     }
 }
@@ -39,6 +40,7 @@ if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["passwor
     </script>
 </head>
 <body>
+
 <div class="registro">
     <form name="myForm" method="post" action="" onsubmit="return validateForm()">
         <table class="table">

@@ -47,7 +47,7 @@ where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
     }
     return $result;
 }
-
+//**********************Guardar usuario en BD*************************************
 function insertarDatosUsuario($username, $pasword, $email)
 {
     global $conn;
@@ -70,17 +70,25 @@ function insertarDatosUsuario($username, $pasword, $email)
     }
 
 }
-
+//**********************Comprobar los datos del usuario ntroducido*************************************
 function comprobarInicio($username, $pasword)
 {
     global $conn;
 
-    $pasword = password_hash($pasword, PASSWORD_DEFAULT);
-
     $query = $conn->query('select Pasword from Usuarios where Username = "' . $username . '"');
     $pwdBD = $query->fetch_assoc();
+    $hash = $pwdBD["Pasword"];
 
-    if ($pasword == $pwdBD) {
+    var_dump($pwdBD);
+    echo "<br>";
+    var_dump($hash);
+    echo "<br>";
+    var_dump($pasword);
+    echo "<br>";
+    var_dump(password_verify($pasword, $hash));
+
+    if (password_verify($pasword, $hash)) {
+        echo "aqui";
         $query = $conn->query('select id from Usuarios where Username = "' . $username . '"');
         $id = $query->fetch_assoc();
         return $id['id'];

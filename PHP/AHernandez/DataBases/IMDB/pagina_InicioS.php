@@ -3,15 +3,14 @@ session_start();
 
 include("funciones.php");
 
-if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["password"]) && $_POST["password"]!="" && isset($_POST["email"]) && $_POST["email"]!="") {
+if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["password"]) && $_POST["password"]!="") {
     $idUsuarioInsertado=comprobarInicio($_POST["userName"], $_POST["password"]);
-
     if ($idUsuarioInsertado=false){
         $_POST["userName"]=null;
     }else{
         $_SESSION["Username"]=$_POST["userName"];
         $_SESSION["ID"]=$idUsuarioInsertado;
-        header("Location: pagina_principal.php");
+        //header("Location: pagina_principal.php");
     }
 }
 ?>
@@ -36,7 +35,7 @@ if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["passwor
 </head>
 <body>
 <div class="inicio">
-    <form name="myForm" method="post" action="pagina_principal.php" onsubmit="return validateForm()">
+    <form name="myForm" method="post" action="" onsubmit="return validateForm()">
         <table class="table">
             <tr>
                 <th>Nombre de Usuario</th>

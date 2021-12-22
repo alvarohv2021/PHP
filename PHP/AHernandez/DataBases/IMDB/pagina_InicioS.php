@@ -1,5 +1,19 @@
 <?php
 session_start();
+
+include("funciones.php");
+
+if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["password"]) && $_POST["password"]!="" && isset($_POST["email"]) && $_POST["email"]!="") {
+    $idUsuarioInsertado=comprobarInicio($_POST["userName"], $_POST["password"]);
+
+    if ($idUsuarioInsertado=false){
+        $_POST["userName"]=null;
+    }else{
+        $_SESSION["Username"]=$_POST["userName"];
+        $_SESSION["ID"]=$idUsuarioInsertado;
+        header("Location: pagina_principal.php");
+    }
+}
 ?>
 <html>
 <head>

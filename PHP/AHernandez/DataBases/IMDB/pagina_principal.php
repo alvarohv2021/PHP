@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 include 'funciones.php';
 global $arrayOBJ_Peliculas;
 session_start();
@@ -12,6 +13,9 @@ session_start();
     if ($_SESSION["Username"] != null) {
         echo "<a href='pagina_InicioS.php'><div class='login'><p> Logout </p></div></a>";
         echo "<div class='login'><p>" . $_SESSION["Username"] . "</p></div>";
+    }else{
+        echo "<a href='pagina_InicioS.php'><div class='login'><p> Login </p></div></a>";
+        echo "<a href='pagina_Registro.php'><div class='login'><p> Sign Up </p></div></a>";
     }
     ?>
 <h1>Peliculas</h1>

@@ -71,6 +71,24 @@ function insertarDatosUsuario($username, $pasword, $email)
 
 }
 
+function comprobarInicio($username, $pasword)
+{
+    global $conn;
+
+    $pasword = password_hash($pasword, PASSWORD_DEFAULT);
+
+    $query = $conn->query('select Pasword from Usuarios where Username = "' . $username . '"');
+    $pwdBD = $query->fetch_assoc();
+
+    if ($pasword == $pwdBD) {
+        $query = $conn->query('select id from Usuarios where Username = "' . $username . '"');
+        $id = $query->fetch_assoc();
+        return $id['id'];
+    } else {
+        return false;
+    }
+}
+
 function arrayObjetosActoresDePelicula($idPelicula)
 {
     global $conn;

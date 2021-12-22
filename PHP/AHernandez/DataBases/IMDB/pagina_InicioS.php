@@ -5,7 +5,8 @@ include("funciones.php");
 
 if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["password"]) && $_POST["password"]!="") {
     $idUsuarioInsertado=comprobarInicio($_POST["userName"], $_POST["password"]);
-    if ($idUsuarioInsertado=false){
+
+    if ($idUsuarioInsertado==false){
         $_POST["userName"]=null;
     }else{
         $_SESSION["Username"]=$_POST["userName"];
@@ -33,7 +34,18 @@ if (isset($_POST["userName"]) && $_POST["userName"]!="" && isset($_POST["passwor
         }
     </script>
 </head>
-<body>
+<body><body>
+<a href="pagina_Registro.php">
+    <div class="login">
+        <p>Sing in</p>
+    </div>
+</a>
+<a href="pagina_principal.php">
+    <div class="login">
+        <p>Home</p>
+    </div>
+</a>
+
 <div class="inicio">
     <form name="myForm" method="post" action="" onsubmit="return validateForm()">
         <table class="table">

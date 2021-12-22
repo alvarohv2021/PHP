@@ -24,3 +24,15 @@ h4{
     margin-right: auto;
     text-align: center;
 }
+.login{
+    background-color: white;
+    color: black;
+    width: 75px;
+    text-align: center;
+    border-radius: 25px;
+    float: right;
+    margin: 2px;
+}
+a{
+    text-decoration: none;
+}

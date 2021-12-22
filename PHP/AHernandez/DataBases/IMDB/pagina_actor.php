@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 include("funciones.php");
 global $arrayOBJ_Peliculas;
 
@@ -27,7 +28,18 @@ echo '</pre>';*/
     <title><?php echo $actor->getName() ?></title>
     <link href="estilos/actor.css" type="text/css" rel="stylesheet">
 </head>
-<body>
+<body><?php
+if ($_SESSION["Username"] != null) {
+    echo "<a href='pagina_principal.php'><div class='login'><p>Home</p></div></a>";
+    echo "<a href='pagina_InicioS.php'><div class='login'><p> Logout </p></div></a>";
+    echo "<div class='login'><p>" . $_SESSION["Username"] . "</p></div>";
+}else{
+    echo "<a href='pagina_principal.php'><div class='login'><p>Home</p></div></a>";
+    echo "<a href='pagina_InicioS.php'><div class='login'><p> Login </p></div></a>";
+    echo "<a href='pagina_Registro.php'><div class='login'><p> Sign Up </p></div></a>";
+}
+?>
+
 <h1><?php echo $actor->getName() ?></h1>
 <h3><?php echo $actor->getNacimiento() ?></h3>
 <table class="center">

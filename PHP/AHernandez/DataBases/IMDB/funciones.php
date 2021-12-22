@@ -70,7 +70,7 @@ function insertarDatosUsuario($username, $pasword, $email)
     }
 
 }
-//**********************Comprobar los datos del usuario ntroducido*************************************
+//**********************Comprobar los datos del usuario introducido*************************************
 function comprobarInicio($username, $pasword)
 {
     global $conn;
@@ -79,22 +79,37 @@ function comprobarInicio($username, $pasword)
     $pwdBD = $query->fetch_assoc();
     $hash = $pwdBD["Pasword"];
 
-    var_dump($pwdBD);
-    echo "<br>";
-    var_dump($hash);
-    echo "<br>";
-    var_dump($pasword);
-    echo "<br>";
-    var_dump(password_verify($pasword, $hash));
-
     if (password_verify($pasword, $hash)) {
-        echo "aqui";
         $query = $conn->query('select id from Usuarios where Username = "' . $username . '"');
         $id = $query->fetch_assoc();
         return $id['id'];
     } else {
         return false;
     }
+}
+//****************************Insertar comentarios en la base de datos******************************
+function insertarComentario($idPelicula,$idUsuario,$comentario){
+    global $conn;
+
+    $sql = 'insert into Comentarios (idPelicula,idUsuario,comentario)
+values ("' . $idPelicula . '","' . $idUsuario . '","' . $comentario . '")';
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Todo ha ido bien";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+function mostarComentariosDePelicula($pelicalId){
+    global $conn;
+
+    $sql='SELECT Usuarios.Username, Comentarios.comentario FROM Comentarios
+join Usuarios on Comentarios.idUsuario = Usuarios.id
+where Comentarios.idPelicula ='."$pelicalId".';';
+
+    $query = $conn->query($sql);
+    return $arrayComentariosUsuarios = $query->fetch_all(MYSQLI_ASSOC);
 }
 
 function arrayObjetosActoresDePelicula($idPelicula)

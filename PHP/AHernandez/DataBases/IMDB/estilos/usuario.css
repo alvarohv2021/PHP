@@ -6,24 +6,25 @@ body{
 .registro{
     margin: auto;
     margin-top: 150px;
-    background-color: #aa72e1;
-    width: 227px;
-    border-radius: 25px;
+    width: 19%;
     height: 220px;
 }
 
 .inicio{
     margin: auto;
     margin-top: 150px;
-    background-color: #aa72e1;
-    width: 227px;
-    border-radius: 25px;
-    height: 160px;
+    width: 19%;
+    height: 220px;
 }
 
 input{
     border-radius: 25px;
     width: 100%;
-    margin-left: 3px;
     margin-top: 8px;
+}
+.table{
+    border-radius: 25px;
+    background-color: #aa72e1;
+    width: 100%;
+    padding: 5px;
 }

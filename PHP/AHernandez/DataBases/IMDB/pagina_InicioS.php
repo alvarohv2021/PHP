@@ -23,7 +23,7 @@ session_start();
 <body>
 <div class="inicio">
     <form name="myForm" method="post" action="pagina_principal.php" onsubmit="return validateForm()">
-        <table>
+        <table class="table">
             <tr>
                 <th>Nombre de Usuario</th>
             </tr>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="21-12-21">
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="12-01-22">
+      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/vista.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funciones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_Registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_Registro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_principal.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_principal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/controlador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Hotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Hotel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,7 +43,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="9495fa64-aa12-4299-80fb-ab49a41bad0a" name="localhost" />
@@ -61,10 +61,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
@@ -87,7 +88,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="pruebas.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/AHernandez/pruebas.php">
+    <configuration name="pruebas.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
@@ -210,21 +211,12 @@
       <workItem from="1639751113893" duration="6236000" />
       <workItem from="1639763892011" duration="474000" />
       <workItem from="1640009622606" duration="3639000" />
-      <workItem from="1640111154295" duration="5020000" />
-    </task>
-    <task id="LOCAL-00032" summary="29-10-21">
-      <created>1635519576307</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1635519576307</updated>
-    </task>
-    <task id="LOCAL-00033" summary="29-10-21">
-      <created>1635521226507</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1635521226507</updated>
+      <workItem from="1640111154295" duration="5257000" />
+      <workItem from="1641824246456" duration="408000" />
+      <workItem from="1641925634727" duration="1581000" />
+      <workItem from="1642008378573" duration="2467000" />
+      <workItem from="1642013670008" duration="1231000" />
+      <workItem from="1642086923193" duration="2521000" />
     </task>
     <task id="LOCAL-00034" summary="29-10-21">
       <created>1635529343735</created>
@@ -555,7 +547,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640113662647</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="21-12-21">
+      <created>1640116310764</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1640116310764</updated>
+    </task>
+    <task id="LOCAL-00082" summary="12-01-22">
+      <created>1642014888249</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1642014888250</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +579,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="25-10-21" />
     <MESSAGE value="26-10-21" />
     <MESSAGE value="27-10-21" />
     <MESSAGE value="28-10-21" />
@@ -598,7 +603,8 @@
     <MESSAGE value="17-12-21" />
     <MESSAGE value="20-12-21" />
     <MESSAGE value="21-12-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="21-12-21" />
+    <MESSAGE value="12-01-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="12-01-22" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

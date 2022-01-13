@@ -1,5 +1,6 @@
 <?php
 require_once ("../BD/BD.php");
+require_once ("../Entidades/Hotel.php");
 
 function crearObjHotel(){
     global $conn;
@@ -12,12 +13,10 @@ function crearObjHotel(){
     for ($i=0;$i<count($arrayHoteles);$i++){
 
         $arrayObjHoteles[$i]=new Hotel($arrayHoteles[$i]["id"],$arrayHoteles[$i]["nombre"]
-        ,$arrayHoteles[$i]["precio"],$arrayHoteles[$i]["ubicacion"],$arrayHoteles[$i]["valoracion"]);
+        ,$arrayHoteles[$i]["precio"],$arrayHoteles[$i]["ubicacion"]
+            ,$arrayHoteles[$i]["valoracion"],$arrayHoteles[$i]["imagen"]);
 
     }
 
-    return $arrayObjHoteles;
+    return $arrayHoteles;
 }
-
-$hoteles=crearObjHotel();
-var_dump($hoteles);

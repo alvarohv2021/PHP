@@ -1,8 +1,8 @@
 <?php
-$server="localhost";
-$user="root";
-$password="2609Ahv*";
-$bdName="Hoteles";
+$server="sql480.main-hosting.eu";
+$user="u850300514_ahernandez";
+$password="x43470242N";
+$bdName="u850300514_ahernandez";
 
 $conn= new mysqli($server,$user,$password,$bdName);
 

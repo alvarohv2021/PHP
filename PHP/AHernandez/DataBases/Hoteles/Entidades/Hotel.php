@@ -20,4 +20,36 @@ private $id,$nombre,$precio,$ubicacion,$valoracion,$imagen;
         $this->imagen=$imagen;
     }
 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    public function getPrecio()
+    {
+        return $this->precio;
+    }
+
+    public function getUbicacion()
+    {
+        return $this->ubicacion;
+    }
+
+    public function getValoracion()
+    {
+        return $this->valoracion;
+    }
+
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+
+
 }

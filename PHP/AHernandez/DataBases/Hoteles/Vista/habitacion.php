@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 session_start();
 ?>
 <!DOCTYPE html>
@@ -21,12 +22,12 @@ session_start();
                 echo "<p>" . $_SESSION['usuario'] . "</p>";
             } else {
             ?>
-            <!--Por hacer página de inicio-->
+            <!--Por terminar, página de inicio-->
             <a href='../Controladores/c_inicio.php' class='text-light' style='text-decoration: none'><p>Iniciar
                     Sesion</p></a>
         </div>
         <div class="col-2 pt-3">
-            <!--Por hacer página de registro-->
+            <!--Por hacer, página de registro-->
             <a href='../Controladores/c_registro.php' class='text-light' style='text-decoration: none'><p>
                     Registrarse</p>
             </a>

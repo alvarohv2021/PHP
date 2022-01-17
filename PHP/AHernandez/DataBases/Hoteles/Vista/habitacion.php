@@ -10,16 +10,24 @@ session_start();
 </head>
 <body>
 <div class="container-fluid">
-    <div class="row bg-info">
-        <div class="col-10">
-            <h1>Spain Travels</h1>
+    <div class="row bg-danger">
+        <div class="col-8">
+            <h1 class="text-light">Spain Travels</h1>
         </div>
         <div class="col-2 pt-3">
             <?php
             if ($_SESSION['usuario'] != null) {
                 echo "<p>" . $_SESSION['usuario'] . "</p>";
             } else {
-                echo "<a href='../Controladores/c_inicio.php'  class='text-dark' style='text-decoration: none'><p>Iniciar Sesion</p></a>";
+            ?>
+            <a href='../Controladores/c_inicio.php' class='text-light' style='text-decoration: none'><p>Iniciar
+                    Sesion</p></a>
+        </div>
+        <div class="col-2 pt-3">
+            <a href='../Controladores/c_registro.php' class='text-light' style='text-decoration: none'><p>Registrarse</p>
+            </a>
+
+            <?php
             }
             ?>
         </div>

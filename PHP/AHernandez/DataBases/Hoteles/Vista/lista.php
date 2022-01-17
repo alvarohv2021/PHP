@@ -17,9 +17,9 @@
                 <div class="card-body">
                     <h4 class="card-title"><?php echo $arrayObjsHoteles[$i]->getNombre() ?></h4>
                     <p class="card-text text-success"><?php echo $arrayObjsHoteles[$i]->getPrecio() ?>€</p>
-                    <p class="card-text"><?php echo $arrayObjsHoteles[$i]->getUbicacion() ?></p>
-                    <p class="card-text"><?php echo $arrayObjsHoteles[$i]->getValoracion() ?> &#11088;</p>
-                    <a href="../Vista/habitacion.php?"<?php $arrayObjsHoteles[$i]->getId() ?> class="card-link">Habitaciones</a>
+                    <p class="card-text float-left"><?php echo $arrayObjsHoteles[$i]->getUbicacion() ?></p>
+                    <p class="card-text float-right"><?php echo $arrayObjsHoteles[$i]->getValoracion() ?> &#11088;</p>
+                    <a href="../Controladores/c_habitacion.php?habitacionId=<?php  echo $arrayObjsHoteles[$i]->getId() ?>" class="card-link">Habitaciones</a>
                 </div>
             </div>
             <?php

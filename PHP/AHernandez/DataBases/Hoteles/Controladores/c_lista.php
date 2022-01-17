@@ -1,7 +1,7 @@
 <?php
 include_once("../Entidades/hotel.php");
 include_once("../Modelo/modelo.php");
-$arrayObjsHoteles = crearObjHotel();
+$arrayObjsHoteles = listaObjsHotel();
 
-include_once("../Vista/vista.php");
+include_once("../Vista/lista.php");
 ?>

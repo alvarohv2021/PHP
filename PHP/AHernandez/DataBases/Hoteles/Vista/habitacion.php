@@ -9,6 +9,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
+<!--**************************Barra Superior**************************-->
 <div class="container-fluid">
     <div class="row bg-danger">
         <div class="col-8">
@@ -20,17 +21,23 @@ session_start();
                 echo "<p>" . $_SESSION['usuario'] . "</p>";
             } else {
             ?>
+            <!--Por hacer página de inicio-->
             <a href='../Controladores/c_inicio.php' class='text-light' style='text-decoration: none'><p>Iniciar
                     Sesion</p></a>
         </div>
         <div class="col-2 pt-3">
-            <a href='../Controladores/c_registro.php' class='text-light' style='text-decoration: none'><p>Registrarse</p>
+            <!--Por hacer página de registro-->
+            <a href='../Controladores/c_registro.php' class='text-light' style='text-decoration: none'><p>
+                    Registrarse</p>
             </a>
-
             <?php
             }
             ?>
         </div>
     </div>
 </div>
+
+<!--**************************Contenido de la pagina**************************-->
+<!--**************************TO DO**************************-->
+<!--**************************terminar tabla de habitaciones y rellenar los campos**************************-->
 </body>

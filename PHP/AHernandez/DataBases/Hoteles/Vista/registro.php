@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+<form>
+    <div class="container bg-danger">
+        <div class="form-group row">
+            <div class="col-12 text-light text-center">
+                <h1>Please Sing in</h1>
+            </div>
+            <label class="sr-only" for="fName">First Name</label>
+            <div class="col-6">
+                <input type="text" class="form-control mb-2 mr-2" id="fName" placeholder="First name">
+            </div>
+            <label class="sr-only" for="lName">Last Name</label>
+            <div class="col-6">
+                <input type="text" class="form-control mb-2 mr-2" id="lName" placeholder="Last name">
+            </div>
+            <label class="sr-only" for="email">email</label>
+            <div class="col-12">
+                <input type="email" class="form-control mb-2 mr-2" id="email" placeholder="Email Address">
+            </div>
+            <label class="sr-only" for="password">password</label>
+            <div class="col-6">
+                <input type="password" class="form-control mb-2 mr-2" id="password" placeholder="Password">
+            </div>
+            <label class="sr-only" for="cPassword">confirm password</label>
+            <div class="col-6">
+                <input type="password" class="form-control mb-2 mr-2" id="cPassword" placeholder="Confirm Password">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-6">
+                <button class="btn btn-primary w-100 mb-2">Register</button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-success w-100 mb-2">Sign In</button>
+            </div>
+        </div>
+
+    </div>
+</form>
+</body>
+</html>

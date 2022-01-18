@@ -9,5 +9,12 @@ if (isset($_GET['sesion'])){
         $_SESSION['usuario']=null;
     }
 }
+
+if (isset($_POST['name'])&& isset($_POST['password'])){
+    if (comprobarUsuario($_POST['name'],$_POST['password'])==false){
+        include_once ('../Vista/inicio.php');
+    }
+}
+
 include_once("../Vista/lista.php");
 ?>

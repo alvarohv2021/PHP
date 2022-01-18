@@ -1,6 +1,7 @@
 <?php
 require_once("../BD/BD.php");
 require_once("../Entidades/Hotel.php");
+session_start();
 
 function listaObjsHotel()
 {
@@ -34,4 +35,22 @@ function objHotel($hotelId)
 
 
     return $hotel;
+}
+
+function comprobarUsuario($nombre, $password)
+{
+    global $conn;
+
+    $query = $conn->query("SELECT Username,Pasword FROM Usuarios where Username ='" . $nombre."'");
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+    $temp = $temp[0];
+
+    $password_hased = $temp['Pasword'];
+
+    if (password_verify($password, $password_hased) == true) {
+        $_SESSION['usuario'] = $nombre;
+        return true;
+    }else{
+        return false;
+    }
 }

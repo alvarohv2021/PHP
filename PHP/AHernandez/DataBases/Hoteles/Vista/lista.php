@@ -17,17 +17,18 @@ session_start();
         <div class="col-8">
             <h1 class="text-light">Spain Travels</h1>
         </div>
-        <div class="col-2 pt-3">
-            <?php if ($_SESSION['usuario'] != null) { ?>
-            <p class='text-light'><?php echo $_SESSION['usuario'] ?></p>
-        </div>
-        <div class='col-2 pt-3'>
-            <a href='../Controladores/c_lista.php?sesion=false' class='text-light' style='text-decoration: none'><p>
-                    Cerar Sesion</p>
-            </a>
-        </div>
+        <?php if ($_SESSION['usuario'] != null) { ?>
+            <div class="col-2 pt-3">
+                <p class='text-light'><?php echo $_SESSION['usuario'] ?></p>
+            </div>
+            <div class='col-2 pt-3'>
+                <a href='../Controladores/c_lista.php?sesion=false' class='text-light' style='text-decoration: none'><p>
+                        Cerar Sesion</p>
+                </a>
+            </div>
         <?php } else { ?>
             <!--Por terminar, página de inicio-->
+
             <div class='col-2 pt-3'>
                 <a href='../Controladores/c_inicio.php' class='text-light' style='text-decoration: none'>
                     <p>Iniciar Sesion</p></a>

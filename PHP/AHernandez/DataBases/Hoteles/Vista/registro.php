@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
-<form>
+<form method="post" action="../Controladores/c_lista.php">
     <div class="container bg-danger">
         <div class="form-group row">
             <div class="col-12 text-light text-center">

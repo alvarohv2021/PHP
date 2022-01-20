@@ -41,5 +41,10 @@
 
     </div>
 </form>
+<?php if (!$cPassword) { ?>
+    <script>
+        alert("Las contraseñas no coinciden")
+    </script>
+<?php } ?>
 </body>
 </html>

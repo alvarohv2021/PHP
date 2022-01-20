@@ -11,30 +11,32 @@ session_start();
 </head>
 <body>
 <!--**************************Barra Superior**************************-->
-<div class="container-fluid">
+<div class="container-fluid mb-2">
     <div class="row bg-danger">
         <div class="col-8">
             <h1 class="text-light">Spain Travels</h1>
         </div>
-        <div class="col-2 pt-3">
-            <?php
-            if ($_SESSION['usuario'] != null) {
-                echo "<p>" . $_SESSION['usuario'] . "</p>";
-            } else {
-            ?>
-            <!--Por terminar, página de inicio-->
-            <a href='../Controladores/c_inicio.php' class='text-light' style='text-decoration: none'><p>Iniciar
-                    Sesion</p></a>
-        </div>
-        <div class="col-2 pt-3">
-            <!--Por hacer, página de registro-->
-            <a href='../Controladores/c_registro.php' class='text-light' style='text-decoration: none'><p>
-                    Registrarse</p>
-            </a>
-            <?php
-            }
-            ?>
-        </div>
+        <?php if ($_SESSION['usuario'] != null) { ?>
+            <div class="col-2 pt-3">
+                <p class='text-light'><?php echo $_SESSION['usuario'] ?></p>
+            </div>
+            <div class='col-2 pt-3'>
+                <a href='../Controladores/c_habitacion.php?sesion=false&habitacionId=<?php echo $_GET['habitacionId']?>' class='text-light'
+                   style='text-decoration: none'>
+                    <p>Cerar Sesion</p>
+                </a>
+            </div>
+        <?php } else { ?>
+            <div class='col-2 pt-3'>
+                <a href='../Controladores/c_inicio.php' class='text-light' style='text-decoration: none'>
+                    <p>Iniciar Sesion</p></a>
+            </div>
+            <div class="col-2 pt-3">
+                <!--Por hacer, página de registro-->
+                <a href='../Controladores/c_registro.php' class='text-light' style='text-decoration: none'>
+                    <p>Registrarse</p></a>
+            </div>
+        <?php } ?>
     </div>
 </div>
 

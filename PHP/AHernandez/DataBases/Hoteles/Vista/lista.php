@@ -27,8 +27,6 @@ session_start();
                 </a>
             </div>
         <?php } else { ?>
-            <!--Por terminar, página de inicio-->
-
             <div class='col-2 pt-3'>
                 <a href='../Controladores/c_inicio.php' class='text-light' style='text-decoration: none'>
                     <p>Iniciar Sesion</p></a>
@@ -42,7 +40,7 @@ session_start();
     </div>
 </div>
 
-
+<!--**************************************************************************************-->
 <div>
     <div class="row">
         <?php

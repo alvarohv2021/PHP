@@ -41,7 +41,7 @@ function comprobarUsuario($nombre, $password)
 {
     global $conn;
 
-    $query = $conn->query("SELECT Username,Pasword FROM Usuarios where Username ='" . $nombre."'");
+    $query = $conn->query("SELECT Username,Pasword FROM Usuarios where Username ='" . $nombre . "'");
     $temp = $query->fetch_all(MYSQLI_ASSOC);
     $temp = $temp[0];
 
@@ -50,7 +50,7 @@ function comprobarUsuario($nombre, $password)
     if (password_verify($password, $password_hased) == true) {
         $_SESSION['usuario'] = $nombre;
         return true;
-    }else{
+    } else {
         return false;
     }
 }

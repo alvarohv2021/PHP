@@ -22,11 +22,11 @@
             </div>
             <label class="sr-only" for="password">password</label>
             <div class="col-6">
-                <input type="password" class="form-control mb-2 mr-2" id="password" placeholder="Password">
+                <input type="password" class="form-control mb-2 mr-2" name="password" placeholder="Password">
             </div>
             <label class="sr-only" for="cPassword">confirm password</label>
             <div class="col-6">
-                <input type="password" class="form-control mb-2 mr-2" id="cPassword" placeholder="Confirm Password">
+                <input type="password" class="form-control mb-2 mr-2" name="cPassword" placeholder="Confirm Password">
             </div>
         </div>
 

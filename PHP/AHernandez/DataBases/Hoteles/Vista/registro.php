@@ -14,11 +14,11 @@
             </div>
             <label class="sr-only" for="name">User Name</label>
             <div class="col-12">
-                <input type="text" class="form-control mb-2 mr-2" id="name" placeholder="User name">
+                <input type="text" class="form-control mb-2 mr-2" name="name" placeholder="User name">
             </div>
             <label class="sr-only" for="email">email</label>
             <div class="col-12">
-                <input type="email" class="form-control mb-2 mr-2" id="email" placeholder="Email Address">
+                <input type="email" class="form-control mb-2 mr-2" name="email" placeholder="Email Address">
             </div>
             <label class="sr-only" for="password">password</label>
             <div class="col-6">
@@ -41,10 +41,15 @@
 
     </div>
 </form>
-<?php if (!$cPassword) { ?>
+<?php if ($cPassword) { ?>
     <script>
         alert("Las contraseñas no coinciden")
     </script>
-<?php } ?>
+<?php }
+if ($alertRegistro){?>
+    <script>
+        alert("Este usuario no esta disponible")
+    </script>
+<?php }?>
 </body>
 </html>

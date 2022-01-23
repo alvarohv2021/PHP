@@ -13,7 +13,7 @@ if (isset($_GET['sesion'])){
 
 if (isset($_POST['name'])&& isset($_POST['password'])){
     if (comprobarUsuario($_POST['name'],$_POST['password'])==false){
-        include_once ('../Vista/inicio.php');
+        header("Location: ../Controladores/c_inicio.php");
     }
 }
 

@@ -41,16 +41,36 @@ function comprobarUsuario($nombre, $password)
 {
     global $conn;
 
-    $query = $conn->query("SELECT Username,Pasword FROM Usuarios where Username ='" . $nombre."'");
+    $query = $conn->query("SELECT Username,Pasword FROM Usuarios where Username ='" . $nombre . "'");
+
+    //comprobacion del numero de filas que devuleve la query
+    if ($query->num_rows == 0) {
+        return false;
+    }
     $temp = $query->fetch_all(MYSQLI_ASSOC);
     $temp = $temp[0];
 
+    //hasheamos la pasword y la comprobamos con la que hay en la base de datos haseada
     $password_hased = $temp['Pasword'];
-
     if (password_verify($password, $password_hased) == true) {
         $_SESSION['usuario'] = $nombre;
         return true;
-    }else{
+    } else {
+        return false;
+    }
+}
+
+function insertarUsuarios($nombre, $email, $password)
+{
+    global $conn;
+
+    if (!comprobarUsuario($nombre, $password)) {
+        $password=password_hash($password,PASSWORD_DEFAULT);
+        $sql = "insert into Usuarios(Email,Username,Pasword) values ('" . $email . "','" . $nombre . "','" . $password . "')";
+        $conn->query($sql);
+        $_SESSION['usuario'] = $nombre;
+        return true;
+    } else {
         return false;
     }
 }

@@ -42,7 +42,7 @@ session_start();
     </div>
 </div>
 
-<!--********************Contenido Principal*********************-->
+
 <div>
     <div class="row">
         <?php
@@ -51,13 +51,13 @@ session_start();
             <div class="card col-sm-12 card col-md-6 col-lg-3">
                 <img class="card-img-top" src="<?php echo $arrayObjsHoteles[$i]->getImagen() ?>" alt="Card image cap"
                      style="height: 60%">
-                <div class="card-body row">
-                    <h4 class="card-title col-12"><?php echo $arrayObjsHoteles[$i]->getNombre() ?></h4>
-                    <p class="card-text text-success col-12"><?php echo $arrayObjsHoteles[$i]->getPrecio() ?>€</p>
-                    <p class="card-text float-left col-10"><?php echo $arrayObjsHoteles[$i]->getUbicacion() ?></p>
-                    <p class="card-text float-right col-2"><?php echo $arrayObjsHoteles[$i]->getValoracion() ?> &#11088;</p>
-                    <button type="button" class="btn btn-danger"><a style="text-decoration: none; color: white" href="../Controladores/c_habitacion.php?habitacionId=<?php echo $arrayObjsHoteles[$i]->getId() ?>"
-                               class="card-link">Habitaciones</a></button>
+                <div class="card-body">
+                    <h4 class="card-title"><?php echo $arrayObjsHoteles[$i]->getNombre() ?></h4>
+                    <p class="card-text text-success"><?php echo $arrayObjsHoteles[$i]->getPrecio() ?>€</p>
+                    <p class="card-text float-left"><?php echo $arrayObjsHoteles[$i]->getUbicacion() ?></p>
+                    <p class="card-text float-right"><?php echo $arrayObjsHoteles[$i]->getValoracion() ?> &#11088;</p>
+                    <a href="../Controladores/c_habitacion.php?habitacionId=<?php echo $arrayObjsHoteles[$i]->getId() ?>"
+                       class="card-link">Habitaciones</a>
                 </div>
             </div>
             <?php

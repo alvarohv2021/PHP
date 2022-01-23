@@ -1,7 +1,6 @@
 <?php
 include_once("../Entidades/hotel.php");
 include_once("../Modelo/modelo.php");
-error_reporting(E_ERROR | E_PARSE);
 session_start();
 
 $arrayObjsHoteles = listaObjsHotel();

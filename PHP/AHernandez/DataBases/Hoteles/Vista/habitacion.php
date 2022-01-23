@@ -58,7 +58,8 @@ session_start();
 
     <?php if (isset($_SESSION['usuario'])) { ?>
         <div class="row justify-content-center mt-2">
-            <form action="../Controladores/c_habitacion.php" method="post">
+            <form action="../Controladores/c_habitacion.php?habitacionId=<?php echo $hotel->getId() ?>"
+                  method="post">
                 <div class="form-group">
                     <div class="col-12">
                         <label for="entrada">Fecha de entrada:</label>
@@ -79,4 +80,9 @@ session_start();
 
 <!--**************************TO DO**************************-->
 <!--**************************terminar tabla de habitaciones y rellenar los campos**************************-->
+<?php if ($fechaMal == true) { ?>
+    <script>
+        alert("La fecha de entrada es despues que la de salida")
+    </script>
+<?php } ?>
 </body>

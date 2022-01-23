@@ -1,7 +1,6 @@
 <?php
 require_once("../BD/BD.php");
 require_once("../Entidades/Hotel.php");
-session_start();
 
 function listaObjsHotel()
 {

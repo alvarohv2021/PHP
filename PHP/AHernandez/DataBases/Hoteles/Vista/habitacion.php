@@ -6,8 +6,14 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hotel <?php echo $hotel->getNombre() ?></title>
+    <title>Habitaciones</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <?php if (isset($_SESSION['usuario'])) {
+        $iniciado = "../Controladores/c_lista.php";
+    } else {
+        $iniciado = "../Controladores/c_inicio.php";
+    }
+    ?>
 </head>
 <body>
 <!--**************************Barra Superior**************************-->
@@ -42,43 +48,39 @@ session_start();
 </div>
 
 <!--**************************Contenido de la pagina**************************-->
-<div class="container mt-2">
-    <div class="card col-12">
-        <img class="card-img-top" src="<?php echo $hotel->getImagen() ?>" alt="Card image cap"
-             style="height: 60%">
-        <div class="card-body">
-            <h4 class="card-title"><?php echo $hotel->getNombre() ?></h4>
-            <p class="card-text text-success"><?php echo $hotel->getPrecio() ?>€</p>
-            <p class="card-text float-left"><?php echo $hotel->getUbicacion() ?></p>
-            <p class="card-text float-right"><?php echo $hotel->getValoracion() ?> &#11088;</p>
-        </div>
+<div class="container-fluid mt-2">
+    <div class="row">
+        <?php for ($i = 0; $i < count($habitaciones); $i++) { ?>
+            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <img class="card-img-top" src="<?php echo $habitaciones[$i]->getImagen() ?>" alt="Card image cap"
+                     style="height: 60%">
+                <form method="post" action="<?php echo $iniciado ?>">
+                    <div class="card-body">
+                        <div class="row">
+
+                            <h4 class="card-title col-12"><?php echo $hotel->getNombre() ?></h4>
+                            <p class="col-6">Precio la Noche</p>
+                            <p class="card-text text-success col-6 text-right"><?php echo $habitaciones[$i]->getPrecio() ?>
+                                €</p>
+                            <p class="col-6">Nº huespedes:</p>
+                            <p class="card-text float-left col-6 text-right"><?php echo $habitaciones[$i]->getNumeroHuespedes() ?></p>
+                            <label for="entrada">De:</label>
+                            <input type="date" id="entrada" name="entrada">
+                            <label for="entrada">A:</label>
+                            <input type="date" id="entrada" name="entrada">
+                            <button type="submit" class="btn btn-success col-12">Reservar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        <?php } ?>
     </div>
-
-    <!--***********************Reserva de la fecha**********************************-->
-
-    <?php if (isset($_SESSION['usuario'])) { ?>
-        <div class="row justify-content-center mt-2">
-            <form action="../Controladores/c_habitacion.php?habitacionId=<?php echo $hotel->getId() ?>"
-                  method="post">
-                <div class="form-group">
-                    <div class="col-12">
-                        <label for="entrada">Fecha de entrada:</label>
-                        <input type="date" id="entrada" name="entrada">
-                    </div>
-                    <div class="col-12">
-                        <label for="salida">Fecha de salida:</label>
-                        <input type="date" id="salida" name="salida">
-                    </div>
-                    <div class="col-12 offset-3">
-                        <input type="submit">
-                    </div>
-                </div>
-            </form>
-        </div>
-    <?php } ?>
 </div>
 
-<!--**************************TO DO**************************-->
+<!--***********************Reserva de la fecha**********************************-->
+
+
+<!--**************************TO do**************************-->
 <!--**************************terminar tabla de habitaciones y rellenar los campos**************************-->
 <?php if ($fechaMal == true) { ?>
     <script>

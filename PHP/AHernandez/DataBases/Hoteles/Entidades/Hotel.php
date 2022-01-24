@@ -2,7 +2,7 @@
 
 class Hotel
 {
-private $id,$nombre,$precio,$ubicacion,$valoracion,$imagen;
+    private $id, $nombre, $ubicacion, $valoracion, $imagen;
 
     /**
      * @param $nombre
@@ -10,14 +10,13 @@ private $id,$nombre,$precio,$ubicacion,$valoracion,$imagen;
      * @param $ubicacion
      * @param $valoracion
      */
-    public function __construct($id,$nombre, $precio, $ubicacion, $valoracion,$imagen)
+    public function __construct($id, $nombre, $ubicacion, $valoracion, $imagen)
     {
         $this->id = $id;
         $this->nombre = $nombre;
-        $this->precio = $precio;
         $this->ubicacion = $ubicacion;
         $this->valoracion = $valoracion;
-        $this->imagen=$imagen;
+        $this->imagen = $imagen;
     }
 
     public function getId()
@@ -28,11 +27,6 @@ private $id,$nombre,$precio,$ubicacion,$valoracion,$imagen;
     public function getNombre()
     {
         return $this->nombre;
-    }
-
-    public function getPrecio()
-    {
-        return $this->precio;
     }
 
     public function getUbicacion()
@@ -49,7 +43,4 @@ private $id,$nombre,$precio,$ubicacion,$valoracion,$imagen;
     {
         return $this->imagen;
     }
-
-
-
 }

@@ -1,9 +1,10 @@
 <?php
-if (isset($_GET['habitacionId'])) {
+if (isset($_GET['hotelId'])) {
 
     include_once("../Modelo/modelo.php");
-    $hotel = objHotel($_GET['habitacionId']);
 
+    $habitaciones = arrayObjsHabitacion($_GET['hotelId']);
+    $hotel=objHotel($_GET['hotelId']);
     //cierre de sesion***************
     if (isset($_GET['sesion'])) {
         if ($_GET['sesion'] == 'false') {

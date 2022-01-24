@@ -34,27 +34,11 @@ private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$idReserva,$imagen,$prec
     }
 
     /**
-     * @param mixed $id
-     */
-    public function setId($id): void
-    {
-        $this->id = $id;
-    }
-
-    /**
      * @return mixed
      */
     public function getIdHotel()
     {
         return $this->idHotel;
-    }
-
-    /**
-     * @param mixed $idHotel
-     */
-    public function setIdHotel($idHotel): void
-    {
-        $this->idHotel = $idHotel;
     }
 
     /**
@@ -66,14 +50,6 @@ private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$idReserva,$imagen,$prec
     }
 
     /**
-     * @param mixed $numeroHuespedes
-     */
-    public function setNumeroHuespedes($numeroHuespedes): void
-    {
-        $this->numeroHuespedes = $numeroHuespedes;
-    }
-
-    /**
      * @return mixed
      */
     public function getNumeroHabitacion()
@@ -82,27 +58,11 @@ private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$idReserva,$imagen,$prec
     }
 
     /**
-     * @param mixed $numeroHabitacion
+     * @return mixed
      */
-    public function setNumeroHabitacion($numeroHabitacion): void
-    {
-        $this->numeroHabitacion = $numeroHabitacion;
-    }
-
-    /**
-     * @return int
-     */
-    public function getIdReserva(): int
+    public function getIdReserva()
     {
         return $this->idReserva;
-    }
-
-    /**
-     * @param int $idReserva
-     */
-    public function setIdReserva(int $idReserva): void
-    {
-        $this->idReserva = $idReserva;
     }
 
     /**
@@ -114,14 +74,6 @@ private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$idReserva,$imagen,$prec
     }
 
     /**
-     * @param mixed $imagen
-     */
-    public function setImagen($imagen): void
-    {
-        $this->imagen = $imagen;
-    }
-
-    /**
      * @return mixed
      */
     public function getPrecio()
@@ -129,12 +81,6 @@ private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$idReserva,$imagen,$prec
         return $this->precio;
     }
 
-    /**
-     * @param mixed $precio
-     */
-    public function setPrecio($precio): void
-    {
-        $this->precio = $precio;
-    }
+
 
 }

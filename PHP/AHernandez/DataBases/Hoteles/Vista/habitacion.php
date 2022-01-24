@@ -8,9 +8,14 @@ session_start();
     <meta charset="UTF-8">
     <title>Habitaciones</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!--Determina en base ha si hay un usuario o no iniciado, a donde le va ha mandar al intentar
+    hacer una reserva-->
     <?php if (isset($_SESSION['usuario'])) {
-        $iniciado = "../Controladores/c_lista.php";
+        $inici = true;
+        $iniciado = "../Controladores/c_reserva.php?idHabitacion=";
     } else {
+        $inici = false;
         $iniciado = "../Controladores/c_inicio.php";
     }
     ?>
@@ -54,7 +59,12 @@ session_start();
             <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <img class="card-img-top" src="<?php echo $habitaciones[$i]->getImagen() ?>" alt="Card image cap"
                      style="height: 60%">
-                <form method="post" action="<?php echo $iniciado ?>">
+                <form method="post" action="<?php
+                if ($inici) {
+                    echo $iniciado . $habitaciones[$i]->getId();
+                } else {
+                    echo $iniciado;
+                } ?>">
                     <div class="card-body">
                         <div class="row">
 
@@ -64,11 +74,18 @@ session_start();
                                 €</p>
                             <p class="col-6">Nº huespedes:</p>
                             <p class="card-text float-left col-6 text-right"><?php echo $habitaciones[$i]->getNumeroHuespedes() ?></p>
+                            <!--
                             <label for="entrada">De:</label>
                             <input type="date" id="entrada" name="entrada">
                             <label for="entrada">A:</label>
                             <input type="date" id="entrada" name="entrada">
-                            <button type="submit" class="btn btn-success col-12">Reservar</button>
+
+                            Si hay una reserva el boton se desactiva-->
+                            <?php if (!$habitaciones[$i]->getIdReserva()) { ?>
+                                <button type="submit" class="btn btn-success col-12">Reservar</button>
+                            <?php } else { ?>
+                                <button type="submit" class="btn btn-success col-12 disabled" disabled>Reservar</button>
+                            <?php } ?>
                         </div>
                     </div>
                 </form>

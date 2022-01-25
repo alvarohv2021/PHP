@@ -12,7 +12,7 @@
       <paths name="FTP">
         <serverdata>
           <mappings>
-            <mapping deploy="/Examen2" local="$PROJECT_DIR$/Examen2" web="/Examen2" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

@@ -1,5 +1,6 @@
 <?php
 include_once("../BD/BD.php");
+include_once("../entidades/countrie.php");
 session_start();
 function comprobarUsuario($email, $passord)
 {
@@ -9,7 +10,7 @@ function comprobarUsuario($email, $passord)
     $temp = $query->fetch_all(MYSQLI_ASSOC);
     $temp = $temp[0];
 
-    if ($query->num_rows==0){
+    if ($query->num_rows == 0) {
         return false;
     }
 
@@ -27,23 +28,71 @@ function registarUsuario($email, $password)
     global $coon;
 
     if (!comprobarUsuario($email, $password)) {
-        $password=password_hash($password,PASSWORD_DEFAULT);
+        $password = password_hash($password, PASSWORD_DEFAULT);
         $query = $coon->query("insert into users (Mail, Password)
         values ('" . $email . "','" . $password . "')");
         return true;
-    }else{
+    } else {
         return false;
     }
 }
 
-function myCountries($userId){
+function getMailUsuario($userId)
+{
     global $coon;
 
-    $query=$coon->query("Select * from countries where UserId=".$userId);
-    $temp=$query->fetch_all(MYSQLI_ASSOC);
-    $temp=$temp[0];
+    $query = $coon->query("Select Mail from users where Id=" . $userId);
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+    $temp = $temp[0];
 
-    $countries=new countrie($temp["Code"],$temp["Name"],$temp["Population"],$temp["GNP"]
-        ,$temp["Capital"],$temp["UserId"]);
+    return $temp['Mail'];
+}
+
+function myCountries($userId)
+{
+    global $coon;
+    $query = $coon->query("Select * from countries where UserId=" . $userId);
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+
+    $temp = $temp[0];
+
+    $countries[] = new countrie($temp["Code"], $temp["Name"], $temp["Population"], $temp["GNP"]
+        , $temp["Capital"], $temp["UserId"]);
+
+    return $countries;
+}
+
+function countrylanguages($countryCode)
+{
+    global $coon;
+
+    $query = $coon->query("SELECT count(*) FROM countrylanguages where CountryCode='" . $countryCode . "'");
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+
+    return $temp;
+}
+
+function numCities($countryCode)
+{
+    global $coon;
+
+    $query = $coon->query("SELECT count(*) FROM cities where CountryCode='" . $countryCode . "'");
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+
+    return $temp;
+}
+
+function otherCountries($userId)
+{
+    global $coon;
+    $query = $coon->query("Select * from countries where UserId!=" . $userId." OR UserId IS NULL");
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+
+    $temp = $temp[0];
+
+    $countries[] = new countrie($temp["Code"], $temp["Name"], $temp["Population"], $temp["GNP"]
+        , $temp["Capital"], $temp["UserId"]);
+
+    return $countries;
 }
 ?>

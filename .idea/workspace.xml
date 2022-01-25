@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="13-01-22">
-      <change afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/vista.php" afterDir="false" />
+    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="25-01-22">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/BD/BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/BD/BD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/controlador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Hotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Hotel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/vista.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/Examen3.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,15 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_reserva.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/reserva.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file:///etc/php/7.4/cli/php.ini" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/habitacion.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/lista.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_lista.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_habitacion.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -55,6 +61,7 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="/usr/share/php" />
+      <path value="$PROJECT_DIR$" />
     </include_path>
   </component>
   <component name="ProjectId" id="1yp4EcSpCeZOmvmzoKBqMHZBvUx" />
@@ -68,10 +75,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -221,98 +228,19 @@
       <workItem from="1642013670008" duration="1231000" />
       <workItem from="1642086923193" duration="2546000" />
       <workItem from="1642103676139" duration="4000" />
-      <workItem from="1642169889478" duration="4409000" />
-    </task>
-    <task id="LOCAL-00035" summary="29-10-21">
-      <created>1635533766172</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1635533766172</updated>
-    </task>
-    <task id="LOCAL-00036" summary="2-11-21">
-      <created>1635883122790</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1635883122790</updated>
-    </task>
-    <task id="LOCAL-00037" summary="3-11-21">
-      <created>1635968926671</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1635968926671</updated>
-    </task>
-    <task id="LOCAL-00038" summary="4-11-21">
-      <created>1636054569078</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1636054569079</updated>
-    </task>
-    <task id="LOCAL-00039" summary="8-11-21">
-      <created>1636381830896</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1636381830896</updated>
-    </task>
-    <task id="LOCAL-00040" summary="8-11-21">
-      <created>1636381971667</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1636381971667</updated>
-    </task>
-    <task id="LOCAL-00041" summary="8-11-21">
-      <created>1636382031522</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1636382031522</updated>
-    </task>
-    <task id="LOCAL-00042" summary="10-11-21">
-      <created>1636565271610</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1636565271610</updated>
-    </task>
-    <task id="LOCAL-00043" summary="11-11-21">
-      <created>1636647436373</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1636647436373</updated>
-    </task>
-    <task id="LOCAL-00044" summary="11-11-21">
-      <created>1636654202405</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1636654202405</updated>
-    </task>
-    <task id="LOCAL-00045" summary="12-11-21">
-      <created>1636729517676</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1636729517676</updated>
-    </task>
-    <task id="LOCAL-00046" summary="12-11-21">
-      <created>1636732426145</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1636732426145</updated>
-    </task>
-    <task id="LOCAL-00047" summary="15-11-21">
-      <created>1636987683189</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1636987683189</updated>
+      <workItem from="1642169889478" duration="4589000" />
+      <workItem from="1642182285575" duration="2148000" />
+      <workItem from="1642428859415" duration="4284000" />
+      <workItem from="1642444374111" duration="1090000" />
+      <workItem from="1642526885497" duration="8102000" />
+      <workItem from="1642692051010" duration="2859000" />
+      <workItem from="1642695246185" duration="1758000" />
+      <workItem from="1642775064493" duration="6566000" />
+      <workItem from="1643033668380" duration="2869000" />
+      <workItem from="1643123286738" duration="440000" />
+      <workItem from="1643123735007" duration="1474000" />
+      <workItem from="1643129187641" duration="1881000" />
+      <workItem from="1643131237649" duration="18000" />
     </task>
     <task id="LOCAL-00048" summary="15-11-21">
       <created>1636988550250</created>
@@ -566,11 +494,113 @@
       <option name="project" value="LOCAL" />
       <updated>1642090186097</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="14-01-22">
+      <created>1642176638839</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1642176638839</updated>
+    </task>
+    <task id="LOCAL-00085" summary="17-01-22">
+      <created>1642432633661</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1642432633661</updated>
+    </task>
+    <task id="LOCAL-00086" summary="17-01-22">
+      <created>1642433138033</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1642433138033</updated>
+    </task>
+    <task id="LOCAL-00087" summary="17-01-22">
+      <created>1642445457947</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1642445457947</updated>
+    </task>
+    <task id="LOCAL-00088" summary="18-01-22">
+      <created>1642527731994</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1642527731995</updated>
+    </task>
+    <task id="LOCAL-00089" summary="18-01-22">
+      <created>1642533945248</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1642533945248</updated>
+    </task>
+    <task id="LOCAL-00090" summary="18-01-22">
+      <created>1642535304461</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1642535304461</updated>
+    </task>
+    <task id="LOCAL-00091" summary="18-01-22">
+      <created>1642535686721</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1642535686721</updated>
+    </task>
+    <task id="LOCAL-00092" summary="20-01-22">
+      <created>1642694901141</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1642694901142</updated>
+    </task>
+    <task id="LOCAL-00093" summary="20-01-22">
+      <created>1642696997352</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1642696997352</updated>
+    </task>
+    <task id="LOCAL-00094" summary="21-01-22">
+      <created>1642775599868</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775599868</updated>
+    </task>
+    <task id="LOCAL-00095" summary="21-01-22">
+      <created>1642781253353</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1642781253353</updated>
+    </task>
+    <task id="LOCAL-00096" summary="25-01-22">
+      <created>1643125192374</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1643125192378</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -584,12 +614,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="27-10-21" />
-    <MESSAGE value="28-10-21" />
-    <MESSAGE value="29-10-21" />
-    <MESSAGE value="2-11-21" />
-    <MESSAGE value="3-11-21" />
-    <MESSAGE value="4-11-21" />
     <MESSAGE value="8-11-21" />
     <MESSAGE value="10-11-21" />
     <MESSAGE value="11-11-21" />
@@ -609,7 +633,13 @@
     <MESSAGE value="21-12-21" />
     <MESSAGE value="12-01-22" />
     <MESSAGE value="13-01-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="13-01-22" />
+    <MESSAGE value="14-01-22" />
+    <MESSAGE value="17-01-22" />
+    <MESSAGE value="18-01-22" />
+    <MESSAGE value="20-01-22" />
+    <MESSAGE value="21-01-22" />
+    <MESSAGE value="25-01-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="25-01-22" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,7 +1,7 @@
 <?php
 
 ?>
-<form action="../controladores/c_main.php" method="post">
+<form action="../controladores/c_iniciar.php" method="post">
     <label for="correo">Correo</label>
     <input type="text" name="email"><br>
     <label for="password">Contraseña</label>

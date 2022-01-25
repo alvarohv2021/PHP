@@ -2,25 +2,23 @@
 
 class Habitacion
 {
-private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$idReserva,$imagen,$precio;
+private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$imagen,$precio;
 
     /**
      * @param $id
      * @param $idHotel
      * @param $numeroHuespedes
      * @param $numeroHabitacion
-     * @param $idReserva
      * @param $imagen
      * @param $precio
      */
 
-    public function __construct($id, $idHotel, $numeroHuespedes, $numeroHabitacion, $idReserva, $imagen, $precio)
+    public function __construct($id, $idHotel, $numeroHuespedes, $numeroHabitacion, $imagen, $precio)
     {
         $this->id = $id;
         $this->idHotel = $idHotel;
         $this->numeroHuespedes = $numeroHuespedes;
         $this->numeroHabitacion = $numeroHabitacion;
-        $this->idReserva = $idReserva;
         $this->imagen = $imagen;
         $this->precio = $precio;
     }
@@ -55,14 +53,6 @@ private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$idReserva,$imagen,$prec
     public function getNumeroHabitacion()
     {
         return $this->numeroHabitacion;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getIdReserva()
-    {
-        return $this->idReserva;
     }
 
     /**

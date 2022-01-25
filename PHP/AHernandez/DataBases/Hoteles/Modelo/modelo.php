@@ -2,7 +2,6 @@
 require_once("../BD/BD.php");
 require_once("../Entidades/Hotel.php");
 require_once("../Entidades/Habitacion.php");
-
 function listaObjsHotel()
 {
     global $conn;
@@ -45,7 +44,7 @@ function arrayObjsHabitacion($hotelId)
 
     for ($i = 0; $i < count($temp); $i++) {
         $habitaciones[$i] = new Habitacion($temp[$i]['id'], $hotelId, $temp[$i]['numero_huespedes'],
-            $temp[$i]['numero_habitacion'], $temp[$i]['id_reserva'], $temp[$i]['imagen'], $temp[$i]['precio']);
+            $temp[$i]['numero_habitacion'], $temp[$i]['imagen'], $temp[$i]['precio']);
     }
 
     return $habitaciones;
@@ -87,4 +86,55 @@ function insertarUsuarios($nombre, $email, $password)
     } else {
         return false;
     }
+}
+
+function idUsuario($nombre)
+{
+
+    global $conn;
+    $query = $conn->query("Select id from Usuarios where Username='" . $nombre . "'");
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+    $temp = $temp[0];
+
+    return $temp['id'];
+
+}
+
+function objHabitacion($habitacionId)
+{
+    global $conn;
+    $query = $conn->query("SELECT * FROM habitaciones where id =" . $habitacionId);
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+    $temp = $temp[0];
+    $habitacion = new Habitacion($habitacionId, $temp['id_hotel'], $temp['numero_huespedes'],
+        $temp['numero_habitacion'], $temp['imagen'], $temp['precio']);
+
+
+    return $habitacion;
+}
+
+function comprobarReserva($entrada, $salida, $idHabitacion)
+{
+    global $conn;
+
+    //Select que comprueba si hay una reserva entre las fechas introducidas sobre la habitacion especificada
+    $query = $conn->query("select * from reserva where idHabitacion=" . $idHabitacion . " and 
+    (Entrada between '" . $entrada . "' and '" . $salida . "') or
+    (Salida between '" . $entrada . "' and '" . $salida . "')");
+
+    if ($query->num_rows > 0) {
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+function reservar($idHabitacion,$idUsuario,$entrada, $salida){
+    global $conn;
+
+    $entrada=date("Y-m-d",$entrada);
+    $salida=date("Y-m-d",$salida);
+
+    $query=$conn->query("insert into reserva (idHabitacion,idUsuario,Entrada,Salida) values (".$idHabitacion.",".$idUsuario.",'".$entrada."','".$salida."')");
 }

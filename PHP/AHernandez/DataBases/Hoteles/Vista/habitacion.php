@@ -79,13 +79,8 @@ session_start();
                             <input type="date" id="entrada" name="entrada">
                             <label for="entrada">A:</label>
                             <input type="date" id="entrada" name="entrada">
-
-                            Si hay una reserva el boton se desactiva-->
-                            <?php if (!$habitaciones[$i]->getIdReserva()) { ?>
-                                <button type="submit" class="btn btn-success col-12">Reservar</button>
-                            <?php } else { ?>
-                                <button type="submit" class="btn btn-success col-12 disabled" disabled>Reservar</button>
-                            <?php } ?>
+                            -->
+                            <button type="submit" class="btn btn-success col-12">Reservar</button>
                         </div>
                     </div>
                 </form>

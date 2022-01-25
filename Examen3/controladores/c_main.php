@@ -10,13 +10,13 @@ if (isset($_SESSION['id'])) {
     }
 
     $oterCountries[] = otherCountries($_SESSION['id']);
+    for ($i = 0; $i < count($oterCountries[0]); $i++) {
 
-    for ($i = 0; $i < count($oterCountries); $i++) {
-        $countryLanguages[$i] = countrylanguages($oterCountries[$i]->getCode());
-        $numCities[$i] = numCities($oterCountries[$i]->getCode());
+        $countryLanguages[$i] = countrylanguages($oterCountries[0][$i]->getCode());
+        $numCities[$i] = numCities($oterCountries[0][$i]->getCode());
     }
 
-    $mail = getMailUsuario($_SESSION['id']);
+    //$mail = getMailUsuario($_SESSION['id']);
 
 }
 include_once("../vista/main.php");

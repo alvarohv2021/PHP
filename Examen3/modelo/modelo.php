@@ -88,10 +88,14 @@ function otherCountries($userId)
     $query = $coon->query("Select * from countries where UserId!=" . $userId." OR UserId IS NULL");
     $temp = $query->fetch_all(MYSQLI_ASSOC);
 
-    $temp = $temp[0];
+for ($i=0;$i<count($temp);$i++){
 
-    $countries[] = new countrie($temp["Code"], $temp["Name"], $temp["Population"], $temp["GNP"]
-        , $temp["Capital"], $temp["UserId"]);
+    if ($temp["UserId"]==null){
+        $temp[$i]["UserId"]=0;
+    }
+    $countries[$i] = new countrie($temp[$i]["Code"], $temp[$i]["Name"], $temp[$i]["Population"]
+        , $temp[$i]["GNP"], $temp[$i]["Capital"], $temp[$i]["UserId"]);
+}
 
     return $countries;
 }

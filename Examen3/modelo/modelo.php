@@ -43,6 +43,7 @@ function myCountries($userId){
     $temp=$query->fetch_all(MYSQLI_ASSOC);
     $temp=$temp[0];
 
-    $countries=new
+    $countries=new countrie($temp["Code"],$temp["Name"],$temp["Population"],$temp["GNP"]
+        ,$temp["Capital"],$temp["UserId"]);
 }
 ?>

@@ -7,16 +7,19 @@ session_start();
 $idUsuario = idUsuario($_SESSION['usuario']);
 $habitacion = objHabitacion($_GET['idHabitacion']);
 
-if (isset($_POST['entrada'])){
-$entrada=strtotime($_POST['entrada']);
-$salida=strtotime($_POST['salida']);
+if (isset($_POST['entrada'])) {
+    $entrada = strtotime($_POST['entrada']);
+    $salida = strtotime($_POST['salida']);
 
-    if ($entrada>=$salida){
-        $fecha=false;
-    }else if (comprobarReserva($_POST['entrada'],$_POST['salida'],$habitacion->getId())){
-        $fecha=true;
+    echo $entrada . "\n";
+    echo $salida;
+
+    if ($entrada >= $salida) {
+        $fecha = false;
+    } else if (comprobarReserva($_POST['entrada'], $_POST['salida'], $habitacion->getId())) {
+        $pillada = comprobarReserva($_POST['entrada'], $_POST['salida'], $habitacion->getId());
     }else{
-        $fecha=false;
+        $fecha=true;
     }
 
 }

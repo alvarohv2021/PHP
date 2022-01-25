@@ -88,6 +88,10 @@ session_start();
     <script>
         alert("La fecha de entrada es posterior a la de salida")
     </script>
+<?php }else if ($pillada == true){ ?>
+    <script>
+        alert("La habitacion esta ocupada durante esas fechas")
+    </script>
 <?php }else{ ?>
     <script>
         alert("Reserva realizada correctamente")

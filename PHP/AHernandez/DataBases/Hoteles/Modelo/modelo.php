@@ -100,14 +100,31 @@ function idUsuario($nombre)
 
 }
 
-function objHabitacion($habitacionId){
+function objHabitacion($habitacionId)
+{
     global $conn;
     $query = $conn->query("SELECT * FROM habitaciones where id =" . $habitacionId);
     $temp = $query->fetch_all(MYSQLI_ASSOC);
-    $temp=$temp[0];
-        $habitacion = new Habitacion($habitacionId, $temp['id_hotel'], $temp['numero_huespedes'],
-            $temp['numero_habitacion'], $temp['id_reserva'], $temp['imagen'], $temp['precio']);
+    $temp = $temp[0];
+    $habitacion = new Habitacion($habitacionId, $temp['id_hotel'], $temp['numero_huespedes'],
+        $temp['numero_habitacion'], $temp['id_reserva'], $temp['imagen'], $temp['precio']);
 
 
     return $habitacion;
+}
+
+function comprobarReserva($entrada, $salida, $idHabitacion)
+{
+    global $conn;
+
+    //Select que comprueba si hay una reserva entre las fechas introducidas sobre la habitacion especificada
+    $query = $conn->query("select * from reserva where (Entrada between '" . $entrada . "' and '" . $salida . "')
+    or (Salida between '" . $entrada . "' and '" . $salida . "')");
+
+    if ($query->num_rows > 0) {
+        return false;
+    }
+
+
+
 }

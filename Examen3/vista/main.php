@@ -57,7 +57,7 @@
             <td><?php echo $oterCountries[0][$i]->getGnp() ?></td>
             <td><?php echo $countryLanguages[$i][0]['count(*)'] ?></td>
             <td><?php echo $numCities[$i][0]['count(*)'] ?></td>
-            <td>0</td>
+            <td><?php echo $oterCountries[0][$i]->getUserId() ?></td>
         </tr>
     <?php } ?>
 </table>

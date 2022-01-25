@@ -2,7 +2,6 @@
 require_once("../BD/BD.php");
 require_once("../Entidades/Hotel.php");
 require_once("../Entidades/Habitacion.php");
-
 function listaObjsHotel()
 {
     global $conn;
@@ -87,4 +86,28 @@ function insertarUsuarios($nombre, $email, $password)
     } else {
         return false;
     }
+}
+
+function idUsuario($nombre)
+{
+
+    global $conn;
+    $query = $conn->query("Select id from Usuarios where Username='" . $nombre . "'");
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+    $temp = $temp[0];
+
+    return $temp['id'];
+
+}
+
+function objHabitacion($habitacionId){
+    global $conn;
+    $query = $conn->query("SELECT * FROM habitaciones where id =" . $habitacionId);
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+    $temp=$temp[0];
+        $habitacion = new Habitacion($habitacionId, $temp['id_hotel'], $temp['numero_huespedes'],
+            $temp['numero_habitacion'], $temp['id_reserva'], $temp['imagen'], $temp['precio']);
+
+
+    return $habitacion;
 }

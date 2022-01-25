@@ -59,6 +59,7 @@
             <td><?php echo $countryLanguages[$i][0]['count(*)'] ?></td>
             <td><?php echo $numCities[$i][0]['count(*)'] ?></td>
             <td><?php echo $oterCountries[0][$i]->getUserId() ?></td>
+            <td><a href="">Attack</a></td>
         </tr>
     <?php } ?>
 </table>

@@ -48,6 +48,7 @@
         <th>Owner</th>
         <th>Action</th>
     </tr>
+
     <?php for ($i = 0; $i < count($oterCountries[0]); $i++) { ?>
 
         <tr>

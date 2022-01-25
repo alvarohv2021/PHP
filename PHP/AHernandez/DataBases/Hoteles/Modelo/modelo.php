@@ -124,7 +124,17 @@ function comprobarReserva($entrada, $salida, $idHabitacion)
 
     if ($query->num_rows > 0) {
         return true;
+    }else{
+        return false;
     }
 
+}
 
+function reservar($idHabitacion,$idUsuario,$entrada, $salida){
+    global $conn;
+
+    $entrada=date("Y-m-d",$entrada);
+    $salida=date("Y-m-d",$salida);
+
+    $query=$conn->query("insert into reserva (idHabitacion,idUsuario,Entrada,Salida) values (".$idHabitacion.",".$idUsuario.",'".$entrada."','".$salida."')");
 }

@@ -49,7 +49,7 @@
         <th>Action</th>
     </tr>
 
-    <?php for ($i = 0; $i < count($oterCountries); $i++) { ?>
+    <?php for ($i = 0; $i < count($oterCountries[0]); $i++) { ?>
 
         <tr>
             <td><?php echo $oterCountries[0][$i]->getCode() ?></td>

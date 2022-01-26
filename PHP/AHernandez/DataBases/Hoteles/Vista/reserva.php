@@ -29,7 +29,8 @@ session_start();
 <div class="container-fluid mb-2">
     <div class="row bg-danger">
         <div class="col-8">
-            <h1><a class="text-light" href="../Controladores/c_lista.php" style="text-decoration: none">Spain Travels</a></h1>
+            <h1><a class="text-light" href="../Controladores/c_lista.php" style="text-decoration: none">Spain
+                    Travels</a></h1>
         </div>
         <?php if ($_SESSION['usuario'] != null) { ?>
             <div class="col-2 pt-3">
@@ -84,17 +85,19 @@ session_start();
 
 <!--**************************TO do**************************-->
 <!--**************************terminar tabla de habitaciones y rellenar los campos**************************-->
-<?php if ($fecha == false) { ?>
-    <script>
-        alert("La fecha de entrada es posterior a la de salida")
-    </script>
-<?php }else if ($pillada == true){ ?>
-    <script>
-        alert("La habitacion esta ocupada durante esas fechas")
-    </script>
-<?php }else{ ?>
-    <script>
-        alert("Reserva realizada correctamente")
-    </script>
-<?php } ?>
+<?php if (isset($fecha)) {
+    if ($fecha == false) { ?>
+        <script>
+            alert("La fecha de entrada es posterior a la de salida")
+        </script>
+    <?php }else if ($pillada == true){ ?>
+        <script>
+            alert("La habitacion esta ocupada durante esas fechas")
+        </script>
+    <?php }else{ ?>
+        <script>
+            alert("Reserva realizada correctamente")
+        </script>
+    <?php }
+} ?>
 </body>

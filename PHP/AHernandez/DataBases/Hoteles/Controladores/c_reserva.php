@@ -13,14 +13,13 @@ if (isset($_POST['entrada'])) {
 
     if ($entrada >= $salida) {
         $fecha = false;
-    } else {
-        $fecha = true;
-    }
-    if (comprobarReserva($_POST['entrada'], $_POST['salida'], $habitacion->getId())) {
+    } else if (comprobarReserva($_POST['entrada'], $_POST['salida'], $habitacion->getId())) {
         $pillada = true;
     } else {
+        $fecha=true;
         reservar($habitacion->getId(), $idUsuario, $entrada, $salida);
     }
+
 
 }
 include_once("../Vista/reserva.php")

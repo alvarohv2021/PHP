@@ -119,8 +119,8 @@ function comprobarReserva($entrada, $salida, $idHabitacion)
 
     //Select que comprueba si hay una reserva entre las fechas introducidas sobre la habitacion especificada
     $query = $conn->query("select * from reserva where idHabitacion=" . $idHabitacion . " and 
-    (Entrada between '" . $entrada . "' and '" . $salida . "') or
-    (Salida between '" . $entrada . "' and '" . $salida . "')");
+    ((Entrada between '" . $entrada . "' and '" . $salida . "') or
+    (Salida between '" . $entrada . "' and '" . $salida . "'))");
 
     if ($query->num_rows > 0) {
         return true;

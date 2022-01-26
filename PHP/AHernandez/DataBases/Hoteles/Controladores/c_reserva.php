@@ -14,6 +14,7 @@ if (isset($_POST['entrada'])) {
     if ($entrada >= $salida) {
         $fecha = false;
     } else if (comprobarReserva($_POST['entrada'], $_POST['salida'], $habitacion->getId())) {
+        $fecha=true;
         $pillada = true;
     } else {
         $fecha=true;

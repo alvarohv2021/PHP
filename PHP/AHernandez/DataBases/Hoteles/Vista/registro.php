@@ -7,10 +7,13 @@
 </head>
 <body>
 <form method="post" action="../Controladores/c_registro.php">
-    <div class="container bg-danger">
+    <div class="container bg-danger rounded mt-5">
         <div class="form-group row">
-            <div class="col-12 text-light text-center">
-                <h1>Please Sing in</h1>
+            <div class="col-3 text-center mt-4">
+                <h5><a class="text-light" href="../Controladores/c_lista.php" style="text-decoration: none">Spain Travels</a></h5>
+            </div>
+            <div class="col-9 text-light offset-4">
+                <h2>Inicio de sesion</h2>
             </div>
             <label class="sr-only" for="name">User Name</label>
             <div class="col-12">

@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container bg-danger">
+<div class="container bg-danger rounded mt-5">
     <form method="post" action="../Controladores/c_lista.php">
         <div class="form-group row">
-            <div class="col-12 text-center text-light">
-                <h1>Inicio de sesion</h1>
+            <div class="col-3 text-center mt-4">
+                <h5><a class="text-light" href="../Controladores/c_lista.php" style="text-decoration: none">Spain Travels</a></h5>
+            </div>
+            <div class="col-9 text-light offset-4">
+                <h2>Inicio de sesion</h2>
             </div>
             <label class="sr-only" for="name">User Name</label>
             <div class="col-12">

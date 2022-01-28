@@ -119,22 +119,24 @@ function comprobarReserva($entrada, $salida, $idHabitacion)
 
     //Select que comprueba si hay una reserva entre las fechas introducidas sobre la habitacion especificada
     $query = $conn->query("select * from reserva where idHabitacion=" . $idHabitacion . " and 
-    ((Entrada between '" . $entrada . "' and '" . $salida . "') or
-    (Salida between '" . $entrada . "' and '" . $salida . "'))");
+    Entrada between '" . $entrada . "' and '" . $salida . "' or
+    Salida between '" . $entrada . "' and '" . $salida . "' or
+    '" . $entrada . "' between Entrada and Salida");
 
     if ($query->num_rows > 0) {
         return true;
-    }else{
+    } else {
         return false;
     }
 
 }
 
-function reservar($idHabitacion,$idUsuario,$entrada, $salida){
+function reservar($idHabitacion, $idUsuario, $entrada, $salida)
+{
     global $conn;
 
-    $entrada=date("Y-m-d",$entrada);
-    $salida=date("Y-m-d",$salida);
+    $entrada = date("Y-m-d", $entrada);
+    $salida = date("Y-m-d", $salida);
 
-    $query=$conn->query("insert into reserva (idHabitacion,idUsuario,Entrada,Salida) values (".$idHabitacion.",".$idUsuario.",'".$entrada."','".$salida."')");
+    $query = $conn->query("insert into reserva (idHabitacion,idUsuario,Entrada,Salida) values (" . $idHabitacion . "," . $idUsuario . ",'" . $entrada . "','" . $salida . "')");
 }

@@ -110,5 +110,21 @@ class film
         return $this->uerId;
     }
 
+    /**
+     * @param string $actors
+     */
+    public function setActors($actors)
+    {
+        $this->actors = $actors;
+    }
+
+    /**
+     * @param string $categories
+     */
+    public function setCategories($categories)
+    {
+        $this->categories = $categories;
+    }
+
 
 }

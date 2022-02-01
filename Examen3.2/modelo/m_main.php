@@ -18,7 +18,7 @@ function myFilms($userId)
 function otherFilms($userId)
 {
     global $coon;
-    $query = $coon->query("Select * from film where user_id!=" . $userId . " or user_id is null");
+    $query = $coon->query("Select * from film where user_id!=" . $userId . " or user_id is null ORDER BY RAND(1234) LIMIT 20");
     $temp = $query->fetch_all(MYSQLI_ASSOC);
 
     for ($i = 0; $i < count($temp); $i++) {
@@ -41,7 +41,7 @@ function setActors($film)
     $temp = $query->fetch_all(MYSQLI_ASSOC);
 
     for ($i = 0; $i < count($temp); $i++) {
-        $actores[] = $temp[$i]['first_name']." ".$temp[$i]['last_name'];
+        $actores[] = $temp[$i]['first_name'] . " " . $temp[$i]['last_name'];
 
     }
     $film->setActors($actores);
@@ -54,12 +54,26 @@ function setCategories($film)
     join film_category on film_category.film_id = film.film_id
     join category on category.category_id=film_category.category_id 
     where film.film_id=" . $film->getId());
-    $temp=$query->fetch_all(MYSQLI_ASSOC);
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
 
     for ($i = 0; $i < count($temp); $i++) {
         $categories[] = $temp[$i]['name'];
 
     }
-$film->setCategories($categories);
+    $film->setCategories($categories);
+
+}
+
+function returnFilm($filmId){
+
+    global $coon;
+    $query=$coon->query("update film set user_id=null where film_id=".$filmId);
+
+}
+
+function getFilm($filmId,$userId){
+
+    global $coon;
+    $query=$coon->query("update film set user_id=".$userId." where film_id=".$filmId);
 
 }

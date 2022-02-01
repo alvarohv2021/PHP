@@ -2,6 +2,7 @@
 include_once("../modelo/modelo.php");
 session_start();
 if (isset($_SESSION['id'])) {
+
     $myCountries = myCountries($_SESSION['id']);
 
     for ($i = 0; $i < count($myCountries); $i++) {

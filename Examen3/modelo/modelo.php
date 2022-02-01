@@ -42,10 +42,34 @@ function getMailUsuario($userId)
     global $coon;
 
     $query = $coon->query("Select Mail from users where Id=" . $userId);
+
     $temp = $query->fetch_all(MYSQLI_ASSOC);
+
     $temp = $temp[0];
 
     return $temp['Mail'];
+}
+
+function asignarPais($userId)
+{
+    global $coon;
+    $query = $coon->query("Select * from countries where UserId=" . $userId);
+
+    if ($query->num_rows > 0) {
+        return true;
+    }
+    $query = $coon->query("Select * from countries");
+    $temp = $query->fetch_all(MYSQLI_ASSOC);
+
+    $introducido = ture;
+    while ($introducido == ture) {
+        $temp = $temp[rand(0, count($temp))];
+        if ($temp['UserId'] == null) {
+            $query=$coon->query("update countries set UserId=".$userId." where Code='".$temp['Code']."'");
+            return true;
+        }
+    }
+
 }
 
 function myCountries($userId)
@@ -54,10 +78,10 @@ function myCountries($userId)
     $query = $coon->query("Select * from countries where UserId=" . $userId);
     $temp = $query->fetch_all(MYSQLI_ASSOC);
 
-    $temp = $temp[0];
-
-    $countries[] = new countrie($temp["Code"], $temp["Name"], $temp["Population"], $temp["GNP"]
-        , $temp["Capital"], $temp["UserId"]);
+    for ($i=0; $i<count($temp);$i++){
+        $countries[] = new countrie($temp[$i]["Code"], $temp[$i]["Name"], $temp[$i]["Population"]
+            , $temp[$i]["GNP"], $temp[$i]["Capital"], $temp[$i]["UserId"]);
+    }
 
     return $countries;
 }
@@ -85,18 +109,21 @@ function numCities($countryCode)
 function otherCountries($userId)
 {
     global $coon;
-    $query = $coon->query("Select * from countries where UserId!=" . $userId." OR UserId IS NULL");
+    $query = $coon->query("Select * from countries where UserId!=" . $userId . " OR UserId IS NULL");
     $temp = $query->fetch_all(MYSQLI_ASSOC);
 
-for ($i=0;$i<count($temp);$i++){
+    for ($i = 0; $i < count($temp); $i++) {
 
-    if ($temp["UserId"]==null){
-        $temp[$i]["UserId"]=0;
+        if ($temp[$i]["UserId"] == null) {
+            $temp[$i]["UserId"] = 0;
+        }else{
+            $temp[$i]["UserId"]=getMailUsuario($temp[$i]["UserId"]);
+        }
+        $countries[$i] = new countrie($temp[$i]["Code"], $temp[$i]["Name"], $temp[$i]["Population"]
+            , $temp[$i]["GNP"], $temp[$i]["Capital"], $temp[$i]['UserId']);
     }
-    $countries[$i] = new countrie($temp[$i]["Code"], $temp[$i]["Name"], $temp[$i]["Population"]
-        , $temp[$i]["GNP"], $temp[$i]["Capital"], $temp[$i]["UserId"]);
-}
 
     return $countries;
 }
+
 ?>

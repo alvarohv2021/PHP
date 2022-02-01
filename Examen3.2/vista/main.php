@@ -91,7 +91,7 @@ include_once("../entidades/film.php")
                     echo $categorias[$j];
                 } ?>
             </td>
-            <td><a href="../controladores/c_main.php?peliculaId=<?php echo $otherFilms[$i]->getId() ?>">Return</a>
+            <td><a href="../controladores/c_main.php?peliculaId=<?php echo $otherFilms[$i]->getId() ?>">Get</a>
             </td>
         </tr>
     <?php } ?>

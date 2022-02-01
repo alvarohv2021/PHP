@@ -97,3 +97,5 @@ include_once("../entidades/film.php")
     <?php } ?>
 
 </table>
+<a href="../controladores/c_LogOut.php">LogOut</a><br>
+<a href="../controladores/c_SignIn.php">LogIn</a>

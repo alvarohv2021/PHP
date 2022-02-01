@@ -26,7 +26,11 @@ function registrarUsuario($email, $password)
 {
     if (!comprobarUsuario($email, $password)) {
         global $coon;
-        $query = $coon->query("Insert into user (mail,password) values ('" . $email . "'," . password_hash($password, PASSWORD_DEFAULT) . ")");
+
+        $password=password_hash($password, PASSWORD_DEFAULT);
+        var_dump($password);
+        $query = $coon->query("Insert into user (mail,password) values ('" . $email . "','" .$password . "')");
+        comprobarUsuario($email, $password);
         return true;
     }
 }

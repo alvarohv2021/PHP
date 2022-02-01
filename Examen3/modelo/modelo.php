@@ -70,7 +70,7 @@ function asignarPais($userId)
         }
     }
 
-}
+}1
 
 function myCountries($userId)
 {

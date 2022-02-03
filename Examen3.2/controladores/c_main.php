@@ -17,7 +17,6 @@ if (isset($_GET['peliculaId'])){
     if ($_GET['owned']==true){
         returnFilm($_GET['peliculaId']);
     }else{
-        var_dump($_SESSION['userId']);
         getFilm($_GET['peliculaId'],$_SESSION['userId']);
     }
     header("Location: c_main.php");

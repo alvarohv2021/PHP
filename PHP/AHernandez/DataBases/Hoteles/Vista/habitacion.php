@@ -90,10 +90,6 @@ session_start();
 </div>
 
 <!--***********************Reserva de la fecha**********************************-->
-
-
-<!--**************************TO do**************************-->
-<!--**************************terminar tabla de habitaciones y rellenar los campos**************************-->
 <?php if ($fechaMal == true) { ?>
     <script>
         alert("La fecha de entrada es despues que la de salida")

@@ -17,13 +17,13 @@ class Usuario
     }
 
     public function insertarUsuarioBD(){
-        global $conn;
+        global $coon;
         $sql="UPDATE 'u850300514_ahernandez'.'Actores' SET 
         'Email' = '".$this->email."' 
         'Username'='".$this->username."'
         'Pasword'='".$this->pasword."';";
 
-        if ($conn->query($sql)===true){
+        if ($coon->query($sql)===true){
             echo "Tabla actualizada correctamente";
         }
     }

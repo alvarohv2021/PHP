@@ -25,7 +25,7 @@ session_start();
 <div class="container-fluid mb-2">
     <div class="row bg-danger">
         <div class="col-8">
-            <h1><a class="text-light" href="../Controladores/c_lista.php" style="text-decoration: none">Spain Travels</a></h1>
+            <h1><a class="text-light" href="../Controladores/llamar_api.php" style="text-decoration: none">Spain Travels</a></h1>
         </div>
         <?php if ($_SESSION['usuario'] != null) { ?>
             <div class="col-2 pt-3">
@@ -57,23 +57,23 @@ session_start();
     <div class="row">
         <?php for ($i = 0; $i < count($habitaciones); $i++) { ?>
             <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                <img class="card-img-top" src="<?php echo $habitaciones[$i]->getImagen() ?>" alt="Card image cap"
+                <img class="card-img-top" src="<?php echo $habitaciones[$i]->imagen ?>" alt="Card image cap"
                      style="height: 60%">
                 <form method="post" action="<?php
                 if ($inici) {
-                    echo $iniciado . $habitaciones[$i]->getId();
+                    echo $iniciado . $habitaciones[$i]->id;
                 } else {
                     echo $iniciado;
                 } ?>">
                     <div class="card-body">
                         <div class="row">
 
-                            <h4 class="card-title col-12"><?php echo $hotel->getNombre() ?></h4>
+                            <h4 class="card-title col-12"><?php echo $hotel->nombre ?></h4>
                             <p class="col-6">Precio la Noche</p>
-                            <p class="card-text text-success col-6 text-right"><?php echo $habitaciones[$i]->getPrecio() ?>
+                            <p class="card-text text-success col-6 text-right"><?php echo $habitaciones[$i]->precio ?>
                                 €</p>
                             <p class="col-6">Nº huespedes:</p>
-                            <p class="card-text float-left col-6 text-right"><?php echo $habitaciones[$i]->getNumeroHuespedes() ?></p>
+                            <p class="card-text float-left col-6 text-right"><?php echo $habitaciones[$i]->numeroHuespedes ?></p>
                             <!--
                             <label for="entrada">De:</label>
                             <input type="date" id="entrada" name="entrada">

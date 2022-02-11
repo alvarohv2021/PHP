@@ -13,22 +13,22 @@ $username = "root";
 $password = "2609Ahv*";
 $dbname = "myDB";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$coon = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($coon->connect_error) {
+    die("Connection failed: " . $coon->connect_error);
 }
 
 $queryResult = "SELECT * FROM Resultados";
-$resultResult = $conn->query($queryResult);
+$resultResult = $coon->query($queryResult);
 $resultados_asociativo = $resultResult->fetch_all(MYSQLI_ASSOC);
 
 $queryProv = "SELECT * FROM Provincias";
-$resultProv = $conn->query($queryProv);
+$resultProv = $coon->query($queryProv);
 $provincias_asociativo = $resultProv->fetch_all(MYSQLI_ASSOC);
 
 $queryPart = "SELECT * FROM Partidos";
-$resultPart = $conn->query($queryPart);
+$resultPart = $coon->query($queryPart);
 $partidos_asociativo = $resultPart->fetch_all(MYSQLI_ASSOC);
 
 //*************************************************************

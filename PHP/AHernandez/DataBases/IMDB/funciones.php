@@ -35,12 +35,12 @@ function crearArrayObjetosPelicula($arrayPeliculas)
 
 function arrayGenerosDePelicula($idPelicula)
 {
-    global $conn;
+    global $coon;
     $sql = "select Generos.genero from Generos
 join PeliculasGeneros on Generos.id = PeliculasGeneros.IdGenero
 where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
 
-    $query = $conn->query($sql);
+    $query = $coon->query($sql);
     $arrayGenerosDePelicula = $query->fetch_all(MYSQLI_ASSOC);
     for ($i = 0; $i < count($arrayGenerosDePelicula); $i++) {
         $result[] = $arrayGenerosDePelicula[$i]['genero'];
@@ -50,22 +50,22 @@ where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
 //**********************Guardar usuario en BD*************************************
 function insertarDatosUsuario($username, $pasword, $email)
 {
-    global $conn;
+    global $coon;
 
-    $email = $conn->real_escape_string($email);
+    $email = $coon->real_escape_string($email);
     $pasword = password_hash($pasword, PASSWORD_DEFAULT);
 
     $sql = 'insert into Usuarios (Username,Pasword,Email) values 
             ("' . $username . '","' . $pasword . '","' . $email . '")';
 
-    if ($conn->query($sql) === TRUE) {
+    if ($coon->query($sql) === TRUE) {
 
-        $query = $conn->query('select id from Usuarios where Username = "' . $username . '"');
+        $query = $coon->query('select id from Usuarios where Username = "' . $username . '"');
         $id = $query->fetch_assoc();
         return $id['id'];
 
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $coon->error;
         return false;
     }
 
@@ -73,14 +73,14 @@ function insertarDatosUsuario($username, $pasword, $email)
 //**********************Comprobar los datos del usuario introducido*************************************
 function comprobarInicio($username, $pasword)
 {
-    global $conn;
+    global $coon;
 
-    $query = $conn->query('select Pasword from Usuarios where Username = "' . $username . '"');
+    $query = $coon->query('select Pasword from Usuarios where Username = "' . $username . '"');
     $pwdBD = $query->fetch_assoc();
     $hash = $pwdBD["Pasword"];
 
     if (password_verify($pasword, $hash)) {
-        $query = $conn->query('select id from Usuarios where Username = "' . $username . '"');
+        $query = $coon->query('select id from Usuarios where Username = "' . $username . '"');
         $id = $query->fetch_assoc();
         return $id['id'];
     } else {
@@ -89,37 +89,37 @@ function comprobarInicio($username, $pasword)
 }
 //****************************Insertar comentarios en la base de datos******************************
 function insertarComentario($idPelicula,$idUsuario,$comentario){
-    global $conn;
+    global $coon;
 
     $sql = 'insert into Comentarios (idPelicula,idUsuario,comentario)
 values ("' . $idPelicula . '","' . $idUsuario . '","' . $comentario . '")';
 
-    if ($conn->query($sql) === TRUE) {
+    if ($coon->query($sql) === TRUE) {
         echo "Todo ha ido bien";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $coon->error;
     }
 }
 
 function mostarComentariosDePelicula($pelicalId){
-    global $conn;
+    global $coon;
 
     $sql='SELECT Usuarios.Username, Comentarios.comentario FROM Comentarios
 join Usuarios on Comentarios.idUsuario = Usuarios.id
 where Comentarios.idPelicula ='."$pelicalId".';';
 
-    $query = $conn->query($sql);
+    $query = $coon->query($sql);
     return $arrayComentariosUsuarios = $query->fetch_all(MYSQLI_ASSOC);
 }
 
 function arrayObjetosActoresDePelicula($idPelicula)
 {
-    global $conn;
+    global $coon;
     $sql = "select Actores.* from Actores
 join PeliculasActores on Actores.id = PeliculasActores.IdActor
 where PeliculasActores.IdPelicula=" . $idPelicula . ";";
 
-    $query = $conn->query($sql);
+    $query = $coon->query($sql);
     $arrayActoresDePelicula = $query->fetch_all(MYSQLI_ASSOC);
 
     /* echo '<pre>';
@@ -138,12 +138,12 @@ where PeliculasActores.IdPelicula=" . $idPelicula . ";";
 
 function arrayPeliculasIDsActor($idActor)
 {
-    global $conn;
+    global $coon;
     $sql = "select PeliculasActores.IdPelicula from Actores
 join PeliculasActores on Actores.id = PeliculasActores.IdActor
 where Actores.id=" . $idActor . ";";
 
-    $query = $conn->query($sql);
+    $query = $coon->query($sql);
 
 
     $peliculas = array();
@@ -156,12 +156,12 @@ where Actores.id=" . $idActor . ";";
 
 function directorPelicula($idPelicula)
 {
-    global $conn;
+    global $coon;
     $sql = "select Directores.name from Peliculas
 join Directores on Peliculas.DirectorID =Directores.id
 where Peliculas.id=" . $idPelicula . ";";
 
-    $query = $conn->query($sql);
+    $query = $coon->query($sql);
     $arrayDirectorPelicula = $query->fetch_all(MYSQLI_ASSOC);
 
     return $directorPelicula = $arrayDirectorPelicula[0]['name'];

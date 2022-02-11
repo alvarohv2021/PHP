@@ -35,12 +35,12 @@ function crearArrayObjetosPelicula($arrayPeliculas)
 
 function arrayGenerosDePelicula($idPelicula)
 {
-    global $conn;
+    global $coon;
     $sql = "select Generos.genero from Generos
 join PeliculasGeneros on Generos.id = PeliculasGeneros.IdGenero
 where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
 
-    $query = $conn->query($sql);
+    $query = $coon->query($sql);
     $arrayGenerosDePelicula = $query->fetch_all(MYSQLI_ASSOC);
     for ($i = 0; $i < count($arrayGenerosDePelicula); $i++) {
         $result[] = $arrayGenerosDePelicula[$i]['genero'];
@@ -50,12 +50,12 @@ where PeliculasGeneros.IdPelicula = " . $idPelicula . ";";
 
 function arrayObjetosActoresDePelicula($idPelicula)
 {
-    global $conn;
+    global $coon;
     $sql = "select Actores.* from Actores
 join PeliculasActores on Actores.id = PeliculasActores.IdActor
 where PeliculasActores.IdPelicula=" . $idPelicula . ";";
 
-    $query = $conn->query($sql);
+    $query = $coon->query($sql);
     $arrayActoresDePelicula = $query->fetch_all(MYSQLI_ASSOC);
 
      echo '<pre>';
@@ -71,12 +71,12 @@ where PeliculasActores.IdPelicula=" . $idPelicula . ";";
 
 function directorPelicula($idPelicula)
 {
-    global $conn;
+    global $coon;
     $sql = "select Directores.name from Peliculas
 join Directores on Peliculas.DirectorID =Directores.id
 where Peliculas.id=" . $idPelicula . ";";
 
-    $query = $conn->query($sql);
+    $query = $coon->query($sql);
     $arrayDirectorPelicula = $query->fetch_all(MYSQLI_ASSOC);
 
     return $directorPelicula = $arrayDirectorPelicula[0]['name'];

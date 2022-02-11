@@ -4,9 +4,9 @@ require_once("../Entidades/Hotel.php");
 require_once("../Entidades/Habitacion.php");
 function listaObjsHotel()
 {
-    global $conn;
+    global $coon;
 
-    $query = $conn->query("SELECT * FROM hoteles");
+    $query = $coon->query("SELECT * FROM hoteles");
     $arrayHoteles = $query->fetch_all(MYSQLI_ASSOC);
 
     $arrayObjsHoteles = [];
@@ -24,8 +24,8 @@ function listaObjsHotel()
 
 function objHotel($hotelId)
 {
-    global $conn;
-    $query = $conn->query("SELECT * FROM hoteles where id =" . $hotelId);
+    global $coon;
+    $query = $coon->query("SELECT * FROM hoteles where id =" . $hotelId);
     $temp = $query->fetch_all(MYSQLI_ASSOC);
     $temp = $temp[0];
 
@@ -38,8 +38,8 @@ function objHotel($hotelId)
 
 function arrayObjsHabitacion($hotelId)
 {
-    global $conn;
-    $query = $conn->query("SELECT * FROM habitaciones where id_hotel =" . $hotelId);
+    global $coon;
+    $query = $coon->query("SELECT * FROM habitaciones where id_hotel =" . $hotelId);
     $temp = $query->fetch_all(MYSQLI_ASSOC);
 
     for ($i = 0; $i < count($temp); $i++) {
@@ -52,9 +52,9 @@ function arrayObjsHabitacion($hotelId)
 
 function comprobarUsuario($nombre, $password)
 {
-    global $conn;
+    global $coon;
 
-    $query = $conn->query("SELECT Username,Pasword FROM Usuarios where Username ='" . $nombre . "'");
+    $query = $coon->query("SELECT Username,Pasword FROM Usuarios where Username ='" . $nombre . "'");
 
     //comprobacion del numero de filas que devuleve la query
     if ($query->num_rows == 0) {
@@ -75,12 +75,12 @@ function comprobarUsuario($nombre, $password)
 
 function insertarUsuarios($nombre, $email, $password)
 {
-    global $conn;
+    global $coon;
 
     if (!comprobarUsuario($nombre, $password)) {
         $password = password_hash($password, PASSWORD_DEFAULT);
         $sql = "insert into Usuarios(Email,Username,Pasword) values ('" . $email . "','" . $nombre . "','" . $password . "')";
-        $conn->query($sql);
+        $coon->query($sql);
         $_SESSION['usuario'] = $nombre;
         return true;
     } else {
@@ -91,8 +91,8 @@ function insertarUsuarios($nombre, $email, $password)
 function idUsuario($nombre)
 {
 
-    global $conn;
-    $query = $conn->query("Select id from Usuarios where Username='" . $nombre . "'");
+    global $coon;
+    $query = $coon->query("Select id from Usuarios where Username='" . $nombre . "'");
     $temp = $query->fetch_all(MYSQLI_ASSOC);
     $temp = $temp[0];
 
@@ -102,8 +102,8 @@ function idUsuario($nombre)
 
 function objHabitacion($habitacionId)
 {
-    global $conn;
-    $query = $conn->query("SELECT * FROM habitaciones where id =" . $habitacionId);
+    global $coon;
+    $query = $coon->query("SELECT * FROM habitaciones where id =" . $habitacionId);
     $temp = $query->fetch_all(MYSQLI_ASSOC);
     $temp = $temp[0];
     $habitacion = new Habitacion($habitacionId, $temp['id_hotel'], $temp['numero_huespedes'],
@@ -115,10 +115,10 @@ function objHabitacion($habitacionId)
 
 function comprobarReserva($entrada, $salida, $idHabitacion)
 {
-    global $conn;
+    global $coon;
 
     //Select que comprueba si hay una reserva entre las fechas introducidas sobre la habitacion especificada
-    $query = $conn->query("select * from reserva where idHabitacion=" . $idHabitacion . " and 
+    $query = $coon->query("select * from reserva where idHabitacion=" . $idHabitacion . " and 
     Entrada between '" . $entrada . "' and '" . $salida . "' or
     Salida between '" . $entrada . "' and '" . $salida . "' or
     '" . $entrada . "' between Entrada and Salida");
@@ -133,10 +133,10 @@ function comprobarReserva($entrada, $salida, $idHabitacion)
 
 function reservar($idHabitacion, $idUsuario, $entrada, $salida)
 {
-    global $conn;
+    global $coon;
 
     $entrada = date("Y-m-d", $entrada);
     $salida = date("Y-m-d", $salida);
 
-    $query = $conn->query("insert into reserva (idHabitacion,idUsuario,Entrada,Salida) values (" . $idHabitacion . "," . $idUsuario . ",'" . $entrada . "','" . $salida . "')");
+    $query = $coon->query("insert into reserva (idHabitacion,idUsuario,Entrada,Salida) values (" . $idHabitacion . "," . $idUsuario . ",'" . $entrada . "','" . $salida . "')");
 }

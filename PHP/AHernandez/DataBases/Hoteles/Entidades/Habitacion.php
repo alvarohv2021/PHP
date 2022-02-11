@@ -2,7 +2,7 @@
 
 class Habitacion
 {
-private $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$imagen,$precio;
+public $id,$idHotel,$numeroHuespedes,$numeroHabitacion,$imagen,$precio;
 
     /**
      * @param $id

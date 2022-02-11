@@ -49,16 +49,16 @@ session_start();
         <?php for ($i = 0; $i < count($arrayObjsHoteles); $i++) { ?>
 
             <div class="card col-sm-12 card col-md-6 col-lg-4 col-xl-3">
-                <img class="card-img-top" src="<?php echo $arrayObjsHoteles[$i]->getImagen() ?>" alt="Card image cap"
+                <img class="card-img-top" src="<?php echo $arrayObjsHoteles[$i]->imagen?>" alt="Card image cap"
                      style="height: 60%">
                 <div class="card-body row">
-                    <h4 class="card-title col-12"><?php echo $arrayObjsHoteles[$i]->getNombre() ?></h4>
-                    <p class="card-text float-left col-10"><?php echo $arrayObjsHoteles[$i]->getUbicacion() ?></p>
-                    <p class="card-text float-right col-2"><?php echo $arrayObjsHoteles[$i]->getValoracion() ?>
+                    <h4 class="card-title col-12"><?php echo $arrayObjsHoteles[$i]->nombre ?></h4>
+                    <p class="card-text float-left col-10"><?php echo $arrayObjsHoteles[$i]->ubicacion ?></p>
+                    <p class="card-text float-right col-2"><?php echo $arrayObjsHoteles[$i]->valoracion ?>
                         &#11088;</p>
                     <button type="button" class="btn btn-danger col-6">
                         <a style="text-decoration: none; color: white"
-                           href="../Controladores/c_habitacion.php?hotelId=<?php echo $arrayObjsHoteles[$i]->getId() ?>"
+                           href="../Controladores/c_habitacion.php?hotelId=<?php echo $arrayObjsHoteles[$i]->id ?>"
                            class="card-link">Habitaciones</a>
                     </button>
                 </div>

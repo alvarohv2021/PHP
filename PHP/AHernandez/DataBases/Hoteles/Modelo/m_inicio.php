@@ -6,7 +6,7 @@ function comprobarUsuario($nombre, $password)
 {
     global $coon;
 
-    $query = $coon->query("SELECT * FROM Usuarios where Username ='" . $nombre . "'");
+    $query = $coon->query("SELECT * FROM usuarios where Username ='" . $nombre . "'");
 
     //comprobacion del numero de filas que devuleve la query
     if ($query->num_rows == 0) {

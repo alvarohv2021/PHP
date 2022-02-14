@@ -25,7 +25,8 @@ session_start();
 <div class="container-fluid mb-2">
     <div class="row bg-danger">
         <div class="col-8">
-            <h1><a class="text-light" href="../Controladores/llamar_api.php" style="text-decoration: none">Spain Travels</a></h1>
+            <h1><a class="text-light" href="../Controladores/llamar_api.php" style="text-decoration: none">Spain
+                    Travels</a></h1>
         </div>
         <?php if ($_SESSION['usuario'] != null) { ?>
             <div class="col-2 pt-3">
@@ -74,12 +75,6 @@ session_start();
                                 €</p>
                             <p class="col-6">Nº huespedes:</p>
                             <p class="card-text float-left col-6 text-right"><?php echo $habitaciones[$i]->numeroHuespedes ?></p>
-                            <!--
-                            <label for="entrada">De:</label>
-                            <input type="date" id="entrada" name="entrada">
-                            <label for="entrada">A:</label>
-                            <input type="date" id="entrada" name="entrada">
-                            -->
                             <button type="submit" class="btn btn-success col-12">Reservar</button>
                         </div>
                     </div>
@@ -88,11 +83,4 @@ session_start();
         <?php } ?>
     </div>
 </div>
-
-<!--***********************Reserva de la fecha**********************************-->
-<?php if ($fechaMal == true) { ?>
-    <script>
-        alert("La fecha de entrada es despues que la de salida")
-    </script>
-<?php } ?>
 </body>

@@ -13,7 +13,7 @@ session_start();
     hacer una reserva-->
     <?php if (isset($_SESSION['usuario'])) {
         $inici = true;
-        $iniciado = "../Controladores/c_reserva.php?idHabitacion=";
+        $iniciado = "../Controladores/c_reserva.php?habitacion=";
     } else {
         $inici = false;
         $iniciado = "../Controladores/c_inicio.php";
@@ -61,7 +61,7 @@ session_start();
                      style="height: 60%">
                 <form method="post" action="<?php
                 if ($inici) {
-                    echo $iniciado . $habitaciones[$i]->id;
+                    echo $iniciado . $habitaciones[$i];
                 } else {
                     echo $iniciado;
                 } ?>">

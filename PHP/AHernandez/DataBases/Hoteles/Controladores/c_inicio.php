@@ -1,6 +1,8 @@
 <?php
-include_once("../Modelo/modelo.php");
+include_once("../Modelo/m_inicio.php");
 
-
-include_once("../Vista/inicio.php");
+if (isset($_GET['userName'])&& isset($_GET['password'])){
+    $usuario=comprobarUsuario($_GET['userName'], $_GET['password']);
+    echo json_encode($usuario);
+}
 ?>

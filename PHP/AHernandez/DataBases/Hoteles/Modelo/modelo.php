@@ -2,6 +2,7 @@
 require_once("../BD/BD.php");
 require_once("../Entidades/Hotel.php");
 require_once("../Entidades/Habitacion.php");
+
 function listaObjsHotel()
 {
     global $coon;
@@ -50,43 +51,7 @@ function arrayObjsHabitacion($hotelId)
     return $habitaciones;
 }
 
-function comprobarUsuario($nombre, $password)
-{
-    global $coon;
 
-    $query = $coon->query("SELECT Username,Pasword FROM Usuarios where Username ='" . $nombre . "'");
-
-    //comprobacion del numero de filas que devuleve la query
-    if ($query->num_rows == 0) {
-        return false;
-    }
-    $temp = $query->fetch_all(MYSQLI_ASSOC);
-    $temp = $temp[0];
-
-    //hasheamos la pasword y la comprobamos con la que hay en la base de datos haseada
-    $password_hased = $temp['Pasword'];
-    if (password_verify($password, $password_hased) == true) {
-        $_SESSION['usuario'] = $nombre;
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function insertarUsuarios($nombre, $email, $password)
-{
-    global $coon;
-
-    if (!comprobarUsuario($nombre, $password)) {
-        $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "insert into Usuarios(Email,Username,Pasword) values ('" . $email . "','" . $nombre . "','" . $password . "')";
-        $coon->query($sql);
-        $_SESSION['usuario'] = $nombre;
-        return true;
-    } else {
-        return false;
-    }
-}
 
 function idUsuario($nombre)
 {
@@ -98,45 +63,4 @@ function idUsuario($nombre)
 
     return $temp['id'];
 
-}
-
-function objHabitacion($habitacionId)
-{
-    global $coon;
-    $query = $coon->query("SELECT * FROM habitaciones where id =" . $habitacionId);
-    $temp = $query->fetch_all(MYSQLI_ASSOC);
-    $temp = $temp[0];
-    $habitacion = new Habitacion($habitacionId, $temp['id_hotel'], $temp['numero_huespedes'],
-        $temp['numero_habitacion'], $temp['imagen'], $temp['precio']);
-
-
-    return $habitacion;
-}
-
-function comprobarReserva($entrada, $salida, $idHabitacion)
-{
-    global $coon;
-
-    //Select que comprueba si hay una reserva entre las fechas introducidas sobre la habitacion especificada
-    $query = $coon->query("select * from reserva where idHabitacion=" . $idHabitacion . " and 
-    Entrada between '" . $entrada . "' and '" . $salida . "' or
-    Salida between '" . $entrada . "' and '" . $salida . "' or
-    '" . $entrada . "' between Entrada and Salida");
-
-    if ($query->num_rows > 0) {
-        return true;
-    } else {
-        return false;
-    }
-
-}
-
-function reservar($idHabitacion, $idUsuario, $entrada, $salida)
-{
-    global $coon;
-
-    $entrada = date("Y-m-d", $entrada);
-    $salida = date("Y-m-d", $salida);
-
-    $query = $coon->query("insert into reserva (idHabitacion,idUsuario,Entrada,Salida) values (" . $idHabitacion . "," . $idUsuario . ",'" . $entrada . "','" . $salida . "')");
 }

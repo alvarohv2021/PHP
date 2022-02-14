@@ -1,11 +1,12 @@
 <?php
+include_once("../Modelo/m_reserva.php");
 include_once("../Modelo/modelo.php");
 session_start();
 
 //Paso la cadena string que contiene la fecha a formato Unix,lo cual me da
 //un int que puedo comparar
 $idUsuario = idUsuario($_SESSION['usuario']);
-$habitacion = objHabitacion($_GET['idHabitacion']);
+$habitacion = $_GET['habitacion'];
 
 if (isset($_POST['entrada'])) {
     $entrada = strtotime($_POST['entrada']);
@@ -23,5 +24,6 @@ if (isset($_POST['entrada'])) {
 
 
 }
+
 include_once("../Vista/reserva.php")
 ?>

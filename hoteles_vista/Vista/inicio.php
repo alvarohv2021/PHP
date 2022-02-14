@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container bg-danger rounded mt-5">
-    <form method="post" action="../Controladores/c_lista.php">
+    <form method="post" action="../Controladores/c_inicio.php">
         <div class="form-group row">
             <div class="col-3 text-center mt-4">
                 <h5><a class="text-light" href="../Controladores/c_lista.php" style="text-decoration: none">Spain Travels</a></h5>
@@ -38,4 +38,5 @@
         </a>
     </div>
 </div>
+
 </body>

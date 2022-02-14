@@ -2,7 +2,7 @@
 
 class Usuario
 {
-    private $id, $nombre, $email, $passsword;
+    public $id, $nombre, $email, $passsword;
 
     /**
      * @param $id

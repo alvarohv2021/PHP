@@ -1,11 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="25-01-22">
+    <list default="true" id="2a0ee9c4-5d36-4c0d-ac4b-f216d1cde1b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/Examen3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/BD/BD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/controladores/c_LogIn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/controladores/c_LogOut.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/controladores/c_SignIn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/controladores/c_main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/entidades/film.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/modelo/m_main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/modelo/usuario.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/vista/SignIn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/vista/logIn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3.2/vista/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/BD/BD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/controladores/c_cierre.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/controladores/c_iniciar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/controladores/c_main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/controladores/c_registro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/entidades/countrie.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/modelo/modelo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/vista/inicio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/vista/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen3/vista/registro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/BD/BD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_habitaciones.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_inicio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_registro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_reserva.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/crear_api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Habitacion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Hotel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Usuario.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/m_inicio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/m_reserva.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/m_usuario.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Alguien_vol_sobre_el_nido_del_cuco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Cadena_perpetua.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Doce_hombres_sin_piedad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_bueno_el_feo_y_el_malo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_caballero_oscuro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_se_or_de_los_anillos_El_retorno_del_rey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_se_or_de_los_anillos_La_comunidad_del_anillo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_se_or_de_los_anillos_Las_dos_torres.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Elpadrino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Forrest_Gump.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/La_guerra_de_las_galaxias_Episodio_V_El_imperio_contraataca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/La_lista_de_Schindler.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Los_siete_samurais.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Matrix.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Origen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Pulp_Fiction.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Seven.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/The-Godfather-Part-II.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Uno-de_los_nuestros.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/el-club-de-la-lucha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_BD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Actores.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Peliculas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Usuario.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/actor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/plicula.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/usuario.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funciones.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funcionescopia.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/notas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_InicioS.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_Registro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_actor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_pelicula.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_principal.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/CreacionTablas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/InsertTablas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/MySQLiObject-Oriente.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/CrearTablas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/CreateBD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/InsertarValores.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/RickAndMortyBD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/Elefantes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/N_perfects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/NumerosPrimos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/OrdenarArrays.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/Password.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/PrimosAndres.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClaseCircumscripcion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClasePartidos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClaseProvincias.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/mainBD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/tablas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/rickandmorty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/arbol.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/arrayMap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/arraysDeObjetos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/elephants-multifilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/escaleraInversa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/mapping.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/phpinfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/world.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP/Warnin message" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controladores_api/BD/BD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controladores_api/Controladores/c_api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/c_habitacion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/c_inicio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/c_registro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/llamar_api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/logOut.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/habitacion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/inicio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/registro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/reserva.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista_api/Controlador/c_vista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista_api/Vista/llamada.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,592 +137,52 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_reserva.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/reserva.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file:///etc/php/7.4/cli/php.ini" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/habitacion.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Vista/lista.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_lista.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_habitacion.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
-  <component name="PhpServers">
-    <servers>
-      <server host="localhost" id="9495fa64-aa12-4299-80fb-ab49a41bad0a" name="localhost" />
-    </servers>
-  </component>
-  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
+  <component name="PhpDebugGeneral" break_at_first_line="true" />
+  <component name="PhpWebServerValidation" path_to_validation_script="D:\Programas\Xampp\htdocs\PHP\PHP\AHernandez" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/PHP\PHP\AHernandez" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
-      <path value="/usr/share/php" />
-      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/../../../php/PEAR" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1yp4EcSpCeZOmvmzoKBqMHZBvUx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2568ideQbftdrvzdfnGdcgs08E4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB" />
-      <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty" />
-      <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases" />
-      <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones" />
-      <recent name="$PROJECT_DIR$/AHernandez/Congreso de los Diputados" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD" />
-      <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty" />
-      <recent name="$PROJECT_DIR$/PHP/AHernandez/OOP" />
-      <recent name="$PROJECT_DIR$/AHernandez/Objetos" />
-      <recent name="$PROJECT_DIR$/AHernandez" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="pruebas.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="PHP Script.pruebas.php" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1c06c152-5e41-4fa2-8df7-c7b5617c7430" name="Changes" comment="" />
-      <created>1632935084729</created>
+      <changelist id="2a0ee9c4-5d36-4c0d-ac4b-f216d1cde1b1" name="Changes" comment="" />
+      <created>1644836304138</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1632935084729</updated>
-      <workItem from="1632935085815" duration="4510000" />
-      <workItem from="1632939607267" duration="97000" />
-      <workItem from="1633011058578" duration="3322000" />
-      <workItem from="1633094212255" duration="9670000" />
-      <workItem from="1633108340512" duration="2208000" />
-      <workItem from="1633111292950" duration="262000" />
-      <workItem from="1633353193417" duration="3394000" />
-      <workItem from="1633454124605" duration="6025000" />
-      <workItem from="1633537863059" duration="8480000" />
-      <workItem from="1633615769817" duration="3082000" />
-      <workItem from="1633621117818" duration="60000" />
-      <workItem from="1633621295510" duration="294000" />
-      <workItem from="1633699048819" duration="222000" />
-      <workItem from="1633699723722" duration="5633000" />
-      <workItem from="1634143704085" duration="5769000" />
-      <workItem from="1634220790282" duration="457000" />
-      <workItem from="1634221746341" duration="4170000" />
-      <workItem from="1634305075338" duration="6391000" />
-      <workItem from="1634315271177" duration="1614000" />
-      <workItem from="1634563085670" duration="241000" />
-      <workItem from="1634565212377" duration="1498000" />
-      <workItem from="1634569676094" duration="2133000" />
-      <workItem from="1634577624416" duration="4407000" />
-      <workItem from="1634738915337" duration="631000" />
-      <workItem from="1634739875856" duration="22000" />
-      <workItem from="1634739929398" duration="49000" />
-      <workItem from="1634740107368" duration="376000" />
-      <workItem from="1634743546059" duration="275000" />
-      <workItem from="1634744137119" duration="11000" />
-      <workItem from="1634744308873" duration="284000" />
-      <workItem from="1634744769772" duration="65000" />
-      <workItem from="1634746754562" duration="91000" />
-      <workItem from="1634910459784" duration="4985000" />
-      <workItem from="1635167807545" duration="3724000" />
-      <workItem from="1635179242405" duration="2018000" />
-      <workItem from="1635268458147" duration="4158000" />
-      <workItem from="1635274448205" duration="56000" />
-      <workItem from="1635340511756" duration="149000" />
-      <workItem from="1635348987247" duration="591000" />
-      <workItem from="1635351804128" duration="3125000" />
-      <workItem from="1635359728157" duration="3000" />
-      <workItem from="1635430725260" duration="4521000" />
-      <workItem from="1635513571177" duration="7660000" />
-      <workItem from="1635528979568" duration="4707000" />
-      <workItem from="1635533757760" duration="35000" />
-      <workItem from="1635866303420" duration="3795000" />
-      <workItem from="1635875695003" duration="5844000" />
-      <workItem from="1635955493237" duration="2194000" />
-      <workItem from="1635959902180" duration="2135000" />
-      <workItem from="1635962194536" duration="6737000" />
-      <workItem from="1636038755886" duration="4010000" />
-      <workItem from="1636046527212" duration="8319000" />
-      <workItem from="1636121684645" duration="7537000" />
-      <workItem from="1636136123016" duration="5433000" />
-      <workItem from="1636483759579" duration="680000" />
-      <workItem from="1636564974499" duration="4270000" />
-      <workItem from="1636643842996" duration="3601000" />
-      <workItem from="1636652429504" duration="1781000" />
-      <workItem from="1636726785467" duration="5580000" />
-      <workItem from="1636985903754" duration="3221000" />
-      <workItem from="1636990257119" duration="3133000" />
-      <workItem from="1636997983476" duration="372000" />
-      <workItem from="1637086820982" duration="5332000" />
-      <workItem from="1637169799466" duration="6029000" />
-      <workItem from="1637248484878" duration="2880000" />
-      <workItem from="1637332007676" duration="3769000" />
-      <workItem from="1637590328941" duration="993000" />
-      <workItem from="1637592970909" duration="51000" />
-      <workItem from="1637593977519" duration="41000" />
-      <workItem from="1637594057588" duration="126000" />
-      <workItem from="1637680561180" duration="656000" />
-      <workItem from="1637685624748" duration="716000" />
-      <workItem from="1637686358984" duration="128000" />
-      <workItem from="1637687882015" duration="247000" />
-      <workItem from="1637688156274" duration="68000" />
-      <workItem from="1637689131268" duration="25000" />
-      <workItem from="1637690618651" duration="22000" />
-      <workItem from="1637690737239" duration="7000" />
-      <workItem from="1637691137658" duration="12000" />
-      <workItem from="1637691168841" duration="15000" />
-      <workItem from="1637691524911" duration="12000" />
-      <workItem from="1637691564188" duration="19000" />
-      <workItem from="1637692572706" duration="16000" />
-      <workItem from="1637692598009" duration="2169000" />
-      <workItem from="1637696084944" duration="8000" />
-      <workItem from="1637774714028" duration="1310000" />
-      <workItem from="1637776555209" duration="815000" />
-      <workItem from="1637854364329" duration="1818000" />
-      <workItem from="1638195441812" duration="2025000" />
-      <workItem from="1638352022985" duration="1407000" />
-      <workItem from="1638353444861" duration="2347000" />
-      <workItem from="1638394851339" duration="1516000" />
-      <workItem from="1639070965341" duration="834000" />
-      <workItem from="1639154450486" duration="463000" />
-      <workItem from="1639158989125" duration="313000" />
-      <workItem from="1639581008368" duration="41000" />
-      <workItem from="1639589561164" duration="3243000" />
-      <workItem from="1639668043277" duration="2866000" />
-      <workItem from="1639751113893" duration="6236000" />
-      <workItem from="1639763892011" duration="474000" />
-      <workItem from="1640009622606" duration="3639000" />
-      <workItem from="1640111154295" duration="5257000" />
-      <workItem from="1641824246456" duration="408000" />
-      <workItem from="1641925634727" duration="1581000" />
-      <workItem from="1642008378573" duration="2467000" />
-      <workItem from="1642013670008" duration="1231000" />
-      <workItem from="1642086923193" duration="2546000" />
-      <workItem from="1642103676139" duration="4000" />
-      <workItem from="1642169889478" duration="4589000" />
-      <workItem from="1642182285575" duration="2148000" />
-      <workItem from="1642428859415" duration="4284000" />
-      <workItem from="1642444374111" duration="1090000" />
-      <workItem from="1642526885497" duration="8102000" />
-      <workItem from="1642692051010" duration="2859000" />
-      <workItem from="1642695246185" duration="1758000" />
-      <workItem from="1642775064493" duration="6566000" />
-      <workItem from="1643033668380" duration="2869000" />
-      <workItem from="1643123286738" duration="440000" />
-      <workItem from="1643123735007" duration="1474000" />
-      <workItem from="1643129187641" duration="1881000" />
-      <workItem from="1643131237649" duration="18000" />
+      <updated>1644836304138</updated>
+      <workItem from="1644836305463" duration="1536000" />
+      <workItem from="1644871202326" duration="2556000" />
+      <workItem from="1644880103237" duration="1241000" />
+      <workItem from="1644881678870" duration="1595000" />
+      <workItem from="1644916761742" duration="603000" />
+      <workItem from="1644921908879" duration="364000" />
     </task>
-    <task id="LOCAL-00048" summary="15-11-21">
-      <created>1636988550250</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1636988550250</updated>
-    </task>
-    <task id="LOCAL-00049" summary="15-11-21">
-      <created>1636989120199</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1636989120199</updated>
-    </task>
-    <task id="LOCAL-00050" summary="15-11-21">
-      <created>1636992637257</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1636992637257</updated>
-    </task>
-    <task id="LOCAL-00051" summary="15-11-21">
-      <created>1636993359933</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1636993359933</updated>
-    </task>
-    <task id="LOCAL-00052" summary="15-11-21">
-      <created>1636993375845</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1636993375845</updated>
-    </task>
-    <task id="LOCAL-00053" summary="17-11-21">
-      <created>1637175491261</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1637175491261</updated>
-    </task>
-    <task id="LOCAL-00054" summary="18-11-21">
-      <created>1637249035321</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1637249035321</updated>
-    </task>
-    <task id="LOCAL-00055" summary="18-11-21">
-      <created>1637249754037</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1637249754037</updated>
-    </task>
-    <task id="LOCAL-00056" summary="19-11-21">
-      <created>1637334152970</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1637334152970</updated>
-    </task>
-    <task id="LOCAL-00057" summary="22-11-21">
-      <created>1637592992524</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1637592992525</updated>
-    </task>
-    <task id="LOCAL-00058" summary="23-11-21">
-      <created>1637680746581</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1637680746581</updated>
-    </task>
-    <task id="LOCAL-00059" summary="23-11-21">
-      <created>1637680874135</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1637680874135</updated>
-    </task>
-    <task id="LOCAL-00060" summary="24-11-21">
-      <created>1637775284909</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1637775284910</updated>
-    </task>
-    <task id="LOCAL-00061" summary="24-11-21">
-      <created>1637775322606</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1637775322606</updated>
-    </task>
-    <task id="LOCAL-00062" summary="24-11-21">
-      <created>1637775686777</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1637775686778</updated>
-    </task>
-    <task id="LOCAL-00063" summary="24-11-21">
-      <created>1637775763814</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1637775763814</updated>
-    </task>
-    <task id="LOCAL-00064" summary="10-12-21">
-      <created>1639153019716</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1639153019716</updated>
-    </task>
-    <task id="LOCAL-00065" summary="10-12-21">
-      <created>1639153804233</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1639153804233</updated>
-    </task>
-    <task id="LOCAL-00066" summary="14-12-21">
-      <created>1639495740117</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1639495740117</updated>
-    </task>
-    <task id="LOCAL-00067" summary="14-12-21">
-      <created>1639501041996</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1639501041996</updated>
-    </task>
-    <task id="LOCAL-00068" summary="15-12-21">
-      <created>1639589901866</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1639589901866</updated>
-    </task>
-    <task id="LOCAL-00069" summary="15-12-21">
-      <created>1639589935232</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1639589935232</updated>
-    </task>
-    <task id="LOCAL-00070" summary="15-12-21">
-      <created>1639589957954</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1639589957955</updated>
-    </task>
-    <task id="LOCAL-00071" summary="15-12-21">
-      <created>1639594789235</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1639594789235</updated>
-    </task>
-    <task id="LOCAL-00072" summary="15-12-21">
-      <created>1639670997822</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1639670997822</updated>
-    </task>
-    <task id="LOCAL-00073" summary="17-12-21">
-      <created>1639752546422</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1639752546422</updated>
-    </task>
-    <task id="LOCAL-00074" summary="17-12-21">
-      <created>1639754466385</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1639754466385</updated>
-    </task>
-    <task id="LOCAL-00075" summary="17-12-21">
-      <created>1639756672246</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1639756672246</updated>
-    </task>
-    <task id="LOCAL-00076" summary="20-12-21">
-      <created>1640013076872</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1640013076872</updated>
-    </task>
-    <task id="LOCAL-00077" summary="20-12-21">
-      <created>1640013176905</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1640013176905</updated>
-    </task>
-    <task id="LOCAL-00078" summary="21-12-21">
-      <created>1640112195102</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1640112195103</updated>
-    </task>
-    <task id="LOCAL-00079" summary="21-12-21">
-      <created>1640112852741</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1640112852741</updated>
-    </task>
-    <task id="LOCAL-00080" summary="21-12-21">
-      <created>1640113662647</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1640113662647</updated>
-    </task>
-    <task id="LOCAL-00081" summary="21-12-21">
-      <created>1640116310764</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1640116310764</updated>
-    </task>
-    <task id="LOCAL-00082" summary="12-01-22">
-      <created>1642014888249</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1642014888250</updated>
-    </task>
-    <task id="LOCAL-00083" summary="13-01-22">
-      <created>1642090186096</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1642090186097</updated>
-    </task>
-    <task id="LOCAL-00084" summary="14-01-22">
-      <created>1642176638839</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1642176638839</updated>
-    </task>
-    <task id="LOCAL-00085" summary="17-01-22">
-      <created>1642432633661</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1642432633661</updated>
-    </task>
-    <task id="LOCAL-00086" summary="17-01-22">
-      <created>1642433138033</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1642433138033</updated>
-    </task>
-    <task id="LOCAL-00087" summary="17-01-22">
-      <created>1642445457947</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1642445457947</updated>
-    </task>
-    <task id="LOCAL-00088" summary="18-01-22">
-      <created>1642527731994</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1642527731995</updated>
-    </task>
-    <task id="LOCAL-00089" summary="18-01-22">
-      <created>1642533945248</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1642533945248</updated>
-    </task>
-    <task id="LOCAL-00090" summary="18-01-22">
-      <created>1642535304461</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1642535304461</updated>
-    </task>
-    <task id="LOCAL-00091" summary="18-01-22">
-      <created>1642535686721</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1642535686721</updated>
-    </task>
-    <task id="LOCAL-00092" summary="20-01-22">
-      <created>1642694901141</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1642694901142</updated>
-    </task>
-    <task id="LOCAL-00093" summary="20-01-22">
-      <created>1642696997352</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1642696997352</updated>
-    </task>
-    <task id="LOCAL-00094" summary="21-01-22">
-      <created>1642775599868</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1642775599868</updated>
-    </task>
-    <task id="LOCAL-00095" summary="21-01-22">
-      <created>1642781253353</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1642781253353</updated>
-    </task>
-    <task id="LOCAL-00096" summary="25-01-22">
-      <created>1643125192374</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1643125192378</updated>
-    </task>
-    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="SHOW_OTHER_BRANCHES" value="true" />
-    <option name="COLUMN_ID_ORDER">
-      <list>
-        <option value="Default.Root" />
-        <option value="Default.Author" />
-        <option value="Default.Date" />
-        <option value="Default.Subject" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -612,37 +194,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="8-11-21" />
-    <MESSAGE value="10-11-21" />
-    <MESSAGE value="11-11-21" />
-    <MESSAGE value="12-11-21" />
-    <MESSAGE value="15-11-21" />
-    <MESSAGE value="17-11-21" />
-    <MESSAGE value="18-11-21" />
-    <MESSAGE value="19-11-21" />
-    <MESSAGE value="22-11-21" />
-    <MESSAGE value="23-11-21" />
-    <MESSAGE value="24-11-21" />
-    <MESSAGE value="10-12-21" />
-    <MESSAGE value="14-12-21" />
-    <MESSAGE value="15-12-21" />
-    <MESSAGE value="17-12-21" />
-    <MESSAGE value="20-12-21" />
-    <MESSAGE value="21-12-21" />
-    <MESSAGE value="12-01-22" />
-    <MESSAGE value="13-01-22" />
-    <MESSAGE value="14-01-22" />
-    <MESSAGE value="17-01-22" />
-    <MESSAGE value="18-01-22" />
-    <MESSAGE value="20-01-22" />
-    <MESSAGE value="21-01-22" />
-    <MESSAGE value="25-01-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="25-01-22" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

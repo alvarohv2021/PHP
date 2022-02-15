@@ -1,134 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a0ee9c4-5d36-4c0d-ac4b-f216d1cde1b1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/BD/BD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/controladores/c_LogIn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/controladores/c_LogOut.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/controladores/c_SignIn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/controladores/c_main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/entidades/film.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/modelo/m_main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/modelo/usuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/vista/SignIn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/vista/logIn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3.2/vista/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/.idea/webServers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/BD/BD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/controladores/c_cierre.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/controladores/c_iniciar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/controladores/c_main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/controladores/c_registro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/entidades/countrie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/modelo/modelo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/vista/inicio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/vista/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen3/vista/registro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/BD/BD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_habitaciones.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_inicio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_lista.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_registro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/c_reserva.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Controladores/crear_api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Habitacion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Hotel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Entidades/Usuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/m_inicio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/m_reserva.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/m_usuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/Hoteles/Modelo/modelo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Alguien_vol_sobre_el_nido_del_cuco.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Cadena_perpetua.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Doce_hombres_sin_piedad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_bueno_el_feo_y_el_malo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_caballero_oscuro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_se_or_de_los_anillos_El_retorno_del_rey.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_se_or_de_los_anillos_La_comunidad_del_anillo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/El_se_or_de_los_anillos_Las_dos_torres.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Elpadrino.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Forrest_Gump.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/La_guerra_de_las_galaxias_Episodio_V_El_imperio_contraataca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/La_lista_de_Schindler.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Los_siete_samurais.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Matrix.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Origen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Pulp_Fiction.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Seven.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/The-Godfather-Part-II.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/Uno-de_los_nuestros.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/Fotos/el-club-de-la-lucha.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_BD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/IMDB_Tabla.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Actores.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Peliculas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/clases/Usuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/actor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/plicula.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/estilos/usuario.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funciones.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/funcionescopia.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/notas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_InicioS.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_Registro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_actor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_pelicula.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/IMDB/pagina_principal.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/CreacionTablas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/InsertTablas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/ResultadosEleccionesBD/MySQLiObject-Oriente.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/CrearTablas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/CreateBD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/InsertarValores.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/DataBases/RyckAndMortyBD/RickAndMortyBD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/Elefantes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/N_perfects.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/NumerosPrimos.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/OrdenarArrays.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/Password.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/PrimosAndres.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClaseCircumscripcion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClasePartidos.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/ClaseProvincias.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/mainBD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/ResultadosElecciones/tablas.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/RickAndMorty/rickandmorty.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/arbol.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/arrayMap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/arraysDeObjetos.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/elephants-multifilter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/escaleraInversa.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/mapping.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/phpinfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/OOP/world.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/AHernandez/info.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/Warnin message" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controladores_api/BD/BD.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controladores_api/Controladores/c_api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/c_habitacion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/c_inicio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/c_registro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/llamar_api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Controladores/logOut.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/habitacion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/inicio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/lista.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/registro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hoteles_vista/Vista/reserva.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vista_api/Controlador/c_vista.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vista_api/Vista/llamada.php" beforeDir="false" />
-    </list>
+    <list default="true" id="2a0ee9c4-5d36-4c0d-ac4b-f216d1cde1b1" name="Changes" comment="15-02-22" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AHernandez/DataBases/Hoteles" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -177,8 +50,23 @@
       <workItem from="1644880103237" duration="1241000" />
       <workItem from="1644881678870" duration="1595000" />
       <workItem from="1644916761742" duration="603000" />
-      <workItem from="1644921908879" duration="364000" />
+      <workItem from="1644921908879" duration="560000" />
     </task>
+    <task id="LOCAL-00001" summary="15-02-22">
+      <created>1644922312345</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644922312345</updated>
+    </task>
+    <task id="LOCAL-00002" summary="15-02-22">
+      <created>1644922376063</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644922376063</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,5 +83,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="15-02-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="15-02-22" />
   </component>
 </project>

@@ -11,9 +11,9 @@ session_start();
 
     <!--Determina en base ha si hay un usuario o no iniciado, a donde le va ha mandar al intentar
     hacer una reserva-->
-    <?php if (isset($_SESSION['usuario'])) {
+    <?php if (isset($_SESSION['Usuario'])) {
         $inici = true;
-        $iniciado = "../Controladores/c_reserva.php?habitacion=";
+        $iniciado = "../Controladores/c_reserva.php?habitacion=".$habitaciones[0];
     } else {
         $inici = false;
         $iniciado = "../Controladores/c_inicio.php";
@@ -28,9 +28,9 @@ session_start();
             <h1><a class="text-light" href="../Controladores/llamar_api.php" style="text-decoration: none">Spain
                     Travels</a></h1>
         </div>
-        <?php if ($_SESSION['usuario'] != null) { ?>
+        <?php if ($_SESSION['Usuario'] != null) { ?>
             <div class="col-2 pt-3">
-                <p class='text-light'><?php echo $_SESSION['usuario'] ?></p>
+                <p class='text-light'><?php echo $_SESSION['Usuario']->nombre ?></p>
             </div>
             <div class='col-2 pt-3'>
                 <a href='../Controladores/c_lista.php?sesion=false' class='text-light' style='text-decoration: none'><p>
@@ -38,14 +38,12 @@ session_start();
                 </a>
             </div>
         <?php } else { ?>
-            <!--Por terminar, página de inicio-->
 
             <div class='col-2 pt-3'>
                 <a href='../Controladores/c_inicio.php' class='text-light' style='text-decoration: none'>
                     <p>Iniciar Sesion</p></a>
             </div>
             <div class="col-2 pt-3">
-                <!--Por hacer, página de registro-->
                 <a href='../Controladores/c_registro.php' class='text-light' style='text-decoration: none'>
                     <p>Registrarse</p></a>
             </div>
@@ -62,7 +60,7 @@ session_start();
                      style="height: 60%">
                 <form method="post" action="<?php
                 if ($inici) {
-                    echo $iniciado . $habitaciones[$i];
+                    echo $iniciado ;
                 } else {
                     echo $iniciado;
                 } ?>">

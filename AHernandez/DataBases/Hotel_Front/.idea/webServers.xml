@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ae816320-42c5-4730-bcee-e993c866bd5d" name="hoteles_vista" url="http://localhost/PHP/hoteles_vista/">
+        <fileTransfer mountedRoot="D:\Programas\Xampp\htdocs\PHP\hoteles_vista" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

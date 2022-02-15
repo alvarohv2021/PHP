@@ -5,7 +5,7 @@ session_start();
 
 //Paso la cadena string que contiene la fecha a formato Unix,lo cual me da
 //un int que puedo comparar
-$idUsuario = idUsuario($_SESSION['usuario']);
+$usuario = $_GET['usuario'];
 $habitacion = $_GET['habitacion'];
 
 if (isset($_POST['entrada'])) {
@@ -15,11 +15,11 @@ if (isset($_POST['entrada'])) {
     if ($entrada >= $salida) {
         $fecha = false;
     } else if (comprobarReserva($_POST['entrada'], $_POST['salida'], $habitacion->getId())) {
-        $fecha=true;
+        $fecha = true;
         $pillada = true;
     } else {
-        $fecha=true;
-        reservar($habitacion->getId(), $idUsuario, $entrada, $salida);
+        $fecha = true;
+        reservar($habitacion->getId(), $usuario->getId(), $entrada, $salida);
     }
 
 

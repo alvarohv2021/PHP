@@ -1,0 +1,38 @@
+body{
+    background-color: #212738;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+.portada{
+    width: 400px;
+    height: 550px;
+    border: 1px solid orange;
+}
+h4{
+    float: right;
+    margin-left: 15px;
+}
+.cartelera{
+    width: 200px;
+    height: 275px;
+    position: relative;
+}
+.center{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.login{
+    background-color: white;
+    color: black;
+    width: 75px;
+    text-align: center;
+    border-radius: 25px;
+    float: right;
+    margin: 2px;
+}
+a{
+    text-decoration: none;
+}
